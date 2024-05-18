@@ -114,7 +114,7 @@ https://github.com/3DPrintDemon/How-to-Update-Sovol-Klipper-Screen-To-Latest-Kli
 
 
 
-## Included USER exacutable macros:
+## Included USER executable macros:
 
 - `PRINT_START`
 - `PRINT_END`
@@ -216,7 +216,7 @@ The rest of the macros are simple single click automations for running a series 
 
 # BE SURE TO SET YOUR MACRO VARIABLES  
 
-- `_CLEAN_VARIABLES` the printer will give you an error if you havent done this & try to use the macros.
+- `_CLEAN_VARIABLES` the printer will give you an error if you haven’t done this & try to use the macros.
 
 
 ****************************************************************************************************************************
@@ -289,7 +289,7 @@ This link is far more helpful!
 
 You will need ensure that you have set your instance to be able to control your Pi’s GPIO pins as mentioned previously in this document. Then you need to choose which 2 GPIO pins on your Rpi to use to control the relay, connect the `Printer Power` GPIO pin along with a single ground pin to the PSon plug on the relay board. You have to then connect the Pi's `Reset Power` GPIO pin to the `reset` pin on the relay board, leave the 5v pin next to it empty.
 
-Then if you wish you can add a physical momentary switch to a 3rd GPIO pin & another ground pin. Then mount it somewhere of your choice on your printer. This button will act as an instant on button & re-power the printer with a single push, norammly you have to manually switch both pins on yourself but now Moonraker will now activate both pins at the same time for you! Magic!
+Then if you wish you can add a physical momentary switch to a 3rd GPIO pin & another ground pin. Then mount it somewhere of your choice on your printer. This button will act as an instant on button & re-power the printer with a single push, normally you have to manually switch both pins on yourself but now Moonraker will now activate both pins at the same time for you! Magic!
 
 ## Setup
 
@@ -339,7 +339,7 @@ restart_klipper_when_powered: True
 restart_delay: 2
 Timer:2
 ```
-You need these two pins as the BTT relay firmware requires a reset command while the `PSon` pin is high. If this is not the case & the `PSon` pin is low (off) & you hit reset the relay power up but trip out again after 8 seconds. This is normal. The `PSon` pin must be high (on) when the reset is pressed. The PowerUp physical button will activate both GPIO pins together when pushed meaning you only need a single push of the physical button to control both pins & re-power the printer instanly.
+You need these two pins as the BTT relay firmware requires a reset command while the `PSon` pin is high. If this is not the case & the `PSon` pin is low (off) & you hit reset the relay power up but trip out again after 8 seconds. This is normal. The `PSon` pin must be high (on) when the reset is pressed. The PowerUp physical button will activate both GPIO pins together when pushed meaning you only need a single push of the physical button to control both pins & re-power the printer instantly.
 
 After that add this macro to your `macros.cfg`
 ```
@@ -359,11 +359,11 @@ This will give you full control of your power relay unit via the GUI Switch & th
 
 To get the most from these macros you’ll need to add a Chamber thermistor to your machine if you haven’t already & a Chamber exhaust fan. 
 - If you have a Chamber exhaust fan call it `[temperature_fan chamber]`
-- If you instead have a Chamber Theremistor only & no Exhaust fan call it `[temperature_sensor Chamber_Temp]`
+- If you instead have a Chamber Thermistor only & no Exhaust fan call it `[temperature_sensor Chamber_Temp]`
 
 ## Printer LED lights
 - If you have printer LED lights (NOT neopixel) call them `[output_pin Printer_Lights]`
-
+- NeoPixel Led's are dealt with in the additionally installed files.
 
 ## Filament Sensor
 If you have or are going to install a filament sensor this must be added to your `printer.cfg` file to run the filament sensor. The filament runout check in the `PRINT_START` macro can then be enabled & disabled in the `_START_VARIABLES` marco if you dont have one or dont want to perform the check at the start of the print.
@@ -475,7 +475,7 @@ For the Adaptive Mesh feature to work you must have:
 - The latest version of Klipper!*
 - Enabled your Slicer for `Exclude Objects`
 - Added the `Exclude Objects` section to your `moonraker.conf` file
-- Added the `Exclude Objects`section to your `printer.cfg` file
+- Added the `Exclude Objects` section to your `printer.cfg` file
 
 Add this to your `moonraker.conf` file:
 ```
