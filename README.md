@@ -114,7 +114,7 @@ https://github.com/3DPrintDemon/How-to-Update-Sovol-Klipper-Screen-To-Latest-Kli
 
 
 
-## Included macros:
+## Included USER exacutable macros:
 
 - `PRINT_START`
 - `PRINT_END`
@@ -147,6 +147,8 @@ https://github.com/3DPrintDemon/How-to-Update-Sovol-Klipper-Screen-To-Latest-Kli
 - `Power_Down`
 - `Backup_Printer`
 - `Bed_Fans_Speed`
+
+- Plus many more automated ones!
 
 
 
