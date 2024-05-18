@@ -120,16 +120,34 @@ https://github.com/3DPrintDemon/How-to-Update-Sovol-Klipper-Screen-To-Latest-Kli
 - `PRINT_END`
 - `_RET_CALI_START`
 - `_GOODNIGHT`
+- `Gantry_Level_Hot`
+- `Gantry_Level_Cold`
 - `CLEAN_NOZZLE`
 - `LOAD_CLEAN`
 - `UNLOAD_CLEAN`
-- `Z_Switch_Calibrate`
-- `Z_Probe_Calibrate`
-- `Z_Probe_Accuracy`
 - `Pressure_Advance_Test_Mode`
+- `Auto_Bed_Mesh_Builder`
 - `Stepper_Buzz_Cycle`
 - `PID_Tune_Mode_FULL`
 - `Auto_Shaper_Calibrate`
+- `Resonance_Test_X`
+- `Resonance_Test_Y`
+- `System Sensors`
+- `Printer_Status`
+- `Z_Switch_Calibrate_Hot`
+- `Z_Probe_Calibrate_Hot`
+- `Z_Probe_Accuracy_Hot`
+- `Z_Switch_Calibrate_Cold`
+- `Z_Probe_Calibrate_Cold`
+- `Z_Probe_Accuracy_Cold`
+- `Present_Toolhead`
+- `Return_Toolhead`
+- `Timer_Start`
+- `Timer_Stop`
+- `Power_Down`
+- `Backup_Printer`
+- `Bed_Fans_Speed`
+
 
 
 
