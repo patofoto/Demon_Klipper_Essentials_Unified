@@ -260,6 +260,8 @@ Then, paste into your printer.cfg
 
 This will bring these files into your system, be sure to comment out & NOT delete your current START & END PRINT Macros just yet!
 
+Lastly in Mainsail click the cogs top right of the screen & then click the `RESTORE` button in the `Interface Settings` window & find the `backup-mainsail-DEMON-MACROS.json` file to bring in the macro setup.
+
 # Additional Configuration
 
 ## Auto Shutdown Moonraker Power Device
