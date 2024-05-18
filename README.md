@@ -341,6 +341,9 @@ To get the most from these macros you’ll need to add a Chamber thermistor to y
 - If you have a Chamber exhaust fan call it `[temperature_fan chamber]`
 - If you instead have a Chamber Theremistor only & no Exhaust fan call it `[temperature_sensor Chamber_Temp]`
 
+## Printer LED lights
+- If you have printer LED lights (NOT neopixel) call them `[output_pin Printer_Lights]`
+
 
 ## Filament Sensor
 If you have or are going to install a filament sensor this must be added to your `printer.cfg` file to run the filament sensor. The filament runout check in the `PRINT_START` macro can then be enabled & disabled in the `_START_VARIABLES` marco if you dont have one or dont want to perform the check at the start of the print.
