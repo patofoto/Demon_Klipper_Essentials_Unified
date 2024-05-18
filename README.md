@@ -218,6 +218,8 @@ The rest of the macros are simple single click automations for running a series 
 
 - `_CLEAN_VARIABLES` the printer will give you an error if you haven’t done this & try to use the macros.
 
+Long video on settings walkthrough: https://youtu.be/s4poVSt5a2g
+
 
 ****************************************************************************************************************************
 # IF YOU RAN V1.0-V2.6 BE SURE TO UPDATE YOUR SLICER'S START GCODE AS PER V2.7 FILE OR NEW FEATURES WONT WORK!
