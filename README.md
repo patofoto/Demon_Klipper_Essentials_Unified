@@ -21,7 +21,7 @@ Checks & Error Handling. This is a big problem for many users, you get an error 
 # FEATURES:
 
 ### NEW! ORCA Slicer `Multi_Surface` handling! 
-- The printer knows what bed surface you choose to use & can add a pre-set Z offset for the print & remove it afterward! The system can even combine the surface offset with a filament or temperature based one! Dont worry though there are `Bed Saver` safety checks that should help stop you entering a wrong number & damaging your printer, especially when using the combine offset funtcion!
+- The printer knows what bed surface you choose to use & can add a pre-set Z offset for the print & remove it afterward! The system can even combine the surface offset with a filament or temperature based one! Don't worry though there are `Bed Saver` safety checks that should help stop you entering a wrong number & damaging your printer, especially when using the combine offset function!
 
 ### NEW! Random nozzle cleaning movements! 
 - No more single path cleaning to wear out your brush/pad! All movements are randomly generated!
@@ -35,7 +35,7 @@ Checks & Error Handling. This is a big problem for many users, you get an error 
 - Full instructions available here in the `bed_fans.cfg` file
 
 ### NEW! The Demon AES System! 
-- Save your printer from damage from homing errors when using a Z Endstop switch & senorless homing! This could save you a lot of money if homing fails!
+- Save your printer from damage from homing errors when using a Z Endstop switch & Sensorless homing! This could save you a lot of money if homing fails!
 - Full instructions avaiable here: https://github.com/3DPrintDemon/Voron_2.4_AES_System_Auto_Emergency_Stop_For_Z_Endstop_Switch
 
 ### NEW! Start Macro handling for Smart Filament Sensor Encoder
