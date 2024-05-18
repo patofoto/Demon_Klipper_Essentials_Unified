@@ -18,6 +18,8 @@ Checks & Error Handling. This is a big problem for many users, you get an error 
 
 # These macros rely on you setting the correct filament type in your slicer! BE SURE YOU DO THIS!
 
+### NOTE: This version is a totally new approach to these macros & therefore have only been tested on my machines, while every effort has been made to make sure they work well there could well be a few bugs that need squashing! So please be sure to report anything that doesn't work correctly or errors you come across. However if you're able please try to solve the issue yourself first & let me know your solution so I can merge it. Thanks all!
+
 # FEATURES:
 
 ### NEW! ORCA Slicer `Multi_Surface` handling! 
