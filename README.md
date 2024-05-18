@@ -16,7 +16,7 @@ The macros will check what machine you have & adapt themselves to it automatical
 
 Checks & Error Handling. This is a big problem for many users, you get an error in klipper but its written in "code" so you cant tell what it means! Here I have tried to explain all errors that occur while running the macros clearly. Sadly I cant help the "encoded" system ones! They'll still be hard to read!
 
-# This macro relies on you setting the correct filament type in your slicer! BE SURE YOU DO THIS!
+# These macros rely on you setting the correct filament type in your slicer! BE SURE YOU DO THIS!
 
 # FEATURES:
 
@@ -221,6 +221,7 @@ The rest of the macros are simple single click automations for running a series 
 
 ****************************************************************************************************************************
 # IF YOU RAN V1.0-V2.6 BE SURE TO UPDATE YOUR SLICER'S START GCODE AS PER V2.7 FILE OR NEW FEATURES WONT WORK!
+# Instructions to do this are in the files.
 # Also you must update ALL the macro files as this new version will NOT work correctly with old files!
 ****************************************************************************************************************************
 
