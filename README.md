@@ -114,7 +114,7 @@ https://github.com/3DPrintDemon/How-to-Update-Sovol-Klipper-Screen-To-Latest-Kli
 
 
 
-## Included USER executable macros:
+## Included User executable macros:
 
 - `PRINT_START`
 - `PRINT_END`
