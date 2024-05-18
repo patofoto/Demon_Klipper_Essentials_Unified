@@ -10,7 +10,8 @@ If you feel you’d like to support my efforts & help to enable me to continue s
 
 # WELCOME TO 3DPrintDemon DEVILISHLY GOOD Klipper macros!
 
-# This UNIFIED version will run on almost any COREXY or BED SLINGER (cartesian) Klipper printer with no changes needed to the files! 
+# This UNIFIED version will run on almost any COREXY or BED SLINGER (cartesian) Klipper printer with no changes needed to the macro files! 
+Small user setting changes will be required of course.
 
 The macros will check what machine you have & adapt themselves to it automatically! So for example if you hit `GANTRY_LEVEL` on a COREXY printer you'll get a `QUAD_GANTRY_LEVEL`, but if you do the same on a bed slinger you'll get a `Z_TILT_ADJUST` - IF your printer has that feature enabled! Same macro button but different function! Also there is a built in smart park, where the printer knows if you have a probe based Z endstop or a switch & will adjust the parking height during macro events to suit your system! Further hardware options are manually selectable in the user settings file.
 
