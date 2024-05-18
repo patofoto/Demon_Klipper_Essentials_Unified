@@ -36,7 +36,7 @@ Checks & Error Handling. This is a big problem for many users, you get an error 
 
 ### NEW! The Demon AES System! 
 - Save your printer from damage from homing errors when using a Z Endstop switch & Sensorless homing! This could save you a lot of money if homing fails!
-- Full instructions avaiable here: https://github.com/3DPrintDemon/Voron_2.4_AES_System_Auto_Emergency_Stop_For_Z_Endstop_Switch
+- Full instructions available here: https://github.com/3DPrintDemon/Voron_2.4_AES_System_Auto_Emergency_Stop_For_Z_Endstop_Switch
 
 ### NEW! Start Macro handling for Smart Filament Sensor Encoder
 - Disables the sensor until the macro completes
@@ -67,7 +67,7 @@ https://github.com/3DPrintDemon/How-to-Update-Sovol-Klipper-Screen-To-Latest-Kli
 
 - Verbose mode, read back all APA commands to the console!
 
-### Thess macrso rely on you setting the correct filament type in your slicer! BE SURE YOU DO THIS!
+### These macros rely on you setting the correct filament type in your slicer! BE SURE YOU DO THIS!
 
 ### Mesh Auto Builder!
 
