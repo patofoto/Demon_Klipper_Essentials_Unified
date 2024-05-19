@@ -159,7 +159,7 @@ https://github.com/3DPrintDemon/How-to-Update-Sovol-Klipper-Screen-To-Latest-Kli
 ## Introduction
 
 These macros are smart & have adaptive properties & will shape themselves to what you’re printing. 
-For example the macros know if your printer is CoreXY or bed slinger, they knows if it's already homed so wont home it again, & can not only automatically shape itself to simple things like your printer’s bed size & what temperatures you’re printing at, but it will even know the current file’s first layer height so it’ll print the purge lines at the same height! Plus it can automatically choose & load the correct mesh for the temperature of your print, as your bed will slightly change shape the hotter it gets. 
+For example the macros know if your printer is CoreXY or bed slinger, they know if it's already homed so wont home it again, & can not only automatically shape itself to simple things like your printer’s bed size & what temperatures you’re printing at, but it will even know the current file’s first layer height so it’ll print the purge lines at the same height! Plus it can automatically choose & load the correct mesh for the temperature of your print, as your bed will slightly change shape the hotter it gets. 
 
 Not only that but it will choose the correct settings for your chamber cooling system, & it will even check to see if you have filament loaded before starting a print! …We’ve all done that one haven’t we, be honest!!
 
@@ -202,7 +202,7 @@ You will need to add some lines to your slicer's `Start G-code` & `End G-code` b
 These are in the `demon_print_start_end.cfg` file.
 
 # Prerequisites
-You must download & `[include]` these two additional files along with these Demon Adaptive Voron 2.4 (DAV) Macros or they will NOT work correctly.
+You must download & `[include]` these two additional files along with these Demon Macros or they will NOT work correctly.
 
 These additional macros are prerequisites:
 
@@ -243,7 +243,7 @@ Then, paste into your printer.cfg
 [include ./Demon_Essentials_Unified/*.cfg]
 ```
 
-This will include all files in a folder called Demon_KLIPPER_Essentials in your `~/config` folder.
+This will include all files in a folder called Demon_KLIPPER_Essentials_Unified in your `~/config` folder.
 
 Or you can SSH into your system & use...
 
