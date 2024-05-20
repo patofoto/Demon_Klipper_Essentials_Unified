@@ -236,7 +236,7 @@ https://github.com/3DPrintDemon/How-to-Update-Sovol-Klipper-Screen-To-Latest-Kli
 
 # INSTALL
 
-Copy the files here into a folder called `Demon_Essentials_Unified` in your config folder on your printer. 
+Copy the files here into a folder called `Demon_Klipper_Essentials_Unified` in your config folder on your printer. 
 
 NOTE: If you download the zip file via the button at the top of the repo your downloaded folder will be called:
 ```
@@ -248,7 +248,7 @@ Then copy that renamed folder to your printer.
 
 Then, paste into your printer.cfg
 ```
-[include ./Demon_Essentials_Unified/*.cfg]
+[include ./Demon_Klipper_Essentials_Unified/*.cfg]
 ```
 
 This will include all files in a folder called Demon_KLIPPER_Essentials_Unified in your `~/config` folder.
@@ -267,7 +267,7 @@ git clone https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified.git
 
 Then, paste into your printer.cfg
 ```
-[include ./Demon_Essentials_Unified/*.cfg]
+[include ./Demon_Klipper_Essentials_Unified/*.cfg]
 ```
 
 This will bring these files into your system, be sure to comment out & NOT delete your current START & END PRINT Macros just yet!
