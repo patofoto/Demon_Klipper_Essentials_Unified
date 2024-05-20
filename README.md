@@ -242,7 +242,9 @@ NOTE: If you download the zip file via the button at the top of the repo your do
 ```
 Demon_Klipper_Essentials_Unified-main
 ```
-You must delete the `-main` part of the name so it reads `Demon_Klipper_Essentials_Unified` ONLY. Then copy that renamed folder to your printer.
+You must delete the `-main` part of the name so it reads `Demon_Klipper_Essentials_Unified` ONLY. 
+
+Then copy that renamed folder to your printer.
 
 Then, paste into your printer.cfg
 ```
