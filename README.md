@@ -274,7 +274,21 @@ This will bring these files into your system, be sure to comment out & NOT delet
 
 Lastly in Mainsail click the cogs top right of the screen & then click the `RESTORE` button in the `Interface Settings` window & find the `backup-mainsail-DEMON-MACROS.json` file to bring in the macro setup.
 
-You should also be sure to `[include mainsail.cfg]` as we will be using this!
+
+## You should also be sure to `[include mainsail.cfg]` as we will be using this!
+
+You need to open the `Mainsail.cfg` file & copy out the `[gcode_macro _CLIENT_VARIABLE]` & place it all into an editable macros.cfg file, as that `Mainsail.cfg` is read only.
+
+Then setup the park positions are you want or need them.
+
+Now were it says `variable_user_pause_macro : ""` you need to paste in...
+```
+_Z_RAISE
+```
+Between the quote marks so it looks like this: `"_Z_RAISE"`
+
+
+Now do the same for `variable_user_cancel_macro: ""`
 
 
 # Additional Configuration
