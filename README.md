@@ -253,7 +253,8 @@ cd /home/pi/printer_data/config
 NOTE: the above command is for a real Raspberry Pi, if you're using a cloned system that "/pi" folder will change to `mks` or `btt` or `sovol` or similar.
 
 ```
-git clone https://github.com/3DPrintDemon/Demon_Essentials_Unified.git
+git clone
+https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified.git
 ```
 
 Then, paste into your printer.cfg
