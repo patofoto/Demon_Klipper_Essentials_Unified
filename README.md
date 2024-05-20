@@ -274,6 +274,9 @@ This will bring these files into your system, be sure to comment out & NOT delet
 
 Lastly in Mainsail click the cogs top right of the screen & then click the `RESTORE` button in the `Interface Settings` window & find the `backup-mainsail-DEMON-MACROS.json` file to bring in the macro setup.
 
+You should also be sure to `[include mainsail.cfg]` as we will be using this!
+
+
 # Additional Configuration
 
 ## Auto Shutdown Moonraker Power Device
