@@ -42,6 +42,8 @@ Checks & Error Handling. This is a big problem for many users, you get an error 
 - Bed Fans macro big update with Floating Bed Fans improvements
 - Bed Fans Floating fans calculates temperature mid points & allows fully interactive runtime adjustments to speed values
 - Bed Fans thermal & power info display macros added
+- The Full PID macro now auto saves at the end of the test
+- The Auto Mesh Builder macro now auto saves all meshes at the end of the building process
 
 - The system can now automatically detect which correctly setup chamber sensor you have, chamber sensor or chamber fan
 
