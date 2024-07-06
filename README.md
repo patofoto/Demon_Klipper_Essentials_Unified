@@ -23,6 +23,30 @@ Checks & Error Handling. This is a big problem for many users, you get an error 
 
 # FEATURES:
 
+# NEW for Version 2.8!!!
+- Better more efficient Klicky actions when Klicky probe is used as Z endstop. 
+- More efficient conditional homing during start for inductive probe printers
+- More efficient nozzle cleanig during start for inductive probe printers
+- Improved Auto E-stop setup, requires unused pin & relay/ssr/transistor connected to the probe's power
+- Improved encoder runout sensor handling! Now the encoder will be disabled until layer 2 of the print job!
+- General small macro improvements & tweaks to core assests & more.
+- Added heat soak skip option
+- Added disable macro flow rate adjustment options
+- Added option to turn off neopixels at the end of the print or leave them on
+- Added option to skip drawing purge lines if you want - good for when you have an uneven bed & like to use Adaptive Meshing
+  
+- NEW FEATURE MACRO - Added chamber heater control options!
+
+- Modified chamber temperature variable naming
+- Chamber temperature min/max settings now available per filament type!! Not just 2 values for all anymore!
+- Bed Fans macro big update with Floating Bed Fans improvements
+- Bed Fans Floating fans calculates temperature mid points & allows fully interactive runtime adjustments to speed values
+- Bed Fans thermal & power info display macros added
+
+- The system can now automatically detect which correctly setup chamber sensor you have, chamber sensor or chamber fan
+
+# Previous & Exsisting Features
+
 ### NEW! ORCA Slicer `Multi_Surface` handling! 
 - The printer knows what bed surface you choose to use & can add a pre-set Z offset for the print & remove it afterward! The system can even combine the surface offset with a filament or temperature based one! Don't worry though there are `Bed Saver` safety checks that should help stop you entering a wrong number & damaging your printer, especially when using the combine offset function!
 
@@ -225,7 +249,7 @@ Long video on settings walkthrough: https://youtu.be/s4poVSt5a2g
 
 
 ****************************************************************************************************************************
-# IF YOU RAN V1.0-V2.6 BE SURE TO UPDATE YOUR SLICER'S START GCODE AS PER V2.7 FILE OR NEW FEATURES WONT WORK!
+# IF YOU RAN V1.0-V2.7 BE SURE TO UPDATE YOUR SLICER'S START GCODE AS PER V2.8 FILE OR NEW FEATURES WONT WORK!
 # Instructions to do this are in the files.
 # Also you must update ALL the macro files as this new version will NOT work correctly with old files!
 ****************************************************************************************************************************
@@ -291,103 +315,74 @@ Between the quote marks so it looks like this: `"_Z_RAISE"`
 Now do the same for `variable_user_cancel_macro: ""`
 
 
-# Additional Configuration
+IF YOURE USING A SV08 PRINTER! If you are using anyhting else jump down a section to Slicers
 
-## Auto Shutdown Moonraker Power Device
-
-To make use of the `_GOODNIGHT` post print auto shutdown macro you must enable your RPI as a secondary MCU so it can control your shutdown relay hardware. Use this link to do that.
-
-- https://github.com/Klipper3d/klipper/blob/master/docs/RPi_microcontroller.md
-
-After you've followed the process in that link be sure that this is added to your `printer.cfg` file.
+YOU MUST, I REPEAT MUST DISABLE ALL THE SOVOL MACROS BY COMMENTING OUT THE macro.cfg FILE INCLUDE IN THE printer.cfg FILE! 
+To do this use a # at the start of the line like this:
 ```
-[mcu host]
-serial: /tmp/klipper_host_mcu
+# [include Macro.cfg]
 ```
-
-## Word of warning! Adding a power control device like a power shutdown relay can sometimes involve working with & modifying your printer’s wiring that runs on mains level voltage!  This can be extremely dangerous with a definite risk of serious injury, fire, loss of property & even death! You have been warned. I accept no liability or responsibility for any loss, death or injury caused directly or indirectly by you or anyone else attempting this! This is all on you, attempt implementation ENTIRELY AT YOUR OWN RISK!
-
-## Connections
-
-Example below for using the BTT Power Relay v1.2
-
-See the install instructions for this product on the BTT Github! 
-
-- https://github.com/bigtreetech/BIGTREETECH-Relay-V1.2
-
-However….
-
-This link is far more helpful! 
-
-- https://www.youtube.com/watch?v=5wJff-hY90s
-
-You will need ensure that you have set your instance to be able to control your Pi’s GPIO pins as mentioned previously in this document. Then you need to choose which 2 GPIO pins on your Rpi to use to control the relay, connect the `Printer Power` GPIO pin along with a single ground pin to the PSon plug on the relay board. You have to then connect the Pi's `Reset Power` GPIO pin to the `reset` pin on the relay board, leave the 5v pin next to it empty.
-
-Then if you wish you can add a physical momentary switch to a 3rd GPIO pin & another ground pin. Then mount it somewhere of your choice on your printer. This button will act as an instant on button & re-power the printer with a single push, normally you have to manually switch both pins on yourself but now Moonraker will now activate both pins at the same time for you! Magic!
-
-## Setup
-
-Then you need to SSH into your pi & run:
-
-NOTE: these commands are for a real Rpi, cloned system or systems built on different images will probably vary.
+Then set your fans like this in the printer.cfg file:
 ```
-sudo nano /boot/config.txt
-```
-Then near the bottom of the file at the end of the first section & in the space BEFORE the start of the `[CM4]` section paste in:
-```
-gpio=16=op,dh # Example GPIO pin, choose a GPIO pin to control power device’s PSon pin
-```
-Then use the commands at the bottom of the screen to exit & save the file.
+[multi_pin fan_pins]
+pins: extra_mcu:PA7, extra_mcu:PB1
 
-This will make sure that the GPIO pin you will use for the relay’s `PSon` pin is automatically pulled “high” when the Pi is first turned on at the beginning of the host boot sequence. This in turn should keep your relay from automatically opening & shutting the printer down while the Pi is booting. It does this at boot because the power relay is not seeing the ‘keep switched on’ signal from the Pi, & it needs that signal. 
-Trust me it is very annoying if you don’t do this!
-
-You will then need to modify your `Moonraker.conf` file by adding these…
+[fan]
+pin:multi_pin: fan_pins
+max_power: 1.0
 ```
-[button PowerUp]
-type: gpio
-pin: ^gpio21 # Example GPIO pin, you can choose your own here
-minimum_event_time: .05
-on_press:
-  {% do call_method("machine.device_power.post_device", device="Reset Power", action="on") %}
-  {% do call_method("machine.device_power.post_device", device="Printer Power", action="on") %}
-
-[power Printer Power]
-type:gpio
-pin:gpio16 # Example GPIO pin, you can choose your own here
-on_when_job_queued: True
-initial_state:on
-off_when_shutdown: True
-locked_while_printing: False
-restart_klipper_when_powered: False
-# restart_delay: 2
-bound_services:
-
-[power Reset Power]
-type:gpio
-pin:gpio12 # Example GPIO pin, you can choose your own here
-on_when_job_queued: True
-locked_while_printing: True
-initial_state:off
-restart_klipper_when_powered: True
-restart_delay: 2
-Timer:2
+Comment out the stock entry do not delete it, it must look like this:
 ```
-You need these two pins as the BTT relay firmware requires a reset command while the `PSon` pin is high. If this is not the case & the `PSon` pin is low (off) & you hit reset the relay power up but trip out again after 8 seconds. This is normal. The `PSon` pin must be high (on) when the reset is pressed. The PowerUp physical button will activate both GPIO pins together when pushed meaning you only need a single push of the physical button to control both pins & re-power the printer instantly.
+# [fan_generic fan0] # back model cooling fan
+# pin: extra_mcu:PA7
+# max_power: 1.0
 
-After that add this macro to your `macros.cfg`
-```
-[gcode_macro M81]
-gcode:
- {action_call_remote_method("set_device_power",device="Printer Power",state="off")}
+# [fan_generic fan1] # front model cooling fan
+# pin: extra_mcu:PB1
+# max_power: 1.0
 ```
 
-Lastly this is used by the `PRINT_END` macro to select the Auto Shutdown feature & should be pasted into your `printer.cfg` file.
+## Updated to include the new integrated KLIPPER Adaptive Mesh option. There is no longer any need for a separate KAMP install.
+
+For the Adaptive Mesh feature to work you must have:
+- The latest version of Klipper!*
+- Enabled your Slicer for `Exclude Objects`
+- Added the `Exclude Objects` section to your `moonraker.conf` file
+- Added the `Exclude Objects` section to your `printer.cfg` file
+
+Add this to your `moonraker.conf` file:
 ```
-[output_pin PRINTER_AUTO_OFF]
-pin: ### <<<<<< Insert unused board pin for state change only, monitored by system
+[file_manager]
+enable_object_processing: true
 ```
-This will give you full control of your power relay unit via the GUI Switch & the `PRINT_END` & `_GOODNIGHT` macros.
+
+Add this to your `printer.cfg` file:
+```
+[exclude_object]
+```
+
+Save & restart!
+
+## To use adaptive meshing all files MUST have been sliced with `Exclude Objects` active.
+## IF NOT YOU WILL RECEIVE THE FOLLOWING ERRORS!!
+
+If you use ORCA SLICER:
+
+`Error evaluating 'gcode_macro PRINT_START:gcode': gcode.CommandError: This error is caused by the sliced file not having EXCLUDE_OBJECT enabled! Please disable Adaptive_Meshing in the user_settings.cfg or re-slice the file with it enabled and restart the print!`
+
+If you use another slicer:
+
+`Internal error on command:"PRINT_START"`
+
+`Internal error on command:"BED_MESH_CALIBRATE"`
+
+
+### Fin...
+
+
+# Additional Configuration - EXTRA STEPS
+
+
 
 ## Chamber Monitoring & Fan Control
 
@@ -492,6 +487,103 @@ You can also add your chamber temp to the menubar in KlipperScreen, this to your
 titlebar_items: chamber
 ```
 
+## Auto Shutdown Moonraker Power Device
+
+To make use of the `_GOODNIGHT` post print auto shutdown macro you must enable your RPI as a secondary MCU so it can control your shutdown relay hardware. Use this link to do that.
+
+- https://github.com/Klipper3d/klipper/blob/master/docs/RPi_microcontroller.md
+
+After you've followed the process in that link be sure that this is added to your `printer.cfg` file.
+```
+[mcu host]
+serial: /tmp/klipper_host_mcu
+```
+
+## Word of warning! Adding a power control device like a power shutdown relay can sometimes involve working with & modifying your printer’s wiring that runs on mains level voltage!  This can be extremely dangerous with a definite risk of serious injury, fire, loss of property & even death! You have been warned. I accept no liability or responsibility for any loss, death or injury caused directly or indirectly by you or anyone else attempting this! This is all on you, attempt implementation ENTIRELY AT YOUR OWN RISK!
+
+## Connections
+
+Example below for using the BTT Power Relay v1.2
+
+See the install instructions for this product on the BTT Github! 
+
+- https://github.com/bigtreetech/BIGTREETECH-Relay-V1.2
+
+However….
+
+This link is far more helpful! 
+
+- https://www.youtube.com/watch?v=5wJff-hY90s
+
+You will need ensure that you have set your instance to be able to control your Pi’s GPIO pins as mentioned previously in this document. Then you need to choose which 2 GPIO pins on your Rpi to use to control the relay, connect the `Printer Power` GPIO pin along with a single ground pin to the PSon plug on the relay board. You have to then connect the Pi's `Reset Power` GPIO pin to the `reset` pin on the relay board, leave the 5v pin next to it empty.
+
+Then if you wish you can add a physical momentary switch to a 3rd GPIO pin & another ground pin. Then mount it somewhere of your choice on your printer. This button will act as an instant on button & re-power the printer with a single push, normally you have to manually switch both pins on yourself but now Moonraker will now activate both pins at the same time for you! Magic!
+
+## Setup
+
+Then you need to SSH into your pi & run:
+
+NOTE: these commands are for a real Rpi, cloned system or systems built on different images will probably vary.
+```
+sudo nano /boot/config.txt
+```
+Then near the bottom of the file at the end of the first section & in the space BEFORE the start of the `[CM4]` section paste in:
+```
+gpio=16=op,dh # Example GPIO pin, choose a GPIO pin to control power device’s PSon pin
+```
+Then use the commands at the bottom of the screen to exit & save the file.
+
+This will make sure that the GPIO pin you will use for the relay’s `PSon` pin is automatically pulled “high” when the Pi is first turned on at the beginning of the host boot sequence. This in turn should keep your relay from automatically opening & shutting the printer down while the Pi is booting. It does this at boot because the power relay is not seeing the ‘keep switched on’ signal from the Pi, & it needs that signal. 
+Trust me it is very annoying if you don’t do this!
+
+You will then need to modify your `Moonraker.conf` file by adding these…
+```
+[button PowerUp]
+type: gpio
+pin: ^gpio21 # Example GPIO pin, you can choose your own here
+minimum_event_time: .05
+on_press:
+  {% do call_method("machine.device_power.post_device", device="Reset Power", action="on") %}
+  {% do call_method("machine.device_power.post_device", device="Printer Power", action="on") %}
+
+[power Printer Power]
+type:gpio
+pin:gpio16 # Example GPIO pin, you can choose your own here
+on_when_job_queued: True
+initial_state:on
+off_when_shutdown: True
+locked_while_printing: False
+restart_klipper_when_powered: False
+# restart_delay: 2
+bound_services:
+
+[power Reset Power]
+type:gpio
+pin:gpio12 # Example GPIO pin, you can choose your own here
+on_when_job_queued: True
+locked_while_printing: True
+initial_state:off
+restart_klipper_when_powered: True
+restart_delay: 2
+Timer:2
+```
+You need these two pins as the BTT relay firmware requires a reset command while the `PSon` pin is high. If this is not the case & the `PSon` pin is low (off) & you hit reset the relay power up but trip out again after 8 seconds. This is normal. The `PSon` pin must be high (on) when the reset is pressed. The PowerUp physical button will activate both GPIO pins together when pushed meaning you only need a single push of the physical button to control both pins & re-power the printer instantly.
+
+After that add this macro to your `macros.cfg`
+```
+[gcode_macro M81]
+gcode:
+ {action_call_remote_method("set_device_power",device="Printer Power",state="off")}
+```
+
+Lastly this is used by the `PRINT_END` macro to select the Auto Shutdown feature & should be pasted into your `printer.cfg` file.
+```
+[output_pin PRINTER_AUTO_OFF]
+pin: ### <<<<<< Insert unused board pin for state change only, monitored by system
+```
+This will give you full control of your power relay unit via the GUI Switch & the `PRINT_END` & `_GOODNIGHT` macros.
+
+
 ## Extra Bonus...
 As an added bonus you can add a second physical button to a 4th GPIO pin to use as a physical Emergency Stop button!
 
@@ -503,42 +595,7 @@ on_press:
   {% do call_method("printer.emergency_stop") %}
 ```
 
-## Updated to include the new integrated KLIPPER Adaptive Mesh option. There is no longer any need for a separate KAMP install.
 
-For the Adaptive Mesh feature to work you must have:
-- The latest version of Klipper!*
-- Enabled your Slicer for `Exclude Objects`
-- Added the `Exclude Objects` section to your `moonraker.conf` file
-- Added the `Exclude Objects` section to your `printer.cfg` file
-
-Add this to your `moonraker.conf` file:
-```
-[file_manager]
-enable_object_processing: true
-```
-
-Add this to your `printer.cfg` file:
-```
-[exclude_object]
-```
-
-Save & restart!
-
-## To use adaptive meshing all files MUST have been sliced with `Exclude Objects` active.
-## IF NOT YOU WILL RECEIVE THE FOLLOWING ERRORS!!
-
-If you use ORCA SLICER:
-
-`Error evaluating 'gcode_macro PRINT_START:gcode': gcode.CommandError: This error is caused by the sliced file not having EXCLUDE_OBJECT enabled! Please disable Adaptive_Meshing in the user_settings.cfg or re-slice the file with it enabled and restart the print!`
-
-If you use another slicer:
-
-`Internal error on command:"PRINT_START"`
-
-`Internal error on command:"BED_MESH_CALIBRATE"`
-
-
-## Fin...
 If you made it to the end here congrats! 
 
 I hope this macro pack makes a nice difference to your printing life, don't forget, if you feel its valuable enough to use please consider hitting that "sponsor this project" button & buying me a beer/coffee. Its always very much appreciated. Thank you & happy printing!!
