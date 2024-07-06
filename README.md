@@ -26,10 +26,10 @@ Checks & Error Handling. This is a big problem for many users, you get an error 
 # NEW for Version 2.8!!!
 - Better more efficient Klicky actions when Klicky probe is used as Z endstop. 
 - More efficient conditional homing during start for inductive probe printers
-- More efficient nozzle cleanig during start for inductive probe printers
+- More efficient nozzle cleaning during start for inductive probe printers
 - Improved Auto E-stop setup, requires unused pin & relay/ssr/transistor connected to the probe's power
 - Improved encoder runout sensor handling! Now the encoder will be disabled until layer 2 of the print job!
-- General small macro improvements & tweaks to core assests & more.
+- General small macro improvements & tweaks to core assets & more.
 - Added heat soak skip option
 - Added disable macro flow rate adjustment options
 - Added option to turn off neopixels at the end of the print or leave them on
@@ -47,7 +47,7 @@ Checks & Error Handling. This is a big problem for many users, you get an error 
 
 - The system can now automatically detect which correctly setup chamber sensor you have, chamber sensor or chamber fan
 
-# Previous & Exsisting Features
+# Previous & Existing Features
 
 ### NEW! ORCA Slicer `Multi_Surface` handling! 
 - The printer knows what bed surface you choose to use & can add a pre-set Z offset for the print & remove it afterward! The system can even combine the surface offset with a filament or temperature based one! Don't worry though there are `Bed Saver` safety checks that should help stop you entering a wrong number & damaging your printer, especially when using the combine offset function!
