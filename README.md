@@ -13,7 +13,9 @@ If you feel you’d like to support my efforts & help to enable me to continue s
 # This UNIFIED version will run on almost any COREXY or BED SLINGER (cartesian) Klipper printer with no changes needed to the macro files! 
 Small user setting changes will be required of course.
 
-The macros will check what machine you have & adapt themselves to it automatically! So for example if you hit `GANTRY_LEVEL` on a COREXY printer you'll get a `QUAD_GANTRY_LEVEL`, but if you do the same on a bed slinger you'll get a `Z_TILT_ADJUST` - IF your printer has that feature enabled! Same macro button but different function! Also there is a built in smart park, where the printer knows if you have a probe based Z endstop or a switch & will adjust the parking height during macro events to suit your system! Further hardware options are manually selectable in the user settings file.
+These macros have been developed for use on almost anything from Voron printers to an Ender3, & anything else in between! They will check what sort of machine you have & try to adapt themselves to it automatically!
+
+So for example if you hit `GANTRY_LEVEL` on a COREXY printer you'll get a `QUAD_GANTRY_LEVEL`, but if you do the same on a bed slinger you'll get a `Z_TILT_ADJUST` - IF your printer has that feature enabled! Same macro button but different function! Also there is a built in smart park, where the printer knows if you have a probe based Z endstop or a switch & will adjust the parking height during macro events to suit your system! Further hardware options are manually selectable in the user settings file.
 
 Checks & Error Handling. This is a big problem for many users, you get an error in klipper but its written in "code" so you cant tell what it means! Here I have tried to explain all errors that occur while running the macros clearly. Sadly I cant help the "encoded" system ones! They'll still be hard to read!
 
