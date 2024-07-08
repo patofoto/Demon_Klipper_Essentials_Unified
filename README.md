@@ -317,7 +317,7 @@ Between the quote marks so it looks like this: `"_Z_RAISE"`
 Now do the same for `variable_user_cancel_macro: ""`
 
 
-IF YOURE USING A SV08 PRINTER! If you are using anyhting else jump down a section to Slicers
+IF YOURE USING A SV08 PRINTER! If you are using anyhting else jump down a section to Adaptive Meshing.
 
 YOU MUST, I REPEAT MUST DISABLE ALL THE SOVOL MACROS BY COMMENTING OUT THE macro.cfg FILE INCLUDE IN THE printer.cfg FILE! 
 To do this use a # at the start of the line like this:
