@@ -131,7 +131,7 @@ https://github.com/3DPrintDemon/How-to-Update-Sovol-Klipper-Screen-To-Latest-Kli
 
 - Support for Quad Gantry Level on CoreXy machines & for 5 stepper driver bed slinger systems with Z-Tilt option
 
-- Customise your purge line! Choose where to start & which axis to purge along! X or Y! It automatically adapts to your file's extrusion height & width!
+- Customise your purge line! Choose where to start & which axis to purge along! X or Y! 
 
 
 
