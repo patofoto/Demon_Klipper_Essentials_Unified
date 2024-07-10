@@ -1,7 +1,7 @@
 
 ![DEMON](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/assets/122202359/c2bae2ee-be37-48ea-b6ac-c2c32e661751)
  
-# Welcome to 3DPrintDemon - DEVILISHLY GOOD Klipper macros!
+# Welcome to 3DPrintDemon DEVILISHLY GOOD Klipper macros!
 
 The very latest UNIFIED version for these macros! Huge re-implementation &amp; new Features!
 
