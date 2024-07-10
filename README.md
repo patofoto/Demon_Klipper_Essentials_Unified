@@ -257,7 +257,6 @@ Note: This file is requred for the heat soaks to work correctly. Install even if
 You must keep neopixels set to `False` in the `demon_user_settings.cfg` `Harware Options` section
 
 
-The rest of the macros are simple single click automations for running a series of tasks you’d normally have to remember the correct procedure for & are a hassle to run multiple times if done manually. They’re quality of life macros to help you get the best setup & results from your printer. 
 
 # BE SURE TO SET YOUR MACRO VARIABLES  
 
