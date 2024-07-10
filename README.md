@@ -332,7 +332,7 @@ This will bring in the defualt macro layout.
 
 You should also be sure to `[include mainsail.cfg]` as we will be using this! You need to open the `Mainsail.cfg` file & copy out the `[gcode_macro _CLIENT_VARIABLE]` & place it all into an editable macros.cfg file, as that `Mainsail.cfg` is read only.
 
-Then setup the park positions are you want or need them.
+Then setup where the park positions are you want or need them.
 
 Now were it says `variable_user_pause_macro : ""` you need to paste in...
 ```
