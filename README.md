@@ -21,7 +21,7 @@ Checks & Error Handling. This is a big problem for many users, you get an error 
 
 # These macros rely on you setting the correct filament type in your slicer! BE SURE YOU DO THIS!
 
-### NOTE: This version is a totally new approach to these macros & therefore have only been tested on my machines, while every effort has been made to make sure they work well there could well be a few bugs that need squashing! So please be sure to report anything that doesn't work correctly or errors you come across. However if you're able please try to solve the issue yourself first & let me know your solution so I can merge it. Thanks all!
+##### NOTE: This version is a totally new approach to these macros & therefore have only been tested on my machines, while every effort has been made to make sure they work well there could well be a few bugs that need squashing! So please be sure to report anything that doesn't work correctly or errors you come across. However if you're able please try to solve the issue yourself first & let me know your solution so I can merge it. Thanks all!
 
 # FEATURES:
 
@@ -183,8 +183,9 @@ https://github.com/3DPrintDemon/How-to-Update-Sovol-Klipper-Screen-To-Latest-Kli
 
 
 
+****************************************************************************************************************************
 
-## Introduction
+# Introduction
 
 These macros are smart & have adaptive properties & will shape themselves to what you’re printing. 
 For example the macros know if your printer is CoreXY or bed slinger, they know if it's already homed so wont home it again, & can not only automatically shape itself to simple things like your printer’s bed size & what temperatures you’re printing at, but it will even know the current file’s first layer height so it’ll print the purge lines at the same height! Plus it can automatically choose & load the correct mesh for the temperature of your print, as your bed will slightly change shape the hotter it gets. 
@@ -200,7 +201,7 @@ It doesn't end there, as all these features are user customisable within the Mac
 With the `_GOODNIGHT` macro you can even flick a GUI switch in Mainsail to let the printer know you want it to auto power down after it’s finished printing!! 
 This can be done at ANY point during the print! You can even change your mind & cancel the auto shutdown at any point before the print completes!
 
-**NOTE: Additional hardware & setup is required for this feature to work! How to do this is explained further on in this readme file.**
+###### NOTE: Additional hardware & setup is required for this feature to work! How to do this is explained further on in this readme file.
 
 The `_RET_CALI_START` macro is used when calibrating your retraction settings with files generated at:
 
@@ -217,7 +218,7 @@ https://www.printables.com/model/201999-nozzle-scrubber-with-a-little-bucket-for
 For SV08 Printers
 https://www.printables.com/model/873006-sovol-sv08-silicone-nozzle-cleaner-purge-bucket-mi
  
-
+****************************************************************************************************************************
 ## All sounds great right!? Ok well here’s the tricky bit! 
 …Well its not that tricky because I got it all written down here for you to just copy/paste into your setup!
 
@@ -229,6 +230,8 @@ You will need to add some lines to your slicer's `Start G-code` & `End G-code` b
 
 These are in the `demon_print_start_end.cfg` file.
 
+****************************************************************************************************************************
+
 # Prerequisites
 You must download & `[include]` these two additional files along with these Demon Macros or they will NOT work correctly.
 
@@ -239,20 +242,20 @@ These additional macros are prerequisites:
 - https://github.com/VoronDesign/Voron-Stealthburner/blob/main/Firmware/stealthburner_leds.cfg
 - https://github.com/rkolbi/voron2.4/blob/main/non-blocking_wait.md
   
-Note: You will need to edit any entry in this file of "SET_LED LED=nozzle" to read "SET_LED LED=sb_leds"
+###### Note: You will need to edit any entry in this file of "SET_LED LED=nozzle" to read "SET_LED LED=sb_leds"
 
-Note: This file is requred for the heat soaks to work correctly. Install even if you dont have any LED's & set a dummy pin.
+###### Note: This file is requred for the heat soaks to work correctly. Install even if you dont have any LED's & set a dummy pin.
 
 ### For SOVOL SV08 PRINTERS
 - https://github.com/3DPrintDemon/Voron-Stealthburner/blob/main/Firmware/RGB_LEDs.cfg
 - https://github.com/3DPrintDemon/Non_Blocking_Wait/releases/tag/Heat_Soak_Timers_V1.0
   
-Note: This file is requred for the heat soaks to work correctly. Install even if you dont have any LED's & set a dummy pin.
+###### Note: This file is requred for the heat soaks to work correctly. Install even if you dont have any LED's & set a dummy pin.
 
 ### For other machines without toolhead Neopixels
 - https://github.com/3DPrintDemon/Non_Blocking_Wait/releases/tag/Heat_Soak_Timers_V1.0
   
-Note: This file is requred for the heat soaks to work correctly. Install even if you dont have any LED's & set a dummy pin.
+###### Note: This file is requred for the heat soaks to work correctly. Install even if you dont have any LED's & set a dummy pin.
 
 You must keep neopixels set to `False` in the `demon_user_settings.cfg` `Harware Options` section
 
@@ -269,12 +272,13 @@ You must keep neopixels set to `False` in the `demon_user_settings.cfg` `Harware
 * If you own a Sovol SV06/Plus with a Sovol Klipper screen or a Sovol SV07/Plus & want to use the latest version of Klipper with Adaptive Meshing & more features you need to follow my How2 guide on how to update the Sovol Klipper screens on your printers.
 
 https://github.com/3DPrintDemon/How-to-Update-Sovol-Klipper-Screen-To-Latest-Klipper-SV06-and-SV07 
+****************************************************************************************************************************
 
 # INSTALL THE MACROS MANUALLY
 
 Copy the files here into a folder called `Demon_Klipper_Essentials_Unified` in your config folder on your printer. 
 
-NOTE: If you download the zip file via the button at the top of the repo your downloaded folder will be called:
+###### NOTE: If you download the zip file via the button at the top of the repo your downloaded folder will be called:
 ```
 Demon_Klipper_Essentials_Unified-main
 ```
@@ -288,6 +292,7 @@ Then, paste into your printer.cfg
 ```
 
 This will include all files in a folder called Demon_KLIPPER_Essentials_Unified in your `~/config` folder.
+****************************************************************************************************************************
 
 # INSTALL THE MACROS VIA SSH TO CLONE THE REPO DIRECTLY
 
@@ -296,7 +301,7 @@ Use Putty or MacOS Terminal to log into your system via SSH
 ```
 cd /home/pi/printer_data/config
 ```
-NOTE: the above command is for a real Raspberry Pi, if you're using a cloned system that "/pi" folder will change to `mks` or `btt` or `sovol` or similar.
+###### NOTE: the above command is for a real Raspberry Pi, if you're using a cloned system that "/pi" folder will change to `mks` or `btt` or `sovol` or similar.
 
 ```
 git clone https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified.git
@@ -309,6 +314,7 @@ Then, paste into your printer.cfg
 
 This will bring these files into your system, be sure to comment out & NOT delete your current START & END PRINT Macros just yet!
 
+****************************************************************************************************************************
 
 # Macro layout import/restore
 
@@ -316,7 +322,7 @@ Lastly in Mainsail click the cogs top right of the screen & then click the `REST
 
 This will bring in the defualt macro layout.
 
-
+****************************************************************************************************************************
 
 # Mainsail.cfg Usage
 
@@ -333,7 +339,7 @@ Between the quote marks so it looks like this: `"_Z_RAISE"`
 
 Now do the same for `variable_user_cancel_macro: ""`
 
-
+****************************************************************************************************************************
 
 
 # Printer Lights (White LED's)
@@ -342,7 +348,7 @@ Be sure to name any White LED's that are on an output_pin you wish the macros to
 ```
 [output_pin Printer_Lights]
 ```
-
+****************************************************************************************************************************
 
 
 # Neopixel Toolhead LEDS 
@@ -357,7 +363,7 @@ Be sure to name any White LED's that are on an output_pin you wish the macros to
 ```
 [neopixel Screen_Colour]
 ```
-
+****************************************************************************************************************************
 
 
 ## IF YOU'RE USING A SV08 PRINTER! 
@@ -388,8 +394,9 @@ Comment out the stock entry do not delete it, it must look like this:
 # pin: extra_mcu:PB1
 # max_power: 1.0
 ```
+****************************************************************************************************************************
 
-## Updated to include the new integrated KLIPPER Adaptive Mesh option. There is no longer any need for a separate KAMP install.
+## The Macros have been updated to include the new integrated KLIPPER Adaptive Mesh option. There is no longer any need for a separate KAMP install.
 
 For the Adaptive Mesh feature to work you must have:
 - The latest version of Klipper!*
@@ -410,6 +417,7 @@ Add this to your `printer.cfg` file:
 
 Save & restart!
 
+****************************************************************************************************************************
 # BE SURE TO SET YOUR MACRO VARIABLES & WATCH THIS VIDEO
 
 - If you dont set `_CLEAN_VARIABLES` the printer will give you an error if you haven’t done this & try to use the nozzle clean macros.
@@ -421,9 +429,9 @@ alt="IMAGE ALT TEXT HERE" width="480" height="360" border="10" /></a>
 
 Long video on settings walkthrough: https://youtu.be/s4poVSt5a2g
 
-
-## To use adaptive meshing all files MUST have been sliced with `Exclude Objects` active.
-## IF NOT YOU WILL RECEIVE THE FOLLOWING ERRORS!!
+****************************************************************************************************************************
+## To use adaptive meshing all files MUST have been sliced with `Exclude Objects` active. 
+IF NOT YOU WILL RECEIVE THE FOLLOWING ERRORS!!
 
 If you use ORCA SLICER:
 
@@ -438,6 +446,7 @@ If you use another slicer:
 
 ### Fin...
 
+****************************************************************************************************************************
 
 # Additional Configuration - EXTRA STEPS
 
@@ -449,9 +458,13 @@ To get the most from these macros you’ll need to add a Chamber thermistor to y
 - If you have a Chamber exhaust fan call it `[temperature_fan chamber]`
 - If you instead have a Chamber Thermistor only & no Exhaust fan call it `[temperature_sensor Chamber_Temp]`
 
+****************************************************************************************************************************
+
 ## Printer LED lights
 - If you have printer LED lights (NOT neopixel) call them `[output_pin Printer_Lights]`
 - NeoPixel LED's are dealt with in the additionally installed files.
+
+****************************************************************************************************************************
 
 ## Filament Sensor
 If you have or are going to install a filament sensor this must be added to your `printer.cfg` file to run the filament sensor. The filament runout check in the `PRINT_START` macro can then be enabled & disabled in the `_START_VARIABLES` marco if you dont have one or dont want to perform the check at the start of the print.
@@ -483,6 +496,8 @@ If you have an encoder based sensor like the BTT Smart Sensor add this:
  gcode:
     SET_FILAMENT_SENSOR SENSOR=encoder_sensor ENABLE=0
 ```
+
+****************************************************************************************************************************
 
 ## Modifying KlipperScreen Menus For New Features
 To add main screen menu buttons to KlipperScreen for your new Nozzle cleaning functions add these lines to your `KlipperScreen.conf` file:
@@ -546,6 +561,8 @@ You can also add your chamber temp to the menubar in KlipperScreen, this to your
 titlebar_items: chamber
 ```
 
+****************************************************************************************************************************
+
 ## Auto Shutdown Moonraker Power Device
 
 To make use of the `_GOODNIGHT` post print auto shutdown macro you must enable your RPI as a secondary MCU so it can control your shutdown relay hardware. Use this link to do that.
@@ -582,7 +599,7 @@ Then if you wish you can add a physical momentary switch to a 3rd GPIO pin & ano
 
 Then you need to SSH into your pi & run:
 
-NOTE: these commands are for a real Rpi, cloned system or systems built on different images will probably vary.
+###### NOTE: these commands are for a real Rpi, cloned system or systems built on different images will probably vary.
 ```
 sudo nano /boot/config.txt
 ```
@@ -642,6 +659,7 @@ pin: ### <<<<<< Insert unused board pin for state change only, monitored by syst
 ```
 This will give you full control of your power relay unit via the GUI Switch & the `PRINT_END` & `_GOODNIGHT` macros.
 
+****************************************************************************************************************************
 
 ## Extra Bonus...
 As an added bonus you can add a second physical button to a 4th GPIO pin to use as a physical Emergency Stop button!
