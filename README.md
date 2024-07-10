@@ -302,10 +302,9 @@ This will bring these files into your system, be sure to comment out & NOT delet
 
 Lastly in Mainsail click the cogs top right of the screen & then click the `RESTORE` button in the `Interface Settings` window & find the `backup-mainsail-DEMON-MACROS.json` file to bring in the macro setup.
 
+### Mainsail.cfg Usage
 
-## You should also be sure to `[include mainsail.cfg]` as we will be using this!
-
-You need to open the `Mainsail.cfg` file & copy out the `[gcode_macro _CLIENT_VARIABLE]` & place it all into an editable macros.cfg file, as that `Mainsail.cfg` is read only.
+You should also be sure to `[include mainsail.cfg]` as we will be using this! You need to open the `Mainsail.cfg` file & copy out the `[gcode_macro _CLIENT_VARIABLE]` & place it all into an editable macros.cfg file, as that `Mainsail.cfg` is read only.
 
 Then setup the park positions are you want or need them.
 
@@ -319,7 +318,28 @@ Between the quote marks so it looks like this: `"_Z_RAISE"`
 Now do the same for `variable_user_cancel_macro: ""`
 
 
-IF YOURE USING A SV08 PRINTER! If you are using anyhting else jump down a section to Adaptive Meshing.
+
+
+## Printer Lights (White LED's)
+Be sure to name any White LED's that are on an output_pin you wish the macros to control to:
+
+```
+[output_pin Printer_Lights]
+```
+
+
+
+## Neopixel Toolhead LEDS 
+
+....if using a Voron or another machine with neopixel LED's in the toolhead. Be sure to name any neopixel toolhead LED's:
+
+```
+[neopixel sb_leds]   
+```
+
+
+
+## IF YOURE USING A SV08 PRINTER! If you are using anyhting else jump down a section to Adaptive Meshing.
 
 YOU MUST, I REPEAT MUST DISABLE ALL THE SOVOL MACROS BY COMMENTING OUT THE macro.cfg FILE INCLUDE IN THE printer.cfg FILE! 
 To do this use a # at the start of the line like this:
