@@ -13,6 +13,18 @@
 
 
 
+Be sure to name any White LED's that are on an output_pin you wish the macros to control to:
+
+[output_pin Printer_Lights]
+
+
+Also... 
+
+....if using a Voron or an other machine with neopixel LED's in the toolhead. Be sure to name any neopixel toolhead LED's:
+ 
+[neopixel sb_leds]   
+
+
 
 IF YOURE USING A SV08 PRINTER! If you are using anyhting else jump down a section to Slicers
 
@@ -132,13 +144,16 @@ It just lets you include all files automatically without having to worry about c
 Dont Miss this....
 Make sure you download install these files they are REQUIRED for these macros to work correctly.
 
-For VORON PRINTERS
+For VORON PRINTERS or other machines with toolhead Neopixels
 https://github.com/rkolbi/voron2.4/blob/main/non-blocking_wait.md
 https://github.com/VoronDesign/Voron-Stealthburner/blob/main/Firmware/stealthburner_leds.cfg 
 
-For SOVOL SV08 PRINTERS & OTHER MACHINES
-https://github.com/3DPrintDemon/Non_Blocking_Wait_Sovol/releases/tag/Heat_Soak_Timers_V1.0
+For SOVOL SV08 PRINTERS
 https://github.com/3DPrintDemon/Voron-Stealthburner/blob/main/Firmware/RGB_LEDs.cfg
+
+For other machines without toolhead Neopixels
+https://github.com/3DPrintDemon/Non_Blocking_Wait_Sovol/releases/tag/Heat_Soak_Timers_V1.0
+
 
 
 I highly recommend you also use my branch of Klicky probe as it contains a fix for the climbing home problem & I added a back-off Y after Z homing Variable.
