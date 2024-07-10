@@ -261,7 +261,7 @@ These additional macros are prerequisites:
   
 ###### Note: This file is requred for the heat soaks to work correctly. Install even if you dont have any LEDs & set a dummy pin.
 
-You must keep neopixels set to `False` in the `demon_user_settings.cfg` `Harware Options` section
+You must keep neopixels set to `False` in the `demon_user_settings.cfg` `Hardware Options` section
 
 
 
