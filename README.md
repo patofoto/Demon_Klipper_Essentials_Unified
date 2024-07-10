@@ -258,11 +258,6 @@ You must keep neopixels set to `False` in the `demon_user_settings.cfg` `Harware
 
 
 
-# BE SURE TO SET YOUR MACRO VARIABLES  
-
-- `_CLEAN_VARIABLES` the printer will give you an error if you haven’t done this & try to use the macros.
-
-Long video on settings walkthrough: https://youtu.be/s4poVSt5a2g
 
 
 ****************************************************************************************************************************
@@ -406,6 +401,18 @@ Add this to your `printer.cfg` file:
 ```
 
 Save & restart!
+
+# BE SURE TO SET YOUR MACRO VARIABLES & WATCH THIS VIDEO
+
+- If you dont set `_CLEAN_VARIABLES` the printer will give you an error if you haven’t done this & try to use the nozzle clean macros.
+
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=s4poVSt5a2g
+" target="_blank"><img src="http://img.youtube.com/vi/s4poVSt5a2g/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="480" height="360" border="10" /></a>
+
+Long video on settings walkthrough: https://youtu.be/s4poVSt5a2g
+
 
 ## To use adaptive meshing all files MUST have been sliced with `Exclude Objects` active.
 ## IF NOT YOU WILL RECEIVE THE FOLLOWING ERRORS!!
