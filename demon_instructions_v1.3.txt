@@ -151,8 +151,6 @@ https://github.com/rkolbi/voron2.4/blob/main/non-blocking_wait.md
 Note: You will need to edit any entry in this file of "SET_LED LED=nozzle" to read "SET_LED LED=sb_leds"
 Note: This file is requred for the heat soaks to work correctly. Install even if you dont have any LED's & set a dummy pin.
 
-
-
 For SOVOL SV08 PRINTERS
 https://github.com/3DPrintDemon/Voron-Stealthburner/blob/main/Firmware/RGB_LEDs.cfg
 https://github.com/3DPrintDemon/Non_Blocking_Wait/releases/tag/Heat_Soak_Timers_V1.0
