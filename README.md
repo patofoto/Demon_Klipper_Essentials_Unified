@@ -1,4 +1,5 @@
-# Demon_Klipper_Essentials_Unified
+# Welcome to 3DPrintDemon's Demon_Klipper_Essentials_Unified DEVILISHLY GOOD Klipper macros!
+
 The very latest UNIFIED version for these macros! Huge re-implementation &amp; new Features!
 
 [<img width="171" alt="kofi_s_tag_dark" src="https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/assets/122202359/08473899-563b-4b4d-9409-5e6602d6ec44">](https://ko-fi.com/3dprintdemon)
@@ -8,7 +9,7 @@ The very latest UNIFIED version for these macros! Huge re-implementation &amp; n
 A lot of time, testing, love & coffee has been poured into them!
 If you feel you’d like to support my efforts & help to enable me to continue sharing my ideas please consider buying me a beer/coffee at the provided “Sponsor this project” link. Thanks!
 
-# WELCOME TO 3DPrintDemon DEVILISHLY GOOD Klipper macros!
+
 
 # This UNIFIED version will run on almost any COREXY or BED SLINGER (cartesian) Klipper printer with no changes needed to the macro files! 
 Small user setting changes will be required of course.
@@ -196,7 +197,7 @@ Also it can decide if your chamber needs to be heat soaked or not before the pri
 
 You have all this plus step by step adaptive on screen messages on any Mainsail web interface & KlipperScreen system so you know exactly what your machine is deciding to do at any time! Some macros can be customised by changing the settings in the macro button options before you manually call the macro in the Mainsail or KlipperScreen interfaces!
 
-It doesn't end there, as all these features are user customisable within the Macro Variables sections inside the files! Some functions can be totally deactivated entirely & bypassed with a simple changing an option from `True` to `False`! This is very useful if your printer doesn’t have the hardware components installed at this time but leaves the configuration easily customisable with a few keystrokes in the future if you want to add to your machine!
+It doesn't end there, as all these features are user customisable within the `demon_user_settingd.cfg` file! Some functions can be totally deactivated entirely & bypassed with a simple changing an option from `True` to `False`! This is very useful if your printer doesn’t have the hardware components installed at this time but leaves the configuration easily customisable with a few keystrokes in the future if you want to add to your machine!
 
 With the `_GOODNIGHT` macro you can even flick a GUI switch in Mainsail to let the printer know you want it to auto power down after it’s finished printing!! 
 This can be done at ANY point during the print! You can even change your mind & cancel the auto shutdown at any point before the print completes!
@@ -222,7 +223,7 @@ https://www.printables.com/model/873006-sovol-sv08-silicone-nozzle-cleaner-purge
 ## All sounds great right!? Ok well here’s the tricky bit! 
 …Well its not that tricky because I got it all written down here for you to just copy/paste into your setup!
 
-### FOR ANY FILE SPECIFIC INSTRUCTIONS & VARIABLES PLEASE CHECK THE FILE TEXT!
+### FOR ANY FILE SPECIFIC INSTRUCTIONS PLEASE CHECK THE FILE TEXT!
 
 **Don’t just install & run them & wonder why they don’t work! They WILL need setting up once on your system. Damage to your machine may result if the macros are run without the prerequisites or without the correct setup before first use!** 
 
