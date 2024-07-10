@@ -270,7 +270,7 @@ You must keep neopixels set to `False` in the `demon_user_settings.cfg` `Harware
 
 https://github.com/3DPrintDemon/How-to-Update-Sovol-Klipper-Screen-To-Latest-Klipper-SV06-and-SV07 
 
-# INSTALL
+# INSTALL THE MACROS MANUALLY
 
 Copy the files here into a folder called `Demon_Klipper_Essentials_Unified` in your config folder on your printer. 
 
@@ -289,8 +289,9 @@ Then, paste into your printer.cfg
 
 This will include all files in a folder called Demon_KLIPPER_Essentials_Unified in your `~/config` folder.
 
-# This is easier!
-Or you can SSH into your system & use...
+# INSTALL THE MACROS VIA SSH TO CLONE THE REPO DIRECTLY
+
+Use Putty or MacOS Terminal to log into your system via SSH
 
 ```
 cd /home/pi/printer_data/config
@@ -309,7 +310,7 @@ Then, paste into your printer.cfg
 This will bring these files into your system, be sure to comment out & NOT delete your current START & END PRINT Macros just yet!
 
 
-## Macro layout import/restore
+# Macro layout import/restore
 
 Lastly in Mainsail click the cogs top right of the screen & then click the `RESTORE` button in the `Interface Settings` window & find the `backup-mainsail-DEMON-MACROS.json` file to bring in the macro setup.
 
@@ -317,7 +318,7 @@ This will bring in the defualt macro layout.
 
 
 
-## Mainsail.cfg Usage
+# Mainsail.cfg Usage
 
 You should also be sure to `[include mainsail.cfg]` as we will be using this! You need to open the `Mainsail.cfg` file & copy out the `[gcode_macro _CLIENT_VARIABLE]` & place it all into an editable macros.cfg file, as that `Mainsail.cfg` is read only.
 
@@ -335,7 +336,7 @@ Now do the same for `variable_user_cancel_macro: ""`
 
 
 
-## Printer Lights (White LED's)
+# Printer Lights (White LED's)
 Be sure to name any White LED's that are on an output_pin you wish the macros to control to:
 
 ```
@@ -344,7 +345,7 @@ Be sure to name any White LED's that are on an output_pin you wish the macros to
 
 
 
-## Neopixel Toolhead LEDS 
+# Neopixel Toolhead LEDS 
 
 ....if using a Voron or another machine with neopixel LED's in the toolhead. Be sure to name any neopixel toolhead LED's:
 
@@ -352,9 +353,16 @@ Be sure to name any White LED's that are on an output_pin you wish the macros to
 [neopixel sb_leds]   
 ```
 
+....If you're using an SV08 leave the neopixel LED's their defualt name:
+```
+[neopixel Screen_Colour]
+```
 
 
-## IF YOURE USING A SV08 PRINTER! If you are using anyhting else jump down a section to Adaptive Meshing.
+
+## IF YOU'RE USING A SV08 PRINTER! 
+
+If you are using anyhting else jump down a section to Adaptive Meshing.
 
 YOU MUST, I REPEAT MUST DISABLE ALL THE SOVOL MACROS BY COMMENTING OUT THE macro.cfg FILE INCLUDE IN THE printer.cfg FILE! 
 To do this use a # at the start of the line like this:
