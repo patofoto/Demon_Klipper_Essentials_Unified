@@ -234,13 +234,25 @@ You must download & `[include]` these two additional files along with these Demo
 
 These additional macros are prerequisites:
 
-For VORON PRINTERS
-- https://github.com/rkolbi/voron2.4/blob/main/non-blocking_wait.md
-- https://github.com/VoronDesign/Voron-Stealthburner/blob/main/Firmware/stealthburner_leds.cfg 
 
-For SOVOL SV08 PRINTERS & OTHER MACHINES
-- https://github.com/3DPrintDemon/Non_Blocking_Wait_Sovol/releases/tag/Heat_Soak_Timers_V1.0
+### For VORON PRINTERS or other machines with toolhead Neopixels
+- https://github.com/VoronDesign/Voron-Stealthburner/blob/main/Firmware/stealthburner_leds.cfg
+- https://github.com/rkolbi/voron2.4/blob/main/non-blocking_wait.md
+  
+Note: You will need to edit any entry in this file of "SET_LED LED=nozzle" to read "SET_LED LED=sb_leds"
+
+Note: This file is requred for the heat soaks to work correctly. Install even if you dont have any LED's & set a dummy pin.
+
+### For SOVOL SV08 PRINTERS
 - https://github.com/3DPrintDemon/Voron-Stealthburner/blob/main/Firmware/RGB_LEDs.cfg
+- https://github.com/3DPrintDemon/Non_Blocking_Wait/releases/tag/Heat_Soak_Timers_V1.0
+  
+Note: This file is requred for the heat soaks to work correctly. Install even if you dont have any LED's & set a dummy pin.
+
+### For other machines without toolhead Neopixels
+- https://github.com/3DPrintDemon/Non_Blocking_Wait/releases/tag/Heat_Soak_Timers_V1.0
+  
+Note: This file is requred for the heat soaks to work correctly. Install even if you dont have any LED's & set a dummy pin.
 
 
 The rest of the macros are simple single click automations for running a series of tasks you’d normally have to remember the correct procedure for & are a hassle to run multiple times if done manually. They’re quality of life macros to help you get the best setup & results from your printer. 
