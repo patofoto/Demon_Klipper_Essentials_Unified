@@ -274,7 +274,7 @@ runout_gcode:
 
 #########################################################################
 
-Be sure to [include mainsail.cfg] in your printer.cfg & then copy & paste the _ClIENT_VARIABLE macro below into your macros.cfg file to enable required system variables...
+Be sure to [include mainsail.cfg] in your printer.cfg & then copy & paste the _ClIENT_VARIABLE macro below into another (or new) macros.cfg file to enable required system variables...
 
 MAKE SURE YOU EDIT THEM CORRECTLY FOR YOUR OWN PRINTER!!!!!
 #########################################################################
