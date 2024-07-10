@@ -248,18 +248,18 @@ These additional macros are prerequisites:
   
 ###### Note: You will need to edit any entry in this file of "SET_LED LED=nozzle" to read "SET_LED LED=sb_leds"
 
-###### Note: This file is requred for the heat soaks to work correctly. Install even if you dont have any LED's & set a dummy pin.
+###### Note: This file is requred for the heat soaks to work correctly. Install even if you dont have any LEDs & set a dummy pin.
 
 ### For SOVOL SV08 PRINTERS
 - https://github.com/3DPrintDemon/Voron-Stealthburner/blob/main/Firmware/RGB_LEDs.cfg
 - https://github.com/3DPrintDemon/Non_Blocking_Wait/releases/tag/Heat_Soak_Timers_V1.0
   
-###### Note: This file is requred for the heat soaks to work correctly. Install even if you dont have any LED's & set a dummy pin.
+###### Note: This file is requred for the heat soaks to work correctly. Install even if you dont have any LEDs & set a dummy pin.
 
 ### For other machines without toolhead Neopixels
 - https://github.com/3DPrintDemon/Non_Blocking_Wait/releases/tag/Heat_Soak_Timers_V1.0
   
-###### Note: This file is requred for the heat soaks to work correctly. Install even if you dont have any LED's & set a dummy pin.
+###### Note: This file is requred for the heat soaks to work correctly. Install even if you dont have any LEDs & set a dummy pin.
 
 You must keep neopixels set to `False` in the `demon_user_settings.cfg` `Harware Options` section
 
@@ -346,8 +346,8 @@ Now do the same for `variable_user_cancel_macro: ""`
 ****************************************************************************************************************************
 
 
-# Printer Lights (White LED's)
-Be sure to name any White LED's that are on an output_pin you wish the macros to control to:
+# Printer Lights (White LEDs)
+Be sure to name any White LEDs that are on an output_pin you wish the macros to control to:
 
 ```
 [output_pin Printer_Lights]
@@ -355,15 +355,15 @@ Be sure to name any White LED's that are on an output_pin you wish the macros to
 ****************************************************************************************************************************
 
 
-# Neopixel Toolhead LEDS 
+# Neopixel Toolhead LEDs 
 
-....if using a Voron or another machine with neopixel LED's in the toolhead. Be sure to name any neopixel toolhead LED's:
+....if using a Voron or another machine with neopixel LEDs in the toolhead. Be sure to name any neopixel toolhead LEDs:
 
 ```
 [neopixel sb_leds]   
 ```
 
-....If you're using an SV08 leave the neopixel LED's their defualt name:
+....If you're using an SV08 leave the neopixel LEDs their defualt name:
 ```
 [neopixel Screen_Colour]
 ```
@@ -466,7 +466,7 @@ To get the most from these macros you’ll need to add a Chamber thermistor to y
 
 ## Printer LED lights
 - If you have printer LED lights (NOT neopixel) call them `[output_pin Printer_Lights]`
-- NeoPixel LED's are dealt with in the additionally installed files.
+- NeoPixel LEDs are dealt with in the additionally installed files.
 
 ****************************************************************************************************************************
 
