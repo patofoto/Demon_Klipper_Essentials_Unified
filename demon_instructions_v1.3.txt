@@ -20,7 +20,7 @@ Be sure to name any White LED's that are on an output_pin you wish the macros to
 
 Also... 
 
-....if using a Voron or an other machine with neopixel LED's in the toolhead. Be sure to name any neopixel toolhead LED's:
+....if using a Voron or another machine with neopixel LED's in the toolhead. Be sure to name any neopixel toolhead LED's:
  
 [neopixel sb_leds]   
 
