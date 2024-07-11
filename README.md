@@ -374,7 +374,7 @@ Or you will get an invalid for LED error.
 [neopixel Screen_Colour]
 ```
 If you have more than 3 neopixel LEDs in your chain be sure to correctly edit the file you're using to include all LEDs in the chain. By default it is set for 3 Stealthburner style toolhead LEDs.
-You will need to change this if you have a long chain or use neopixels elswhere on your printer.
+You will need to change this if you have a long chain or use neopixels elsewhere on your printer.
 
 
 ![LED Chain Settings](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/assets/122202359/d452e81e-5847-4b16-a752-760f587ffc4d)
