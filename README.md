@@ -42,6 +42,7 @@ Checks & Error Handling. This is a big problem for many users, you get an error 
 - Added option to skip drawing purge lines if you want - good for when you have an uneven bed & like to use Adaptive Meshing
   
 - NEW FEATURE MACRO - Added chamber heater control options!
+- NEW FEATURE MACRO - Added Manual Levelling support for Bed Screws & Screw Tilt Adjust!
 
 - Modified chamber temperature variable naming
 - Chamber temperature min/max settings now available per filament type!! Not just 2 values for all anymore!
