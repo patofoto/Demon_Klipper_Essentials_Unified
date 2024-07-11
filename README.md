@@ -367,6 +367,7 @@ Be sure to name any White LEDs that are on an output_pin you wish the macros to 
 ```
 [neopixel sb_leds]   
 ```
+Or you will get an invalid for LED error.
 
 ....If you're using an SV08 leave the neopixel LEDs their defualt name:
 ```
