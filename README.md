@@ -19,7 +19,7 @@ Small user setting changes will be required of course.
 
 These macros have been developed for use on almost anything from Voron printers to an Ender3, & anything else in between! They will check what sort of machine you have & try to adapt themselves to it automatically!
 
-So for example if you hit `GANTRY_LEVEL` on a COREXY printer you'll get a `QUAD_GANTRY_LEVEL`, but if you do the same on a bed slinger you'll get a `Z_TILT_ADJUST` - IF your printer has that feature enabled! Same macro button but different function! Also there is a built in smart park, where the printer knows if you have a probe based Z endstop or a switch & will adjust the parking height during macro events to suit your system! Further hardware options are manually selectable in the user settings file.
+So for example if you hit `GANTRY_LEVEL` on a COREXY printer you'll get a `QUAD_GANTRY_LEVEL`, but if you do the same on a bed slinger you'll get a `Z_TILT_ADJUST` - if your printer has that feature enabled! Plus now once the new variable `use_manual_levelling` is enabled that same macro button wil provide you `bed_screws` or `screws_tilt_calculate` functions & bypass any auto levelling calls! Same macro button but different function! Also there is a built in smart park, where the printer knows if you have a probe based Z endstop or a switch & will adjust the parking height during macro events to suit your system! Further hardware options are manually selectable in the user settings file.
 
 Checks & Error Handling. This is a big problem for many users, you get an error in klipper but its written in "code" so you cant tell what it means! Here I have tried to explain all errors that occur while running the macros clearly. Sadly I cant help the "encoded" system ones! They'll still be hard to read!
 
@@ -193,7 +193,7 @@ https://github.com/3DPrintDemon/How-to-Update-Sovol-Klipper-Screen-To-Latest-Kli
 # Introduction
 
 These macros are smart & have adaptive properties & will shape themselves to what you’re printing. 
-For example the macros know if your printer is CoreXY or bed slinger, they know if it's already homed so wont home it again, & can not only automatically shape itself to simple things like your printer’s bed size & what temperatures you’re printing at, but it will even know the current file’s first layer height so it’ll print the purge lines at the same height! Plus it can automatically choose & load the correct mesh for the temperature of your print, as your bed will slightly change shape the hotter it gets. 
+For example the macros know if your printer is CoreXY or bed slinger, they know if it's already homed so wont home it again, & can not only automatically shape itself to simple things like your printer’s bed size & what temperatures you’re printing at! Plus it can automatically choose & load the correct mesh for the temperature of your print, as your bed will slightly change shape the hotter it gets. 
 
 Not only that but it will choose the correct settings for your chamber cooling system, & it will even check to see if you have filament loaded before starting a print! …We’ve all done that one haven’t we, be honest!!
 
@@ -201,7 +201,7 @@ Also it can decide if your chamber needs to be heat soaked or not before the pri
 
 You have all this plus step by step adaptive on screen messages on any Mainsail web interface & KlipperScreen system so you know exactly what your machine is deciding to do at any time! Some macros can be customised by changing the settings in the macro button options before you manually call the macro in the Mainsail or KlipperScreen interfaces!
 
-It doesn't end there, as all these features are user customisable within the `demon_user_settingd.cfg` file! Some functions can be totally deactivated entirely & bypassed with a simple changing an option from `True` to `False`! This is very useful if your printer doesn’t have the hardware components installed at this time but leaves the configuration easily customisable with a few keystrokes in the future if you want to add to your machine!
+It doesn't end there, as all these features are user customisable within the `demon_user_settings.cfg` file! Some functions can be totally deactivated entirely & bypassed with a simple changing an option from `True` to `False`! This is very useful if your printer doesn’t have the hardware components installed at this time but leaves the configuration easily customisable with a few keystrokes in the future if you want to add to your machine!
 
 With the `_GOODNIGHT` macro you can even flick a GUI switch in Mainsail to let the printer know you want it to auto power down after it’s finished printing!! 
 This can be done at ANY point during the print! You can even change your mind & cancel the auto shutdown at any point before the print completes!
