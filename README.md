@@ -398,6 +398,13 @@ Comment out the stock entry do not delete it, it must look like this:
 # pin: extra_mcu:PB1
 # max_power: 1.0
 ```
+
+You will also need to go into the `printer.cfg` & comment out line 440 in the `[idle_timeout]` section.
+```
+# gcode: _IDLE_TIMEOUT
+```
+If not you will get an error when the the printer times out for unknown command as the macro its calling is disabled.
+
 ****************************************************************************************************************************
 
 ## The Macros have been updated to include the new integrated KLIPPER Adaptive Mesh option. There is no longer any need for a separate KAMP install.
