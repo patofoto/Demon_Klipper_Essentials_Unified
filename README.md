@@ -367,6 +367,13 @@ Be sure to name any White LEDs that are on an output_pin you wish the macros to 
 ```
 [neopixel Screen_Colour]
 ```
+If you have more than 3 neopixel LEDs in your chain be sure to correctly edit the file you're using to include all LEDs in the chain. By default it is set for 3 Stealthburner style toolhead LEDs.
+You will need to change this if you have a long chain or use neopixels elswhere on your printer.
+
+
+![LED Chain Settings](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/assets/122202359/d452e81e-5847-4b16-a752-760f587ffc4d)
+
+
 ****************************************************************************************************************************
 
 
@@ -454,6 +461,21 @@ If you use another slicer:
 
 `Internal error on command:"BED_MESH_CALIBRATE"`
 
+
+****************************************************************************************************************************
+# SLICER SETUP
+
+You have to modify your slicer's `Machine Gcode` that is sent to the printer.
+Instructions to do this & what to put are in the macro files, please take special care to copy them in correctly, as even a single error can stop the whole system from working.
+
+Copy out your current gcode into Notepad/Notes to save if you ever revert back & need it again.
+It's very important the last line of the `Machine Start Gcode` is a single long line as shown below, with no returns in it. 
+Of this is not the case the system will fail as soon as you start a print.
+
+
+Here is how they should look in Ocra Slicer. 
+
+![Orca Slicer Printer Gcode](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/assets/122202359/89453292-ce82-4c43-9df4-85430d7fe39b)
 
 ### Fin...
 
