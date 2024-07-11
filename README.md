@@ -346,6 +346,8 @@ Between the quote marks so it looks like this: `"_Z_RAISE"`
 
 Now do the same for `variable_user_cancel_macro: ""`
 
+![Mainsail Client_Vars](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/assets/122202359/6adea304-0697-43a9-81f9-4e352637f1d3)
+
 ****************************************************************************************************************************
 
 
