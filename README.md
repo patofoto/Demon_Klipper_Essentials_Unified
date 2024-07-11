@@ -327,7 +327,7 @@ Lastly in Mainsail click the cogs top right of the screen & then click the `REST
 
 This will bring in the defualt macro layout.
 
-![Macro Layout](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/assets/122202359/47beffdf-84a1-485a-aae6-d0f064c957b0)
+![Macro Layout](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/assets/122202359/8a3d41e8-3cd3-4366-bab4-56cb790b3f29)
 
 
 
