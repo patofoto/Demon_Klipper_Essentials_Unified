@@ -422,13 +422,18 @@ If not you will get an error when the the printer times out for unknown command 
 
 ****************************************************************************************************************************
 
-## The Macros have been updated to include the new integrated KLIPPER Adaptive Mesh option. There is no longer any need for a separate KAMP install.
+# Setting up KLIPPER's Adaptive Mesh option. 
 
-For the Adaptive Mesh feature to work you must have:
-- The latest version of Klipper!*
-- Enabled your Slicer for `Exclude Objects`
+There is no longer any need for a separate KAMP install for meshing. The adaptive purge line & smart park are still needed.
+
+For Klipper's Adaptive Mesh feature to work you must have:
+- The latest version of Klipper!
+- Enabled your Slicer for `Label Objects`
+- It's good to have `Exclude Objects` too..
 - Added the `Exclude Objects` section to your `moonraker.conf` file
 - Added the `Exclude Objects` section to your `printer.cfg` file
+
+![ORCA Label](https://github.com/user-attachments/assets/1a1cd72e-11d9-4023-bc6e-ef0e0b9e0a9a)
 
 Add this to your `moonraker.conf` file:
 ```
@@ -444,13 +449,32 @@ Add this to your `printer.cfg` file:
 Save & restart!
 
 ****************************************************************************************************************************
+## To use adaptive meshing all files MUST have been sliced with `Label Objects` active. 
+IF NOT YOU WILL RECEIVE THE FOLLOWING ERRORS!!
+
+If you use ORCA SLICER:
+
+`Error evaluating 'gcode_macro PRINT_START:gcode': gcode.CommandError: This error is caused by the sliced file not having "Label Objects" enabled! Please disable Adaptive_Meshing in the user_settings.cfg or re-slice the file with it enabled and restart the print!`
+
+If you use another slicer:
+
+`Internal error on command:"PRINT_START"`
+
+`Internal error on command:"BED_MESH_CALIBRATE"`
+
+
+
+
+****************************************************************************************************************************
 # BE SURE TO SET YOUR MACRO VARIABLES & WATCH THIS VIDEO
 
 - Configure the macros in one place! Set the variables for all the Demon Klipper Essentials macros in the `demon_user_settings.cfg` file
 - There is no need to edit any macro code with this macro pack!
 - NOTE: If you dont set `_CLEAN_VARIABLES` the printer will give you an error if you haven’t done this & try to use the nozzle clean macros.
 
-![Set Your Vars](https://github.com/user-attachments/assets/4e51ecfd-5848-4125-81c7-1d5bfbbc5c99)
+![Set Your Vars](https://github.com/user-attachments/assets/d2efa6c8-70c2-4585-aab3-08a4e29b6f0d)
+
+
 
 
 
@@ -460,20 +484,6 @@ Save & restart!
 alt="IMAGE ALT TEXT HERE" width="480" height="360" border="10" /></a>
 
 Long video on settings walkthrough: https://youtu.be/s4poVSt5a2g
-
-****************************************************************************************************************************
-## To use adaptive meshing all files MUST have been sliced with `Exclude Objects` active. 
-IF NOT YOU WILL RECEIVE THE FOLLOWING ERRORS!!
-
-If you use ORCA SLICER:
-
-`Error evaluating 'gcode_macro PRINT_START:gcode': gcode.CommandError: This error is caused by the sliced file not having EXCLUDE_OBJECT enabled! Please disable Adaptive_Meshing in the user_settings.cfg or re-slice the file with it enabled and restart the print!`
-
-If you use another slicer:
-
-`Internal error on command:"PRINT_START"`
-
-`Internal error on command:"BED_MESH_CALIBRATE"`
 
 
 ****************************************************************************************************************************
