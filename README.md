@@ -446,7 +446,13 @@ Save & restart!
 ****************************************************************************************************************************
 # BE SURE TO SET YOUR MACRO VARIABLES & WATCH THIS VIDEO
 
-- If you dont set `_CLEAN_VARIABLES` the printer will give you an error if you haven’t done this & try to use the nozzle clean macros.
+- Configure the macros in one place! Set the variables for all the Demon Klipper Essentials macros in the `demon_user_settings.cfg` file
+- There is no need to edit any macro code with this macro pack!
+- NOTE: If you dont set `_CLEAN_VARIABLES` the printer will give you an error if you haven’t done this & try to use the nozzle clean macros.
+
+![Set Your Vars](https://github.com/user-attachments/assets/4e51ecfd-5848-4125-81c7-1d5bfbbc5c99)
+
+
 
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=s4poVSt5a2g
