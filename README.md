@@ -497,6 +497,7 @@ Copy out your current gcode into Notepad/Notes to save if you ever revert back &
 It's very important the last line of the `Machine Start Gcode` is a single long line as shown below, with no returns in it. 
 If this is not the case the system will fail as soon as you start a print.
 
+###### NOTE: If your screen cant hold the text in a single line the computer will place it on mulitple lines itself, however there will be not actual "returns" placed into it, as far as the printer will see it will still be one long line.
 
 Here is how they should look in Ocra Slicer. 
 
