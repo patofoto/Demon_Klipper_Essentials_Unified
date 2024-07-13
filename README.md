@@ -478,6 +478,7 @@ If you use another slicer:
 
 
 
+### BE SURE TO WATCH THIS WHILE YOU SET UP YOUR MACROS...
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=s4poVSt5a2g
 " target="_blank"><img src="http://img.youtube.com/vi/s4poVSt5a2g/0.jpg" 
