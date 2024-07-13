@@ -429,7 +429,7 @@ There is no longer any need for a separate KAMP install for meshing. The adaptiv
 For Klipper's Adaptive Mesh feature to work you must have:
 - The latest version of Klipper!
 - Enabled your Slicer for `Label Objects`
-- It's good to have `Exclude Objects` too..
+- It's good to have `Exclude Objects` too...
 - Added the `file_manager` section to your `moonraker.conf` file for `object processing`  
 - Added the `Exclude Object` section to your `printer.cfg` file
 
@@ -470,7 +470,7 @@ If you use another slicer:
 
 - Configure the macros in one place! Set the variables for all the Demon Klipper Essentials macros in the `demon_user_settings.cfg` file
 - There is no need to edit any macro code with this macro pack!
-- NOTE: If you dont set `_CLEAN_VARIABLES` the printer will give you an error if you haven’t done this & try to use the nozzle clean macros.
+- NOTE: If you don't set `_CLEAN_VARIABLES` the printer will give you an error if you haven’t done this & try to use the nozzle clean macros.
 
 ![Set Your Vars](https://github.com/user-attachments/assets/d2efa6c8-70c2-4585-aab3-08a4e29b6f0d)
 
