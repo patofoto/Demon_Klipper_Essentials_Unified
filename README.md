@@ -495,7 +495,7 @@ Instructions to do this & what to put are in the macro files, please take specia
 
 Copy out your current gcode into Notepad/Notes to save if you ever revert back & need it again.
 It's very important the last line of the `Machine Start Gcode` is a single long line as shown below, with no returns in it. 
-Of this is not the case the system will fail as soon as you start a print.
+If this is not the case the system will fail as soon as you start a print.
 
 
 Here is how they should look in Ocra Slicer. 
