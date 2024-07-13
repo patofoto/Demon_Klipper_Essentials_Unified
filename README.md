@@ -430,8 +430,8 @@ For Klipper's Adaptive Mesh feature to work you must have:
 - The latest version of Klipper!
 - Enabled your Slicer for `Label Objects`
 - It's good to have `Exclude Objects` too..
-- Added the `Exclude Objects` section to your `moonraker.conf` file
-- Added the `Exclude Objects` section to your `printer.cfg` file
+- Added the `file_manager` section to your `moonraker.conf` file for `object processing`  
+- Added the `Exclude Object` section to your `printer.cfg` file
 
 ![ORCA Label](https://github.com/user-attachments/assets/1a1cd72e-11d9-4023-bc6e-ef0e0b9e0a9a)
 
