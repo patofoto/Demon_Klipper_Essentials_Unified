@@ -454,7 +454,7 @@ IF NOT YOU WILL RECEIVE THE FOLLOWING ERRORS!!
 
 If you use ORCA SLICER:
 
-`Error evaluating 'gcode_macro PRINT_START:gcode': gcode.CommandError: This error is caused by the sliced file not having "Label Objects" enabled! Please disable Adaptive_Meshing in the user_settings.cfg or re-slice the file with it enabled and restart the print!`
+`Error evaluating 'gcode_macro PRINT_START:gcode': gcode.CommandError: This error is caused by the sliced file not having "Label Objects" enabled! Please disable Adaptive_Meshing in the demon_user_settings.cfg or re-slice the file with it enabled and restart the print!`
 
 If you use another slicer:
 
