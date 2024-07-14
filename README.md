@@ -29,6 +29,12 @@ Checks & Error Handling. This is a big problem for many users, you get an error 
 
 # FEATURES:
 
+# VERSION 2.8 LATE UPDATE!!!
+- NEW! Added support to use KAMP Adaptive Purge & Smart Park macros! Install fork KAMP_LiTE to use!
+- Added BLTouch parking height
+- Updated Github docs
+- Updated demon_user_settings file
+
 # NEW for Version 2.8!!!
 - Better more efficient Klicky actions when Klicky probe is used as Z endstop. 
 - More efficient conditional homing during start for inductive probe printers
@@ -242,6 +248,9 @@ You must download & `[include]` these two additional files along with these Demo
 
 These additional macros are prerequisites:
 
+FOR ALL MACHINES
+FOR ADAPTIVE PURGING & SMART PARK install KAMP_LiTE fork.
+- https://github.com/3DPrintDemon/KAMP_LiTE/releases/tag/v1.0
 
 ### For VORON PRINTERS or other machines with toolhead Neopixels
 - https://github.com/VoronDesign/Voron-Stealthburner/blob/main/Firmware/stealthburner_leds.cfg
@@ -479,7 +488,7 @@ If not you will get an error when the the printer times out for unknown command 
 There is no longer any need for a separate KAMP install for meshing. The adaptive purge line & smart park are still needed.
 
 For Klipper's Adaptive Mesh feature to work you must have:
-- The latest version of Klipper!
+- You must have a version of Klipper later than 1st Feb 2024
 - Enabled your Slicer for `Label Objects`
 - It's good to have `Exclude Objects` too...
 - Added the `file_manager` section to your `moonraker.conf` file for `object processing`  
@@ -499,6 +508,31 @@ Add this to your `printer.cfg` file:
 ```
 
 Save & restart!
+
+****************************************************************************************************************************
+
+# Seting up KAMP_Lite Adaptive Purge & Smart Park
+
+You must have a version of Klipper later than 1st Feb 2024. You must have completed the steps described in the above section.
+
+Also the fork KAMP_LiTE must be installed & included, how to do this are in the link:
+
+https://github.com/3DPrintDemon/KAMP_LiTE/releases/tag/v1.0
+
+KAMP_LiTE is simply KAMP but withot the adpative meshing macro included, changes listed in the above link.
+
+
+You must set your desired values in the KAMP_Settings.cfg
+
+![KAMP_LiTE Settings](https://github.com/user-attachments/assets/3ecfcd1c-b117-43b8-b8cb-9121be6c7b95)
+
+Then you must activate the KAMP settings in the `demon_user_settings.cfg` file.
+
+![KAMP_LiTE Vars](https://github.com/user-attachments/assets/58ebc555-2bad-465c-b052-04c9f189171d)
+
+
+###### NOTE: If `variable_adaptive_meshing` is set to `True` then the system will override the values for `variable_use_kamp_adaptive_purge` & `variable_use_kamp_smart_park`. It will always use the adaptive purge & smart park features no matter what the settings are. Even if they're set to false. User control is handed back once `variable_adaptive_meshing` is set to `False`
+
 
 ****************************************************************************************************************************
 ## To use adaptive meshing all files MUST have been sliced with `Label Objects` active. 
