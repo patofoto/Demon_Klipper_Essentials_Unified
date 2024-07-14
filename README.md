@@ -335,9 +335,9 @@ This will bring in the defualt macro layout.
 
 # Mainsail.cfg Usage
 
-You should also be sure to `[include mainsail.cfg]` as we will be using this! You need to open the `Mainsail.cfg` file & copy out the `[gcode_macro _CLIENT_VARIABLE]` & place it all into an editable macros.cfg file, as that `Mainsail.cfg` is read only.
+You should be sure to `[include mainsail.cfg]` as we will be using this! You need to open the `Mainsail.cfg` file & copy out the `[gcode_macro _CLIENT_VARIABLE]` & place it all into a new editable my_macros.cfg file for example, as that `Mainsail.cfg` is read only.
 
-Then setup where the park positions are you want or need them.
+Then setup where you want/need the park position, the extruder retract/unretract movements & speeds etc.
 
 Now were it says `variable_user_pause_macro : ""` you need to paste in...
 ```
@@ -345,10 +345,62 @@ _Z_RAISE
 ```
 Between the quote marks so it looks like this: `"_Z_RAISE"`
 
-
 Now do the same for `variable_user_cancel_macro: ""`
 
+Also be sure to add the line below for the `variable_runout_sensor: ""` option between the quote marks ("").
+```
+filament_switch_sensor filament_sensor
+```
+Your new uncommented `CLIENT_VARIABLES` marco should look like this when you're done. Image is for a Voron 2.4 350
+
+BE SURE TO SAVE & RESTART!
+
+
+
 ![Mainsail Client_Vars](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/assets/122202359/6adea304-0697-43a9-81f9-4e352637f1d3)
+
+****************************************************************************************************************************
+
+
+# Klipperscreen LOAD/UNLOAD Macros
+
+Be sure you have the Klipperscreen LOAD/UNLOAD macros in your system.
+
+If not add them now.....
+
+Paste this in the same file with your `CLIENT_VARIABLES` macro to keep things tidy.
+These are the Klipperscreen macros posted here for your convenience.
+https://klipperscreen.readthedocs.io/en/latest/macros/#extrude-panel
+
+###### NOTE: You may want to edit the `variable_load_distance` & `variable_unload_distance` if you have a longer filamnet path than 50mm. A Biqu H2V2 is ok on 50mm but a Stealthburner will need something like 100mm!
+
+```
+[gcode_macro LOAD_FILAMENT]
+variable_load_distance:  50
+variable_purge_distance:  25
+gcode:
+    {% set speed = params.SPEED|default(300) %}
+    {% set max_velocity = printer.configfile.settings['extruder'].max_extrude_only_velocity  * 60 %}
+    SAVE_GCODE_STATE NAME=load_state
+    G91
+    G92 E0
+    G1 E{load_distance} F{max_velocity} # fast-load
+    G1 E{purge_distance} F{speed} # purge
+    RESTORE_GCODE_STATE NAME=load_state
+
+[gcode_macro UNLOAD_FILAMENT]
+variable_unload_distance:  50
+variable_purge_distance:  25
+gcode:
+    {% set speed = params.SPEED|default(300) %}
+    {% set max_velocity = printer.configfile.settings['extruder'].max_extrude_only_velocity  * 60 %}
+    SAVE_GCODE_STATE NAME=unload_state
+    G91
+    G92 E0
+    G1 E{purge_distance} F{speed} # purge
+    G1 E-{unload_distance} F{max_velocity} # fast-unload
+    RESTORE_GCODE_STATE NAME=unload_state
+```
 
 ****************************************************************************************************************************
 
