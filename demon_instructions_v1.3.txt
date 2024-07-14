@@ -62,6 +62,9 @@ If not you will get an error when the the printer times out for unknown command 
 
 
 
+
+
+
 #########################################################################
 # ADD THE 3 LINES BELOW TO PRUSASLICER'S START GCODE SECTION
 #########################################################################
@@ -147,6 +150,10 @@ It just lets you include all files automatically without having to worry about c
 
 Dont Miss this....
 Make sure you download install these files they are REQUIRED for these macros to work correctly.
+
+FOR ALL MACHINES
+FOR ADAPTIVE PURGING & SMART PARK install KAMP_LiTE fork.
+https://github.com/3DPrintDemon/KAMP_LiTE/releases/tag/v1.0
 
 
 For VORON PRINTERS or other machines with toolhead Neopixels
@@ -400,16 +407,3 @@ USE NEW AUTO MESH BUILDER MACRO!
 
 # IF YOU USE & LIKE THESE MACROS PLEASE CONSIDER SUPPORTING MY EFFORTS AT 
 # https://ko-fi.com/3dprintdemon 
-
-
-
-
-
-
-
-
-
-
-
-
-
