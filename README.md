@@ -35,6 +35,8 @@ Checks & Error Handling. This is a big problem for many users, you get an error 
 - Updated Github docs
 - Updated demon_user_settings file
 
+- if you've already download v2.8 please does so again & backup your old files including your `demon_user_settings.cfg` file as you'll need to transfer your settings over.
+
 # NEW for Version 2.8!!!
 - Better more efficient Klicky actions when Klicky probe is used as Z endstop. 
 - More efficient conditional homing during start for inductive probe printers
@@ -248,8 +250,7 @@ You must download & `[include]` these additional files along with these Demon Ma
 
 These additional macros are prerequisites:
 
-FOR ALL MACHINES
-FOR ADAPTIVE PURGING & SMART PARK install KAMP_LiTE fork.
+### FOR ALL MACHINES FOR ADAPTIVE PURGING & SMART PARK install KAMP_LiTE fork.
 - https://github.com/3DPrintDemon/KAMP_LiTE/releases/tag/v1.0
 
 ### For VORON PRINTERS or other machines with toolhead Neopixels
