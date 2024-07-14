@@ -517,7 +517,7 @@ KAMP_LiTE is simply KAMP but without the adpative meshing macro, as it is not re
 
 You must have a version of Klipper later than 1st Feb 2024. You must have completed the steps described in the above section.
 
-Also the fork KAMP_LiTE must be installed & included, how to do this are in the link:
+Also the fork KAMP_LiTE must be installed & included, how to do this is in the below link:
 
 https://github.com/3DPrintDemon/KAMP_LiTE/releases/tag/v1.0
 
