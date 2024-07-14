@@ -244,7 +244,7 @@ These are in the `demon_print_start_end.cfg` file.
 ****************************************************************************************************************************
 
 # Prerequisites
-You must download & `[include]` these two additional files along with these Demon Macros or they will NOT work correctly.
+You must download & `[include]` these additional files along with these Demon Macros or they will NOT work correctly.
 
 These additional macros are prerequisites:
 
