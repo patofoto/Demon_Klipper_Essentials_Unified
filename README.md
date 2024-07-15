@@ -64,34 +64,34 @@ Checks & Error Handling. This is a big problem for many users, you get an error 
 
 # Previous & Existing Features
 
-### NEW! ORCA Slicer `Multi_Surface` handling! 
+- NEW! ORCA Slicer `Multi_Surface` handling! 
 - The printer knows what bed surface you choose to use & can add a pre-set Z offset for the print & remove it afterward! The system can even combine the surface offset with a filament or temperature based one! Don't worry though there are `Bed Saver` safety checks that should help stop you entering a wrong number & damaging your printer, especially when using the combine offset function!
 
-### NEW! Random nozzle cleaning movements! 
+- NEW! Random nozzle cleaning movements! 
 - No more single path cleaning to wear out your brush/pad! All movements are randomly generated!
 
-### NEW! Random filament purge parking! 
+- NEW! Random filament purge parking! 
 - No more purging in the same spot over & over piling filament on top of filament!
 
-### NEW! Now includes the Demon Bed Fans Monitor!
+- NEW! Now includes the Demon Bed Fans Monitor!
 - NEW! Now with Floating fan chamber control! The system will raise or low fan speed depending on temperature!
 - Smart & fully adaptive Bed Fans control system!
 - Full instructions available here in the `bed_fans.cfg` file
 
-### NEW! The Demon AES System! 
+- NEW! The Demon AES System! 
 - Save your printer from damage from homing errors when using a Z Endstop switch & Sensorless homing! This could save you a lot of money if homing fails!
 - Full instructions available here: https://github.com/3DPrintDemon/Voron_2.4_AES_System_Auto_Emergency_Stop_For_Z_Endstop_Switch
 
-### NEW! Start Macro handling for Smart Filament Sensor Encoder
+- NEW! Start Macro handling for Smart Filament Sensor Encoder
 - Disables the sensor until the macro completes
 
-### NEW! Support for Klipper's `ADAPTIVE_MESH` system in the latest Klipper update
+- NEW! Support for Klipper's `ADAPTIVE_MESH` system in the latest Klipper update
 - NOTE you need the latest version of Klipper to use this!
 -  If you own a Sovol SV06/Plus with a Sovol Klipper screen or a Sovol SV07/Plus & want to use the latest version of Klipper with Adaptive Meshing & more features you need to follow my How2 guide on how to update the Sovol Klipper screens on your printers.
 
 https://github.com/3DPrintDemon/How-to-Update-Sovol-Klipper-Screen-To-Latest-Klipper-SV06-and-SV07 
 
-### NEW! Adaptive Pressure Advance Mode! - APA - ORCA SLICER ONLY
+- NEW! Adaptive Pressure Advance Mode! - APA - ORCA SLICER ONLY
 
 - Why have only 1 single setting for Pressure Advance trying to work across the whole print when you can have 6!!
 
@@ -113,12 +113,12 @@ https://github.com/3DPrintDemon/How-to-Update-Sovol-Klipper-Screen-To-Latest-Kli
 
 ### These macros rely on you setting the correct filament type in your slicer! BE SURE YOU DO THIS!
 
-### Mesh Auto Builder!
+#### Mesh Auto Builder!
 
 - Auto build all 5 meshes at different temperatures with included heat soak waits & message prompts! Inspired by a community contribution from Karl L! Thank you for sharing!
 
 
-### **Demon Print Start End**
+#### **Demon Print Start End**
 
 - The printer knows what filament you sliced your print for!
 
