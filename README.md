@@ -216,6 +216,7 @@ This can be done at ANY point during the print! You can even change your mind & 
 
 ###### NOTE: Additional hardware & setup is required for this feature to work! How to do this is explained further on in this readme file.
 
+## Retraction Calibration...
 The `_RET_CALI_START` macro is used when calibrating your retraction settings with files generated at:
 
 http://www.retractioncalibration.com/
@@ -223,6 +224,7 @@ http://www.retractioncalibration.com/
 All you need do is paste `_RET_CALI_START` into the website's "Custom Gcode" box next to the green "Generate Gcode" button
 This is without a doubt the absolute BEST retraction test out there!
 
+## Nozzle Cleaning & Purge Buckets...
 The `CLEAN_NOZZLE`, `LOAD_CLEAN`, & `UNLOAD_CLEAN` macros are for use with a nozzle cleaning brush found here:
 
 For VORON 2.4 printers
@@ -235,13 +237,13 @@ https://www.printables.com/model/873006-sovol-sv08-silicone-nozzle-cleaner-purge
 ## All sounds great right!? Ok well here’s the tricky bit! 
 …Well its not that tricky because I got it all written down here for you to just copy/paste into your setup!
 
-### FOR ANY FILE SPECIFIC INSTRUCTIONS PLEASE CHECK THE FILE TEXT!
+### PLEASE CHECK ALL INSTRUCTIONS CAREFULLY & FOR ANY FILE SPECIFIC INSTRUCTIONS PLEASE CHECK THE FILE TEXT!
 
-**Don’t just install & run them & wonder why they don’t work! They WILL need setting up once on your system. Damage to your machine may result if the macros are run without the prerequisites or without the correct setup before first use!** 
+**Don’t just install & run the macros & wonder why they don’t work! They WILL need setting up once on your system. Damage to your machine may result if the macros are run without the prerequisites or without the correct setup before first use!** 
 
-You will need to add some lines to your slicer's `Start G-code` & `End G-code` boxes to get the `PRINT_START` macro to work correctly. 
+You will need to edit your slicer's `Start G-code` & `End G-code` boxes to get the `PRINT_START` macro to work correctly. 
 
-These are in the `demon_print_start_end_v2.8.cfg` file.
+There are full instructions further down this page & the basic lines in the `demon_print_start_end_v2.8.cfg` file.
 
 ****************************************************************************************************************************
 
@@ -280,7 +282,7 @@ You must keep neopixels set to `False` in the `demon_user_settings_v2.8.cfg` `Ha
 
 ****************************************************************************************************************************
 # IF YOU RAN V1.0-V2.7 BE SURE TO UPDATE YOUR SLICER'S START GCODE AS PER V2.8 FILE OR NEW FEATURES WONT WORK!
-# Instructions to do this are in the files.
+# Instructions to do this are further down this page.
 # Also you must update ALL the macro files as this new version will NOT work correctly with old files!
 ****************************************************************************************************************************
 
