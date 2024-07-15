@@ -361,7 +361,7 @@ Also be sure to add the line below for the `variable_runout_sensor: ""` option b
 ```
 filament_switch_sensor filament_sensor
 ```
-Your new uncommented `_CLIENT_VARIABLES` marco should look like this when you're done. Image is for a Voron 2.4 350
+Your new uncommented `_CLIENT_VARIABLE` marco should look like this when you're done. Image is for a Voron 2.4 350
 
 BE SURE TO SAVE & RESTART!
 
@@ -378,7 +378,7 @@ Be sure you have the Klipperscreen LOAD/UNLOAD macros in your system.
 
 If not add them now.....
 
-Paste this in the same file with your `_CLIENT_VARIABLES` macro to keep things tidy.
+Paste this in the same file with your `_CLIENT_VARIABLE` macro to keep things tidy.
 These are the Klipperscreen macros posted here for your convenience.
 https://klipperscreen.readthedocs.io/en/latest/macros/#extrude-panel
 
