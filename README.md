@@ -281,7 +281,7 @@ You must keep neopixels set to `False` in the `demon_user_settings_v2.8.cfg` `Ha
 
 
 ****************************************************************************************************************************
-# IF YOU RAN V1.0-V2.7 BE SURE TO UPDATE YOUR SLICER'S START GCODE AS PER V2.8 FILE OR NEW FEATURES WONT WORK!
+# IF YOU RAN V1.0-V2.7 BE SURE TO UPDATE YOUR SLICER'S START GCODE OR NEW FEATURES WONT WORK!
 # Instructions to do this are further down this page.
 # Also you must update ALL the macro files as this new version will NOT work correctly with old files!
 ****************************************************************************************************************************
