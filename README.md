@@ -35,7 +35,7 @@ Checks & Error Handling. This is a big problem for many users, you get an error 
 - Updated Github docs
 - Updated demon_user_settings file
 
-- if you've already download v2.8 please does so again & backup your old files including your `demon_user_settings.cfg` file as you'll need to transfer your settings over.
+- if you've already download v2.8 please does so again & backup your old files including your `demon_user_settings_v2.8.cfg` file as you'll need to transfer your settings over.
 
 # NEW for Version 2.8!!!
 - Better more efficient Klicky actions when Klicky probe is used as Z endstop. 
@@ -209,7 +209,7 @@ Also it can decide if your chamber needs to be heat soaked or not before the pri
 
 You have all this plus step by step adaptive on screen messages on any Mainsail web interface & KlipperScreen system so you know exactly what your machine is deciding to do at any time! Some macros can be customised by changing the settings in the macro button options before you manually call the macro in the Mainsail or KlipperScreen interfaces!
 
-It doesn't end there, as all these features are user customisable within the `demon_user_settings.cfg` file! Some functions can be totally deactivated entirely & bypassed with a simple changing an option from `True` to `False`! This is very useful if your printer doesn’t have the hardware components installed at this time but leaves the configuration easily customisable with a few keystrokes in the future if you want to add to your machine!
+It doesn't end there, as all these features are user customisable within the `demon_user_settings_v2.8.cfg` file! Some functions can be totally deactivated entirely & bypassed with a simple changing an option from `True` to `False`! This is very useful if your printer doesn’t have the hardware components installed at this time but leaves the configuration easily customisable with a few keystrokes in the future if you want to add to your machine!
 
 With the `_GOODNIGHT` macro you can even flick a GUI switch in Mainsail to let the printer know you want it to auto power down after it’s finished printing!! 
 This can be done at ANY point during the print! You can even change your mind & cancel the auto shutdown at any point before the print completes!
@@ -241,7 +241,7 @@ https://www.printables.com/model/873006-sovol-sv08-silicone-nozzle-cleaner-purge
 
 You will need to add some lines to your slicer's `Start G-code` & `End G-code` boxes to get the `PRINT_START` macro to work correctly. 
 
-These are in the `demon_print_start_end.cfg` file.
+These are in the `demon_print_start_end_v2.8.cfg` file.
 
 ****************************************************************************************************************************
 
@@ -272,7 +272,7 @@ These additional macros are prerequisites:
   
 ###### Note: This file is requred for the heat soaks to work correctly. Install even if you dont have any LEDs & set a dummy pin.
 
-You must keep neopixels set to `False` in the `demon_user_settings.cfg` `Hardware Options` section
+You must keep neopixels set to `False` in the `demon_user_settings_v2.8.cfg` `Hardware Options` section
 
 
 
@@ -527,7 +527,7 @@ You must set your desired values in the KAMP_Settings.cfg
 
 ![KAMP_LiTE Settings](https://github.com/user-attachments/assets/3ecfcd1c-b117-43b8-b8cb-9121be6c7b95)
 
-Then you must activate the KAMP settings in the `demon_user_settings.cfg` file.
+Then you must activate the KAMP settings in the `demon_user_settings_v2.8.cfg` file.
 
 ![KAMP_LiTE Vars](https://github.com/user-attachments/assets/58ebc555-2bad-465c-b052-04c9f189171d)
 
@@ -555,7 +555,7 @@ If you use another slicer:
 ****************************************************************************************************************************
 # BE SURE TO SET YOUR MACRO VARIABLES & WATCH THIS VIDEO
 
-- Configure the macros in one place! Set the variables for all the Demon Klipper Essentials macros in the `demon_user_settings.cfg` file
+- Configure the macros in one place! Set the variables for all the Demon Klipper Essentials macros in the `demon_user_settings_v2.8.cfg` file
 - There is no need to edit any macro code with this macro pack!
 - NOTE: If you don't set `_CLEAN_VARIABLES` the printer will give you an error if you haven’t done this & try to use the nozzle clean macros.
 
