@@ -514,7 +514,7 @@ Save & restart!
 
 ****************************************************************************************************************************
 
-# Setting up KAMP_Lite Adaptive Purge & Smart Park
+# Setting up KAMP_LiTE Adaptive Purge & Smart Park
 
 KAMP_LiTE is simply KAMP but without the adpative meshing macro, as it is not required now klipper has Adaptive Meshing included by default. However the Adpative Purge & Smart Park features are still very useful! Changes listed in the link.
 
