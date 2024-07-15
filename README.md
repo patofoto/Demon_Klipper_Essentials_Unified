@@ -495,6 +495,8 @@ For Klipper's Adaptive Mesh feature to work you must have:
 - Added the `file_manager` section to your `moonraker.conf` file for `object processing`  
 - Added the `Exclude Object` section to your `printer.cfg` file
 
+###### Find options under Orca main window Process/Global/Others
+
 ![ORCA Label](https://github.com/user-attachments/assets/1a1cd72e-11d9-4023-bc6e-ef0e0b9e0a9a)
 
 Add this to your `moonraker.conf` file:
@@ -578,7 +580,8 @@ Long video on settings walkthrough: https://youtu.be/s4poVSt5a2g
 # SLICER SETUP
 
 You have to modify your slicer's `Machine Gcode` that is sent to the printer.
-Instructions to do this & what to put are in the macro files, please take special care to copy them in correctly, as even a single error can stop the whole system from working.
+The basic commands to do this are in the macro files, please take special care to copy them in correctly, as even a single error can stop the whole system from working.
+Below shows a fully setup slicer as per recommended Mainsail settings combined with the macro settings for Orca Slicer using relative extrusion.
 
 Copy out your current gcode into Notepad/Notes to save if you ever revert back & need it again.
 It's very important the last line of the `Machine Start Gcode` is a single long line as shown below, with no returns in it. 
@@ -589,6 +592,53 @@ If this is not the case the system will fail as soon as you start a print.
 Here is how they should look in Ocra Slicer. 
 
 ![Orca Slicer Printer Gcode](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/assets/122202359/89453292-ce82-4c43-9df4-85430d7fe39b)
+
+These are fully setup codes as per recommended Mainsail settings combined with the macro settings for Orca Slicer using relative extrusion, as per the image....
+
+Machine Start G-code:
+
+```
+SET_PRINT_STATS_INFO TOTAL_LAYER=[total_layer_count]
+M104 S0
+M140 S0
+PRINT_START EXTRUDER=[nozzle_temperature_initial_layer] BED=[hot_plate_temp_initial_layer] LAYER=[layer_height] FILAMENT=[filament_type] EXCLUDE=[exclude_object] SURFACE="[curr_bed_type]"
+```
+Machine end G-code:
+```
+; printing object ENDGCODE
+PRINT_END
+```
+
+Before layer change G-code:
+```
+;BEFORE_LAYER_CHANGE
+;[layer_z]
+G92 E0
+```
+
+After layer change G-code:
+```
+;AFTER_LAYER_CHANGE
+;[layer_z]
+SET_PRINT_STATS_INFO CURRENT_LAYER={layer_num + 1}
+M117 Layer {layer_num+1}/[total_layer_count] : {filament_settings_id[0]}
+```
+
+Change filament G-code:
+```
+PUASE
+```
+
+Change extrusion role G-code:
+```
+_ADAPTIVE_PA TYPE=[extrusion_role]
+```
+
+Pause G-code:
+```
+PAUSE
+```
+
 
 ### Fin...
 
