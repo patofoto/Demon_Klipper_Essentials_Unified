@@ -378,7 +378,7 @@ Be sure you have the Klipperscreen LOAD/UNLOAD macros in your system.
 
 If not add them now.....
 
-Paste this in the same file with your `CLIENT_VARIABLES` macro to keep things tidy.
+Paste this in the same file with your `_CLIENT_VARIABLES` macro to keep things tidy.
 These are the Klipperscreen macros posted here for your convenience.
 https://klipperscreen.readthedocs.io/en/latest/macros/#extrude-panel
 
