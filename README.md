@@ -361,7 +361,7 @@ Also be sure to add the line below for the `variable_runout_sensor: ""` option b
 ```
 filament_switch_sensor filament_sensor
 ```
-Your new uncommented `CLIENT_VARIABLES` marco should look like this when you're done. Image is for a Voron 2.4 350
+Your new uncommented `_CLIENT_VARIABLES` marco should look like this when you're done. Image is for a Voron 2.4 350
 
 BE SURE TO SAVE & RESTART!
 
