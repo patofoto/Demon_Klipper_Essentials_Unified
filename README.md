@@ -335,7 +335,7 @@ This will bring these files into your system, be sure to comment out & NOT delet
 
 # Macro layout import/restore
 
-Lastly in Mainsail click the cogs top right of the screen & then click the `RESTORE` button in the `Interface Settings` window & find the `backup-mainsail-DEMON-MACROS.json` file to bring in the macro setup.
+Lastly in Mainsail click the cogs top right of the screen & then click the `RESTORE` button in the `Interface Settings` window under the `General` tab. Now find the `backup-mainsail-DEMON-MACROS.json` file, click open & then select the macros option, then click `Restore` to bring in the macro setup.
 
 This will bring in the defualt macro layout.
 
