@@ -251,10 +251,10 @@ You must download & `[include]` these additional files along with these Demon Ma
 
 These additional macros are prerequisites:
 
-#### **FOR ALL MACHINES FOR ADAPTIVE PURGING & SMART PARK install KAMP_LiTE fork.**
+## **FOR ALL MACHINES FOR ADAPTIVE PURGING & SMART PARK install KAMP_LiTE fork.**
 - https://github.com/3DPrintDemon/KAMP_LiTE/releases/tag/v1.0
 
-#### **For VORON PRINTERS or other machines with toolhead Neopixels**
+## **For VORON PRINTERS or other machines with toolhead Neopixels**
 - https://github.com/VoronDesign/Voron-Stealthburner/blob/main/Firmware/stealthburner_leds.cfg
 - https://github.com/rkolbi/voron2.4/blob/main/non-blocking_wait.md
   
@@ -262,13 +262,13 @@ These additional macros are prerequisites:
 
 ###### Note: This file is requred for the heat soaks to work correctly. Install even if you dont have any LEDs & set a dummy pin.
 
-#### **For SOVOL SV08 PRINTERS**
+## **For SOVOL SV08 PRINTERS**
 - https://github.com/3DPrintDemon/Voron-Stealthburner/blob/main/Firmware/RGB_LEDs.cfg
 - https://github.com/3DPrintDemon/Non_Blocking_Wait/releases/tag/Heat_Soak_Timers_V1.0
   
 ###### Note: This file is requred for the heat soaks to work correctly. Install even if you dont have any LEDs & set a dummy pin.
 
-#### **For other machines without toolhead Neopixels**
+## **For other machines without toolhead Neopixels**
 - https://github.com/3DPrintDemon/Non_Blocking_Wait/releases/tag/Heat_Soak_Timers_V1.0
   
 ###### Note: This file is requred for the heat soaks to work correctly. Install even if you dont have any LEDs & set a dummy pin.
