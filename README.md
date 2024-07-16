@@ -655,7 +655,7 @@ PAUSE
 
 
 
-# Chamber Monitoring & Fan Control
+## Chamber Monitoring & Fan Control
 
 To get the most from these macros you’ll need to add a Chamber thermistor to your machine if you haven’t already & a Chamber exhaust fan. 
 - If you have a Chamber exhaust fan call it `[temperature_fan chamber]`
@@ -663,13 +663,13 @@ To get the most from these macros you’ll need to add a Chamber thermistor to y
 
 ****************************************************************************************************************************
 
-# Printer LED lights
+## Printer LED lights
 - If you have printer LED lights (NOT neopixel) call them `[output_pin Printer_Lights]`
 - NeoPixel LEDs are dealt with in the additionally installed files.
 
 ****************************************************************************************************************************
 
-# Filament Sensor
+## Filament Sensor
 If you have or are going to install a filament sensor this must be added to your `printer.cfg` file to run the filament sensor. The filament runout check in the `PRINT_START` macro can then be enabled & disabled in the `_START_VARIABLES` marco if you dont have one or dont want to perform the check at the start of the print.
 ```
 [filament_switch_sensor filament_sensor]
@@ -702,7 +702,7 @@ If you have an encoder based sensor like the BTT Smart Sensor add this:
 
 ****************************************************************************************************************************
 
-# Modifying KlipperScreen Menus For New Features
+## Modifying KlipperScreen Menus For New Features
 To add main screen menu buttons to KlipperScreen for your new Nozzle cleaning functions add these lines to your `KlipperScreen.conf` file:
 ```
 [menu __main custom]
