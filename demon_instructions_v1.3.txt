@@ -70,7 +70,7 @@ If not you will get an error when the the printer times out for unknown command 
 #########################################################################
 M104 S0
 M140 S0
-print_start EXTRUDER=[first_layer_temperature[initial_extruder]] BED=[first_layer_bed_temperature] LAYER=[layer_height] FILAMENT=[filament_type] EXTRUSION=[external_perimeter_extrusion_width] 
+print_start EXTRUDER=[first_layer_temperature[initial_extruder]] BED=[first_layer_bed_temperature] LAYER=[layer_height] FILAMENT=[filament_type] 
 
 
 
@@ -101,7 +101,7 @@ _ADAPTIVE_PA TYPE=[extrusion_role]
 #########################################################################
 M109 S0
 M190 S0
-print_start EXTRUDER={material_print_temperature_layer_0} BED={material_bed_temperature_layer_0} LAYER={layer_height} FILAMENT={material_type} EXTRUSION={line_width}
+print_start EXTRUDER={material_print_temperature_layer_0} BED={material_bed_temperature_layer_0} LAYER={layer_height} FILAMENT={material_type}
 
 
 
