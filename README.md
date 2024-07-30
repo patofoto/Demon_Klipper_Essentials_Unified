@@ -347,9 +347,15 @@ This will bring in the defualt macro layout.
 
 # Mainsail.cfg Usage
 
-You should be sure to `[include mainsail.cfg]` as we will be using this! You need to open the `Mainsail.cfg` file & copy out the `[gcode_macro _CLIENT_VARIABLE]` & place it all into a new editable my_macros.cfg file for example, as that `Mainsail.cfg` is read only.
+**This is for parking the toolhead when you pause or cancel a print.** 
 
-Then setup where you want/need the park position, the extruder retract/unretract movements & speeds etc.
+You should be sure to `[include mainsail.cfg]` as we will be using this! 
+
+You need to open the `Mainsail.cfg` file, select & copy the `[gcode_macro _CLIENT_VARIABLE]` & paste it all into a new editable `my_macros.cfg` file for example, as that `Mainsail.cfg` is read only & you can't make any changes to it.
+
+Once pasted into the new file uncomment the `[gcode_macro _CLIENT_VARIABLE]` macro by selecting the whole macro & pressing `crt+/` on PC or `cmd+/` on MacOS.
+
+Then setup where you want/need the park position, the extruder retract/unretract movements & speeds etc. You can even set up two locations if you wish, one for pause, & one for cancel.
 
 Now were it says `variable_user_pause_macro : ""` you need to paste in...
 ```
