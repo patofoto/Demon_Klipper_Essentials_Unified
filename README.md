@@ -337,7 +337,7 @@ This will bring these files into your system, be sure to comment out & NOT delet
 
 Lastly in Mainsail click the cogs top right of the screen & then click the `RESTORE` button in the `Interface Settings` window under the `General` tab. Now find the `backup-mainsail-DEMON-MACROS.json` file, click open & then select the macros option, then click `Restore` to bring in the macro setup.
 
-This will bring in the defualt macro layout.
+This will bring in the defualt macro layout. It will not change your toolhead layout, you will need to do this yourself if you wish to. This is done by changing the `Style` option in the `Control` tab of the `Interface Settings` window to `Circle`.
 
 ![Macro Layout](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/assets/122202359/8a3d41e8-3cd3-4366-bab4-56cb790b3f29)
 
