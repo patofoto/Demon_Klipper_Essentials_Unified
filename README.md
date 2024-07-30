@@ -333,7 +333,7 @@ This will bring these files into your system, be sure to comment out & NOT delet
 
 ****************************************************************************************************************************
 
-# Macro layout import/restore
+# Macro layout Import/Restore
 
 Lastly in Mainsail click the cogs top right of the screen & then click the `RESTORE` button in the `Interface Settings` window under the `General` tab. Now find the `backup-mainsail-DEMON-MACROS.json` file, click open & then select the macros option, then click `Restore` to bring in the macro setup.
 
@@ -357,7 +357,7 @@ You need to open the `Mainsail.cfg` file, select & copy the `[gcode_macro _CLIEN
 
 Once pasted into the new file uncomment the `[gcode_macro _CLIENT_VARIABLE]` macro by selecting the whole macro & pressing `crt+/` on PC or `cmd+/` on MacOS.
 
-Then setup where you want/need the park position, the extruder retract/unretract movements & speeds etc. You can even set up two locations if you wish, one for pause, & one for cancel.
+Then setup where you want/need the park position, the extruder retract/unretract movements & speeds etc. You can even define two locations if you wish, one for pause, & one for cancel.
 
 Now were it says `variable_user_pause_macro : ""` you need to paste in...
 ```
