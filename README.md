@@ -426,7 +426,7 @@ gcode:
 
 
 # Printer Lights (White LEDs)
-Be sure to name any White LEDs that are on an output_pin you wish the macros to control to:
+Be sure to name any White LEDs that are on an output_pin in the `printer.cfg` file you wish the macros to control to:
 
 ```
 [output_pin Printer_Lights]
