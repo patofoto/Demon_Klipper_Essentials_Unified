@@ -642,7 +642,7 @@ M117 Layer {layer_num+1}/[total_layer_count] : {filament_settings_id[0]}
 
 Change filament G-code:
 ```
-PUASE
+PAUSE
 ```
 
 Change extrusion role G-code:
