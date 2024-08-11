@@ -331,6 +331,7 @@ Then, paste into your printer.cfg
 
 This will bring these files into your system, be sure to comment out & NOT delete your current START & END PRINT Macros just yet!
 
+
 ****************************************************************************************************************************
 
 # Macro layout Import/Restore
@@ -378,6 +379,16 @@ BE SURE TO SAVE & RESTART!
 
 
 ![Mainsail Client_Vars](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/assets/122202359/6adea304-0697-43a9-81f9-4e352637f1d3)
+
+****************************************************************************************************************************
+
+# Define Respond Section
+
+These macros make use of the `respond` command so please make sure your printer.cfg has this defined for use in the system. This is command is already defined in the your `Mainsail.cfg` that you just included above, so if you set these macros up correctly you wont need to add it, however if you choose not to use the `Mainsail.cfg` you will need to add the section manually.
+
+```
+[respond]
+```
 
 ****************************************************************************************************************************
 
