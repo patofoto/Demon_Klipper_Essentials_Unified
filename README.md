@@ -403,6 +403,8 @@ Paste this in the same file with your `_CLIENT_VARIABLE` macro to keep things ti
 These are the Klipperscreen macros posted here for your convenience.
 https://klipperscreen.readthedocs.io/en/latest/macros/#extrude-panel
 
+Make sure you have `max_extrude_only_velocity:` defined in your `[extruder]` section of your `printer.cfg` & set to a safe value. For example on my Orbiter2 extruder I have a value of 500. Please check your system though.
+
 ###### NOTE: You may want to edit the `variable_load_distance` & `variable_unload_distance` if you have a longer filamnet path than 50mm. A Biqu H2V2 is ok on 50mm but a Stealthburner will need something like 100mm!
 
 ```
