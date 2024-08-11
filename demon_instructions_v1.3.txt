@@ -219,7 +219,9 @@ All you need do is paste _RET_CALI_START into the website's "Custom Gcode" box n
 
 NEW CUSTOM MENU!
 Copy & paste these lines to your Klipperscreen.conf file, it will give you a new filament handling menu for the included macros...
-NOTE: You'll need to restart Klipperscreen service for the changes to take effect. Use power menu top right of Mainsail
+NOTE: You'll need to restart Klipperscreen service for the changes to take effect. Use power menu top right of Mainsail.
+NOTE: If no Klipperscreen.conf exists simple create a new file in your config folder & name it Klipperscreen.conf, then paste in the menu items below & save.
+https://klipperscreen.readthedocs.io/en/latest/Configuration/
 
 
 [menu __main custom]
