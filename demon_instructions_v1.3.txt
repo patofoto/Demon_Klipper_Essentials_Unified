@@ -25,9 +25,9 @@ Also...
 [neopixel sb_leds]   
 
 
-
-IF YOURE USING A SV08 PRINTER! If you are using anyhting else jump down a section to Slicers
-
+#########################################################################
+IF YOU'RE USING A SV08 PRINTER! If you are using anyhting else jump down a section to Slicers
+#########################################################################
 YOU MUST, I REPEAT MUST DISABLE ALL THE SOVOL MACROS BY COMMENTING OUT THE macro.cfg FILE INCLUDE IN THE printer.cfg FILE! 
 To do this use a # at the start of the line like this:
 
@@ -182,6 +182,33 @@ https://github.com/3DPrintDemon/Klicky-Probe/releases/tag/v.1.0.0
 
 
 
+#########################################################################
+# BEFORE FIRST USE
+#########################################################################
+
+# CHECK YOUR VALUES ARE CORRECT BEFORE USE, THIS IS VITAL & TOTALLY ON YOU!
+
+# DO NOT BLINDLY USE THESE DEFAULTS!!
+
+# USE THESE MACROS AT YOUR OWN RISK! 
+
+# DONT CRY TO ME IF YOU DIDN'T CHECK/CHANGE VALUES & YOU BREAK THINGS!
+
+# ALSO YOU WILL NEED TO CONFIRM YOU HAVE SET UP YOUR CLEAN_VARIABLES FOR YOUR PRINTER IF YOU WANT TO USE THE NOZZLE CLEANING &
+# CLEAN LOAR/UNLOAD FEATURES. DONT SKIP THIS & DONT JUST SAY YES AS DAMAGE TO YOUR MACHINE MAY RESULT!
+
+
+
+# FOR FULL WALKTHROUGH OF THE SETTINGS SEE THIS VIDEO:
+
+# https://youtu.be/s4poVSt5a2g
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+# >>>>>>>>>>>>>>>>>>>>>>>>>!!WARNING!!<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+# THIS START CODE USES RELATIVE EXTRUSION!! SET IT IN YOUR SLICER!
+
+# This macro relies on you setting the correct filament type in your slicer! BE SURE YOU DO THIS! OR IT WILL NOT WORK!!
 
 
 
