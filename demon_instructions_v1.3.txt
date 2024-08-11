@@ -6,6 +6,17 @@
 # IF YOU USE & LIKE THESE MACROS PLEASE CONSIDER SUPPORTING MY EFFORTS AT 
 # https://ko-fi.com/3dprintdemon
 
+
+
+#########################################################################
+
+FOR EXTENDED STEP BY STEP INSTRUCTIONS PLEASE VISIT:
+https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified
+
+#########################################################################
+
+
+
 ########################## VERY IMPORTANT ###############################
 #########################################################################
 # FOR THIS TO WORK!!!
