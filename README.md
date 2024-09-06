@@ -675,11 +675,14 @@ If you have an encoder based sensor like the BTT Smart Sensor add this:
  switch_pin: ^### <<<<<< insert board pin
  detection_length: 9
  extruder: extruder
- pause_on_runout: True
+ pause_on_runout: False
  insert_gcode:
      { action_respond_info("Filament Encoder is Running") }
  runout_gcode:
-     { action_respond_info("Filament Encoder Stall Detected") }
+    { action_respond_info("Filament Encoder Stall Detected") }
+    {% if printer.print_stats.state in ['printing', 'paused'] %}
+      PAUSE
+    {% endif %}
 
  [delayed_gcode encoder_sensor]
  initial_duration: 1
