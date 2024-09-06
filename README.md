@@ -334,7 +334,7 @@ This will bring these files into your system, be sure to comment out & NOT delet
 
 ****************************************************************************************************************************
 
-# Macro layout Import/Restore
+# Macro Layout Import/Restore
 
 Lastly in Mainsail click the cogs top right of the screen & then click the `RESTORE` button in the `Interface Settings` window under the `General` tab. Now find the `backup-mainsail-DEMON-MACROS.json` file, click open & then select the macros option, then click `Restore` to bring in the macro setup.
 
@@ -395,45 +395,9 @@ These macros make use of the `respond` command so please make sure your printer.
 
 # Klipperscreen LOAD/UNLOAD Macros
 
-Be sure you have the Klipperscreen LOAD/UNLOAD macros in your system.
 
-If not add them now.....
+###### NOTE: Klipperscreen Macros copy/paste into file is no longer required. Any previous copies of these LOAD/UNLOAD macros must be removed from any additional macro.cfg files in favour of the new included LOAD/UNLOAD macros. If you do not do this then there will be issues with the loading & unloading of filament.
 
-Paste this in the same file with your `_CLIENT_VARIABLE` macro to keep things tidy.
-These are the Klipperscreen macros posted here for your convenience.
-https://klipperscreen.readthedocs.io/en/latest/macros/#extrude-panel
-
-
-
-###### NOTE: You may want to edit the `variable_load_distance` & `variable_unload_distance` if you have a longer filamnet path than 50mm. A Biqu H2V2 is ok on 50mm but a Stealthburner will need something like 100mm!
-
-```
-[gcode_macro LOAD_FILAMENT]
-variable_load_distance:  50
-variable_purge_distance:  25
-gcode:
-    {% set speed = params.SPEED|default(300) %}
-    {% set max_velocity = printer.configfile.settings['extruder'].max_extrude_only_velocity  * 60 %}
-    SAVE_GCODE_STATE NAME=load_state
-    G91
-    G92 E0
-    G1 E{load_distance} F{max_velocity} # fast-load
-    G1 E{purge_distance} F{speed} # purge
-    RESTORE_GCODE_STATE NAME=load_state
-
-[gcode_macro UNLOAD_FILAMENT]
-variable_unload_distance:  50
-variable_purge_distance:  25
-gcode:
-    {% set speed = params.SPEED|default(300) %}
-    {% set max_velocity = printer.configfile.settings['extruder'].max_extrude_only_velocity  * 60 %}
-    SAVE_GCODE_STATE NAME=unload_state
-    G91
-    G92 E0
-    G1 E{purge_distance} F{speed} # purge
-    G1 E-{unload_distance} F{max_velocity} # fast-unload
-    RESTORE_GCODE_STATE NAME=unload_state
-```
 
 ****************************************************************************************************************************
 
