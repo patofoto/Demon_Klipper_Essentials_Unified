@@ -29,7 +29,7 @@ Checks & Error Handling. This is a big problem for many users, you get an error 
 *NOTE: This version is a totally new approach to these macros & therefore have only been tested on my machines, while every effort has been made to make sure they work well there could well be a few bugs that need squashing! So please be sure to report anything that doesn't work correctly or errors you come across. However if you're able please try to solve the issue yourself first & let me know your solution so I can merge it. Thanks all!*
 
 # Sept 10th Component update:
-- Added load & unload macros to the pack, no longer any need to manually add them
+- Added load & unload macros to the pack, no longer any need to manually add them [see here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified?tab=readme-ov-file#klipperscreen-loadunload-macros)
 - Added encoder filament sensor support for filament load/unload macros
 - Added encoder filament sensor support for filament load_clean & unload_clean macros
 - Updated all filament load & unload macros to use feedrate mm/s as per Mainsail Extruder interface
