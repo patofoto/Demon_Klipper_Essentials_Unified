@@ -34,7 +34,7 @@ Checks & Error Handling. This is a big problem for many users, you get an error 
 - Added encoder filament sensor support for filament load_clean & unload_clean macros
 - Updated all filament load & unload macros to use feedrate mm/s as per Mainsail Extruder interface
 - Added safety limit for max_extrude_only_velocity during filament loading/unloading
-- Updated encoder filament sensor macro
+- Updated [encoder filament sensor macro](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified?tab=readme-ov-file#filament-sensor)
 - Updated demon_user_settings.cfg to include mesh selection options for auto mesh builder macro
 - Added mesh selection options to the auto mesh builder macro
 - Added safety lock-out for load_clean & unload_clean macros so can't be used while printing
