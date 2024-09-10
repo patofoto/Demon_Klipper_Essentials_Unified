@@ -28,6 +28,18 @@ Checks & Error Handling. This is a big problem for many users, you get an error 
 
 *NOTE: This version is a totally new approach to these macros & therefore have only been tested on my machines, while every effort has been made to make sure they work well there could well be a few bugs that need squashing! So please be sure to report anything that doesn't work correctly or errors you come across. However if you're able please try to solve the issue yourself first & let me know your solution so I can merge it. Thanks all!*
 
+# Sept 10th Component update:
+- Added load & unload macros to the pack, no longer any need to manually add them
+- Added encoder filament sensor support for filament load/unload macros
+- Added encoder filament sensor support for filament load_clean & unload_clean macros
+- Updated all filament load & unload macros to use feedrate mm/s as per Mainsail Extruder interface
+- Added safety limit for max_extrude_only_velocity during filament loading/unloading
+- Updated encoder filament sensor macro
+- Updated demon_user_settings.cfg to include mesh selection options for auto mesh builder macro
+- Added mesh selection options to the auto mesh builder macro
+- Added safety lock-out for load_clean & unload_clean macros so can't be used while printing
+- Added sefety lock-out for Present_Toolhead & Stow_toolhead macros so can't be used while printing
+
 # VERSION 2.8 LATE UPDATE!!!
 - NEW! Added support to use KAMP Adaptive Purge & Smart Park macros! Install fork KAMP_LiTE to use!
 - Added BLTouch parking height
