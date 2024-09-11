@@ -39,6 +39,7 @@ Checks & Error Handling. This is a big problem for many users, you get an error 
 - Added mesh selection options to the `AUTO MESH BUILDER` macro
 - Added safety lock-out for `LOAD_CLEAN` & `UNLOAD_CLEAN` macros so can't be used while printing
 - Added sefety lock-out for `PRESENT_TOOLHEAD` & `STOW_TOOLHEAD` macros so can't be used while printing
+- Added Nevermore Post Print features, see the `demon_user_settings.cfg` file!
 
 # VERSION 2.8 LATE UPDATE!!!
 - NEW! Added support to use KAMP Adaptive Purge & Smart Park macros! Install fork KAMP_LiTE to use!
