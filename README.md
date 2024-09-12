@@ -693,7 +693,7 @@ If you have an encoder based sensor like the BTT Smart Sensor add this:
      { action_respond_info("Filament Encoder is Running") }
  runout_gcode:
     { action_respond_info("Filament Encoder Stall Detected") }
-    {% if printer.print_stats.state in ['printing', 'paused'] %}
+    {% if printer.print_stats.state == "printing" %}
       PAUSE
     {% endif %}
 
