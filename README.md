@@ -270,9 +270,9 @@ These additional macros are prerequisites:
 
 ### **For VORON PRINTERS or other machines with toolhead Neopixels**
 - https://github.com/VoronDesign/Voron-Stealthburner/blob/main/Firmware/stealthburner_leds.cfg
-- https://github.com/rkolbi/voron2.4/blob/main/non-blocking_wait.md
+- https://github.com/3DPrintDemon/Non_Blocking_Wait/releases/tag/Heat_Soak_Timers_V1.0
   
-###### Note: You will need to edit any entry in this file of "SET_LED LED=nozzle" to read "SET_LED LED=sb_leds"
+###### Note: You will need to choose the "sb_leds" or "toolhea_leds" file versions. 
 
 ###### Note: This file is requred for the heat soaks to work correctly. Install even if you dont have any LEDs & set a dummy pin.
 
