@@ -272,7 +272,7 @@ These additional macros are prerequisites:
 - https://github.com/VoronDesign/Voron-Stealthburner/blob/main/Firmware/stealthburner_leds.cfg
 - https://github.com/3DPrintDemon/Non_Blocking_Wait/releases/tag/Heat_Soak_Timers_V1.0
   
-###### Note: You will need to choose the "sb_leds" or "toolhea_leds" file versions. 
+###### Note: You will need to choose the "sb_leds" or "toolhead_leds" file versions. 
 
 ###### Note: This file is requred for the heat soaks to work correctly. Install even if you dont have any LEDs & set a dummy pin.
 
