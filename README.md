@@ -1,3 +1,6 @@
+************************************
+- ### [UPDATING FROM A PREVIOUS VERSION CLICK HERE!!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Other_Files/Version_Config_Changes/V2.9_Config_Changes.md)
+************************************
 
 ![DEMON](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/assets/122202359/c2bae2ee-be37-48ea-b6ac-c2c32e661751)
  
@@ -6,9 +9,7 @@
 The very latest UNIFIED version for these macros! Huge re-implementation & new Features! 
 
 # NOW WITH FULL BTT EDDY SUPPORT!!!
-************************************
-- ### [UPDATING FROM A PREVIOUS VERSION CLICK HERE!!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Other_Files/Version_Config_Changes/V2.9_Config_Changes.md)
-************************************
+
 ## Release version 2.9, still 100% ai Free!
 
 A lot of time, love, coffee & lack of sleep testing has been poured into these macros! They have all been written 100% by a human! 
