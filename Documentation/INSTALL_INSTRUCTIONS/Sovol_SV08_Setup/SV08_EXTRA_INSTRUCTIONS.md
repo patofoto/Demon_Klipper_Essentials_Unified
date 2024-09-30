@@ -4,14 +4,8 @@ If you feel these macros are valuable enough to download & use please consider h
 [<img width="171" alt="kofi_s_tag_dark" src="https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/assets/122202359/08473899-563b-4b4d-9409-5e6602d6ec44">](https://ko-fi.com/3dprintdemon)
 
 ****************************************************************************************************************************
-### IF YOU RAN V1.0-V2.7 BE SURE TO UPDATE YOUR SLICER'S START GCODE OR NEW FEATURES WONT WORK!
-**Instructions to do this are further down this page.**
+### IF YOU RAN V1.0-V2.8 BE SURE TO UPDATE YOUR SLICER'S START GCODE OR NEW FEATURES WONT WORK!
 **Also you must update ALL the macro files as this new version will NOT work correctly with old files!**
-****************************************************************************************************************************
-
-**If you own a Sovol SV06/Plus with a Sovol Klipper screen or a Sovol SV07/Plus & want to use the latest version of Klipper with Adaptive Meshing & more features you need to follow my How2 guide on how to update the Sovol Klipper screens on your printers.**
-
-https://github.com/3DPrintDemon/How-to-Update-Sovol-Klipper-Screen-To-Latest-Klipper-SV06-and-SV07 
 ****************************************************************************************************************************
 
 
@@ -28,23 +22,23 @@ BE SURE TO INSTALL THE STUFF YOU NEED TO INSTALL!!!
 
 Here is my SV08 nozzle cleaning & purge bucket!
 
-https://www.printables.com/model/873006-sovol-sv08-silicone-nozzle-cleaner-purge-bucket-mi
+- https://www.printables.com/model/873006-sovol-sv08-silicone-nozzle-cleaner-purge-bucket-mi
 
 Anti-vibration feet
 
-https://www.printables.com/model/867321-sovol-sv08-low-profile-vibration-isolation-feet
+- https://www.printables.com/model/867321-sovol-sv08-low-profile-vibration-isolation-feet
 
 M12 Probe mount
 
-https://www.printables.com/model/870302-sovol-sv08-m12-inductive-probe-mount-lj12a3-4-zax
+- https://www.printables.com/model/870302-sovol-sv08-m12-inductive-probe-mount-lj12a3-4-zax
 
 DIN rail mount
 
-https://www.printables.com/model/867676-sovol-sv08-recessed-din-rail-mount-bracket
+ -https://www.printables.com/model/867676-sovol-sv08-recessed-din-rail-mount-bracket
 
+****************************************************************************************************************************
 
-
-Edit your printer.cfg 
+# Edit your printer.cfg 
 
 Be sure your `printer.cfg` file `[extruder]` section contains...
 
