@@ -101,17 +101,19 @@ You must set...
 You can define a specific cancel print location too if you wish! Set your X Y loaction with these:
 ```
 variable_park_at_cancel   : True
-variable_park_at_cancel_x
-variable_park_at_cancel_y
+variable_park_at_cancel_x :
+variable_park_at_cancel_y :
 ```
 
-`variable_idle_timeout : 600` 
+Idle_timeout. This is set in seconds so 600 is 10 minutes. This will be used for your mid print timeout after which Klipper can be set to kill your hotend heater & parts cooling fan while keeping the motors engaged & bed hot. 
+```
+variable_idle_timeout : 600
+``` 
 
-This is set in seconds so 600 is 10 minutes. This will be used for your mid print timeout after which Klipper can be set to kill your hotend heater & parts cooling fan while keeping the motors engaged & bed hot. 
 It will sit & wait for you. Or if you prefer you can set it to disable your motors & kill all heaters, cancel your print & even shut the printer down! 
 It’s totally up to you!
 
-Don’t forget you should set the idle timeout section in your printer.cfg as per the above example!
+###### NOTE: Don’t forget you should set the idle timeout section in your printer.cfg as per the next section below!
 
 Now were it says `variable_user_pause_macro : ""` you need to paste in...
 ```
