@@ -82,7 +82,7 @@ Lets you automatically resume all system parts cooling/nevermore/chamber fans as
 
 FILAMENT_CHANGE_PARK
 Now not only can you have a standard park on pause location, & a totally different park on cancel location thanks to the amazing Mainsail.cfg features you can now also have a special filament change parking spot too!! Not only that if your print is below your chosen Z height the printer will raise itself up away from its current low location & wait for you to make the filament change & then it’ll move back down to the print after resuming. 
-Add the new macro call “FLI_CHANGE_PARK” to your slicer’s filament change Gcode box & have the printer park in your chosen spot ready for you to activate an unload/load process, this is not an auto unloader. The system will also run your chosen printing timeout laid out above. 
+Add the new macro call “FIL_CHANGE_PARK” to your slicer’s filament change Gcode box & have the printer park in your chosen spot ready for you to activate an unload/load process, this is not an auto unloader. The system will also run your chosen printing timeout laid out above. 
 
 
 
