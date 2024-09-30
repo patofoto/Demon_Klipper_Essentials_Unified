@@ -54,17 +54,17 @@ This can be done at ANY point during the print! You can even change your mind & 
 
 A macro pack features list is here....
 
-#### [FEATURES LIST](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/Features/Features.md)
+- #### [FEATURES LIST](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/Features/Features.md)
 
 Macro pack version update history is here....
 
-#### [UPDATE HISTORY](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/Update%20History/Update_History.md)
+- #### [UPDATE HISTORY](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/Update%20History/Update_History.md)
 
 
 **Retraction Calibration...**
 The `_RET_CALI_START` macro is used when calibrating your retraction settings with files generated at:
 
-http://www.retractioncalibration.com/
+- http://www.retractioncalibration.com/
 
 All you need do is paste `_RET_CALI_START` into the website's "Custom Gcode" box next to the green "Generate Gcode" button
 This is without a doubt the absolute BEST retraction test out there!
@@ -73,10 +73,12 @@ This is without a doubt the absolute BEST retraction test out there!
 The `CLEAN_NOZZLE`, `LOAD_CLEAN`, & `UNLOAD_CLEAN` macros are for use with a nozzle cleaning brush found here:
 
 For VORON 2.4 printers
-https://www.printables.com/model/201999-nozzle-scrubber-with-a-little-bucket-for-voron-24
+
+- https://www.printables.com/model/201999-nozzle-scrubber-with-a-little-bucket-for-voron-24
 
 For SV08 Printers
-https://www.printables.com/model/873006-sovol-sv08-silicone-nozzle-cleaner-purge-bucket-mi
+
+- https://www.printables.com/model/873006-sovol-sv08-silicone-nozzle-cleaner-purge-bucket-mi
  
 ****************************************************************************************************************************
 ## All sounds great right!? Ok well here’s the tricky bit! 
@@ -95,16 +97,17 @@ You will need to edit your slicer's `Start G-code` & `End G-code` boxes to get t
 
 ## Stuff you need to install BEFORE these macros can work - DO NOT SKIP THIS!
 
-[PREREQUISITES - DONT NOT SKIP THIS!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/Prerequisites/Prerequisites.md)
+- [PREREQUISITES - DONT NOT SKIP THIS!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/Prerequisites/Prerequisites.md)
 
 ## Full install & setup instructions...
 
-[GENERAL SETUP FOR ALL PRINTERS](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General%20_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md)
+- [GENERAL SETUP FOR ALL PRINTERS](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General%20_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md)
 
 ## If you're using a Sovol SV08 printer 
-You need to do this as well as the general setup for all printers above...
-[SOVOL SV08 SETUP](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/Sovol_SV08_Setup/SV08_EXTRA_INSTRUCTIONS.md)
 
+- [SOVOL SV08 SETUP](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/Sovol_SV08_Setup/SV08_EXTRA_INSTRUCTIONS.md)
+
+You need to do this as well as the general setup for all printers above...
 
 ****************************************************************************************************************************
 
@@ -117,12 +120,12 @@ How about fully automated power on/off control with auto cool down & shutdown af
 
 Find out here!
 
-https://github.com/3DPrintDemon/BTT-Relay-v1.2-Moonraker_INSTANT_Power-On-Button
+- https://github.com/3DPrintDemon/BTT-Relay-v1.2-Moonraker_INSTANT_Power-On-Button
 
 Or maybe you're using Klicky Probe & sensorless homing & you want an AUTO E STOP system so that if your nozzle misses your endstop switch the printer knows there's a problem!
 
-https://github.com/3DPrintDemon/Voron_2.4_AES_System_Auto_Emergency_Stop_For_Klicky_Probe
+- https://github.com/3DPrintDemon/Voron_2.4_AES_System_Auto_Emergency_Stop_For_Klicky_Probe
 
 If thats not enough how about creating your very own online auto updating backup of all your config files here on Github in your own private repo?!
 
-https://github.com/3DPrintDemon/Auto_Backup_Your_Klipper_Printer
+- https://github.com/3DPrintDemon/Auto_Backup_Your_Klipper_Printer
