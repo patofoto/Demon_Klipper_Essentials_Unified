@@ -89,7 +89,7 @@ https://www.printables.com/model/873006-sovol-sv08-silicone-nozzle-cleaner-purge
 You will need to edit your slicer's `Start G-code` & `End G-code` boxes to get the `PRINT_START` macro to work correctly. 
 
 
-# Here's how you do it...!
+# Here's how you do it...
 
 ## Stuff you need to install BEFORE these macros can work - DO NOT SKIP THIS!
 
@@ -99,8 +99,8 @@ You will need to edit your slicer's `Start G-code` & `End G-code` boxes to get t
 
 [GENERAL SETUP FOR ALL PRINTERS](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General%20_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md)
 
-## If you're using a Sovol SV08 printer you need to do this...
-
+## If you're using a Sovol SV08 printer 
+You need to do this as well as the general setup for all printers above...
 [SOVOL SV08 SETUP](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/Sovol_SV08_Setup/SV08_EXTRA_INSTRUCTIONS.md)
 
 
