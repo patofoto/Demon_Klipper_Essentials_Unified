@@ -6,8 +6,10 @@
 The very latest UNIFIED version for these macros! Huge re-implementation & new Features! 
 
 # NOW WITH FULL BTT EDDY SUPPORT!!!
-
-### This is the release of version 2.9! 100% ai FREE!!
+************************************
+- ### [UPDATING FROM A PREVIOUS VERSION CLICK HERE!!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Other_Files/Version_Config_Changes/V2.9_Config_Changes.md)
+************************************
+## Release version 2.9, still 100% ai Free!
 
 A lot of time, love, coffee & lack of sleep testing has been poured into these macros! They have all been written 100% by a human! 
 
@@ -17,6 +19,7 @@ If you feel these macros are valuable enough to download & use please consider h
 [<img width="171" alt="kofi_s_tag_dark" src="https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/assets/122202359/08473899-563b-4b4d-9409-5e6602d6ec44">](https://ko-fi.com/3dprintdemon)
 
 **Made to make your printing life easier & your printer SMARTER!**
+
 
 
 
@@ -94,6 +97,10 @@ You will need to edit your slicer's `Start G-code` & `End G-code` boxes to get t
 
 
 # FULL INSTALL INSTRUCTIONS...
+
+************************************
+- ### [UPDATING FROM A PREVIOUS VERSION CLICK HERE!!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Other_Files/Version_Config_Changes/V2.9_Config_Changes.md)
+************************************
 
 - [Be sure to check out all the new macros & how to use them!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/Update%20History/Update_History.md)
 
