@@ -498,7 +498,7 @@ PAUSE
 ```
 
 ### Other Slicers
-- [HERES THE FILE FOR OTHER SLICER'S G-CODE BOXES](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/Other_Slicers_Start_G-code/Other_Slicers.md)
+- [HERES THE FILE FOR OTHER SLICER'S G-CODE START](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/Other_Slicers_Start_G-code/Other_Slicers.md)
 
 **Fin...**
 
