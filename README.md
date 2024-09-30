@@ -95,6 +95,8 @@ You will need to edit your slicer's `Start G-code` & `End G-code` boxes to get t
 
 # FULL INSTALL INSTRUCTIONS...
 
+[Be sure to check out all the new macros & how to use them!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/Update%20History/Update_History.md)
+
 ## Stuff you need to install BEFORE these macros can work - DO NOT SKIP THIS!
 
 - [PREREQUISITES - DONT NOT SKIP THIS!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/Prerequisites/Prerequisites.md)
