@@ -432,6 +432,11 @@ I REPEAT LEAVE LINE 111 COMMENTED OUT!!! Comment in lines 106-110 ONLY!
 
 ##### NOTE: If you're using Eddy as a bed scanner only & have a separate endstop switch DO NOT do the above. Leave the file as it is.
 
+Actual Probe setup & calibration. You will need to setup your Eddy Probe still, steps how to do this are here:
+https://github.com/bigtreetech/Eddy/blob/master/README.md
+
+Once Your probe is setup correctly & tested working as per the above BTT github guide all Demon Z_Probe calibration, machine meshing & machine levelling macros all now automatically detect & support BTT Eddy Probe! Just hit go & it’ll do its thing!
+
 
 ****************************************************************************************************************************
 # SLICER SETUP
