@@ -349,7 +349,7 @@ You will also need to go into the `Klicky-macros.cfg` file & add
 ```
 _DRIVER_DEFINER
 ```
- at the top of their `[homing_override]` section. The best place is underneath the “collect user state variables” (the block of ‘set’ commands. Put it in with the “checks if the variable definitions are up to date” commands, under `_CheckProbe action=query`
+ at the top of their `[homing_override]` section. The best place is underneath the “collect user state variables” (the block of ‘set’ commands. Put it in with the “checks if the variable definitions are up to date” command, under `_CheckProbe action=query`
 On line 577 in my file.
 
 ![Klicky_Driver_Definer](https://github.com/user-attachments/assets/90200ca7-d21d-436d-92ad-aebebc3305f7)
