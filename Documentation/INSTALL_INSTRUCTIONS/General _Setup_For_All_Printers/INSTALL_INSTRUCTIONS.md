@@ -398,7 +398,7 @@ Found in the demon_user_settings_v2.9.cfg
 
 `axis_register_clear_wait` = Set axis register clear time. If using sensorless homing this value should be 2 seconds or slightly over
 
-`homing_movement_travel_speed` = Set speed for the toolhead to move to the axis endstop mm/s 
+`homing_movement_travel_speed` = Set speed for the toolhead to move to the Z axis endstop mm/s 
 
 `post_z_switch_backoff` = Set True to raise Z axis & back the gantry away from the rear of the printer after Z endstop switch press
 
