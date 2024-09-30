@@ -386,7 +386,7 @@ Found in the demon_user_settings_v2.9.cfg
 
 `override_home_power_safety` = leave this set false unless you need a high homing current. Damage may result if used improperly!
 
-`soft_home_power` = This is the power level to reduce the X Y axis down to while homing. Normally 0.6-0.7 is good
+`home_power` = This is the power level to reduce the X Y axis down to while homing. Normally 0.6-0.7 is good
 
 `pre_home_lift` = Set height to lift the toolhead prior to homing if axes are not enabled & homed. Range of 0-20mm
 
