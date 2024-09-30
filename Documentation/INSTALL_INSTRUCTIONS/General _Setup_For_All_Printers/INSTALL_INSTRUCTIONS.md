@@ -15,6 +15,12 @@ If you feel these macros are valuable enough to download & use please consider h
 https://github.com/3DPrintDemon/How-to-Update-Sovol-Klipper-Screen-To-Latest-Klipper-SV06-and-SV07 
 ****************************************************************************************************************************
 
+# Whats New
+
+- [Check Out the new macros & how to use them!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/Update%20History/Update_History.md)
+
+****************************************************************************************************************************
+
 # Make a Backup of your current system now!
 
 Be sure you at least download your current `/config` folder BEFORE YOU DO ANYTHING ELSE!! 
@@ -75,7 +81,8 @@ This will bring these files into your system, be sure to comment out & NOT delet
 
 Lastly in Mainsail click the cogs top right of the screen & then click the `RESTORE` button in the `Interface Settings` window under the `General` tab. Now find the `backup-mainsail-DEMON-MACROS-v2.9.json` file, click open & then select the macros option, then click `Restore` to bring in the macro setup.
 
-This will bring in the defualt macro layout. 
+This will bring in the defualt macro layout.
+- [CLICK HERE FOR MACRO LAYOUT FILE](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/tree/main/Other_Files/DEMON_Macro_layout_JSON)
 
 It will not change your toolhead layout, you will need to do this yourself if you wish to. This is done by changing the `Style` option in the `Control` tab of the `Interface Settings` window to `Circle`.
 
@@ -488,8 +495,16 @@ Pause G-code:
 PAUSE
 ```
 
+### Other Slicers
+- [HERES THE FILE FOR OTHER SLICER'S G-CODE BOXES](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/Other_Slicers_Start_G-code/Other_Slicers.md)
 
 **Fin...**
+
+
+****************************************************************************************************************************
+# If You're Using A Sovol SV08 Printer
+
+- [Further configuration steps are here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/Sovol_SV08_Setup/SV08_EXTRA_INSTRUCTIONS.md)
 
 ****************************************************************************************************************************
 
