@@ -21,6 +21,12 @@ Be sure you at least download your current `/config` folder BEFORE YOU DO ANYTHI
 You want have a set of files to refer back to if needed!
 ****************************************************************************************************************************
 
+# Did you already do this???
+
+Don't miss this out, you need them! [INSTALL PREREQUISITES](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/Prerequisites/Prerequisites.md)
+
+****************************************************************************************************************************
+
 # INSTALL THE MACROS MANUALLY
 
 Copy the files here into a folder called `Demon_Klipper_Essentials_Unified` in your config folder on your printer. 
@@ -72,8 +78,7 @@ This will bring in the defualt macro layout.
 
 It will not change your toolhead layout, you will need to do this yourself if you wish to. This is done by changing the `Style` option in the `Control` tab of the `Interface Settings` window to `Circle`.
 
-![Macro Layout](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/assets/122202359/8a3d41e8-3cd3-4366-bab4-56cb790b3f29)
-
+![Macro_Layout](https://github.com/user-attachments/assets/d062ceed-75b6-498c-9bc3-27778f27c6dc)
 
 
 ****************************************************************************************************************************
@@ -133,9 +138,7 @@ Your new uncommented `_CLIENT_VARIABLE` marco should look like this when you're 
 
 BE SURE TO SAVE & RESTART!
 
-
-
-![Mainsail Client_Vars](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/assets/122202359/6adea304-0697-43a9-81f9-4e352637f1d3)
+![Mainsail_Client_Var](https://github.com/user-attachments/assets/03d025db-8a73-4b9a-909c-236b64362663)
 
 ****************************************************************************************************************************
 
@@ -292,12 +295,12 @@ If you use another slicer:
 ****************************************************************************************************************************
 # BE SURE TO SET YOUR MACRO VARIABLES & WATCH THIS VIDEO - bit outdated - todo: make new one!
 
-- Configure the macros in one place! Set the variables for all the Demon Klipper Essentials macros in the `demon_user_settings_v2.8.cfg` file
+- Configure the macros in one place! Set the variables for all the Demon Klipper Essentials macros in the `demon_user_settings_v2.9.cfg` file
 - There is no need to edit any macro code with this macro pack!
 - NOTE: If you don't set `_CLEAN_VARIABLES` the printer will give you an error if you haven’t done this & try to use the nozzle clean macros.
 
-![Set Your Vars](https://github.com/user-attachments/assets/d2efa6c8-70c2-4585-aab3-08a4e29b6f0d)
 
+![Set_Your_Vars](https://github.com/user-attachments/assets/bc0c6705-557b-4b27-a5b4-877830e4d4f7)
 
 
 
@@ -389,9 +392,8 @@ Don’t worry it’s super simple! Open the file linked above & “comment in”
 
 I REPEAT LEAVE LINE 111 COMMENTED OUT!!! Comment in lines 106-110 ONLY!
 
+![BTT_EDDY_Setup](https://github.com/user-attachments/assets/1d92fd9d-7029-40e6-b59d-a2c7b52893ca)
 
-
-PHOTO HERE!!!!!<<<<<<<<<<<<<<<<<<<
 
 ****************************************************************************************************************************
 # SLICER SETUP
@@ -409,7 +411,7 @@ If this is not the case the system will fail as soon as you start a print.
 
 Here is how they should look in Ocra Slicer. 
 
-![Orca Slicer Printer Gcode](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/assets/122202359/89453292-ce82-4c43-9df4-85430d7fe39b)
+![Orca_Slicer_Printer_G-code](https://github.com/user-attachments/assets/6b87af09-35f0-4491-a54e-55385a85f80b)
 
 These are fully setup codes as per recommended Mainsail settings combined with the macro settings for Orca Slicer using relative extrusion, as per the image....
 
