@@ -103,14 +103,13 @@ Once pasted into the new file uncomment the `[gcode_macro _CLIENT_VARIABLE]` mac
 
 Then setup where you want/need the park position, the extruder retract/unretract movements & speeds etc. You can even define two locations if you wish, one for pause, & one for cancel.
 
-You must set...
-
 You can define a specific cancel print location too if you wish! Set your X Y loaction with these:
 ```
 variable_park_at_cancel   : True
 variable_park_at_cancel_x :
 variable_park_at_cancel_y :
 ```
+You must set...
 
 Idle_timeout. This is set in seconds so 600 is 10 minutes. This will be used for your mid print timeout after which Klipper can be set to kill your hotend heater & parts cooling fan while keeping the motors engaged & bed hot. 
 ```
