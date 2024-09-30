@@ -430,6 +430,9 @@ I REPEAT LEAVE LINE 111 COMMENTED OUT!!! Comment in lines 106-110 ONLY!
 ![BTT_EDDY_Setup](https://github.com/user-attachments/assets/1d92fd9d-7029-40e6-b59d-a2c7b52893ca)
 
 
+##### NOTE: If you're using Eddy as a bed scanner only & have a separate endstop switch DO NOT do the above. Leave the file as it is.
+
+
 ****************************************************************************************************************************
 # SLICER SETUP
 
