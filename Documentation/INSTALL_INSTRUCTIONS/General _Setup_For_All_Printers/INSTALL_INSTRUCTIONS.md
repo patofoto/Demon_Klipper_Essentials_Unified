@@ -341,7 +341,7 @@ For printers using `Klicky Probe` you need to open the `demon_homing_control_v1.
 
 You will also need to go into the `Klicky-macros.cfg` file & add 
 ```
-_DRIVER_DIFINER
+_DRIVER_DEFINER
 ```
  at the top of their `[homing_override]` section. The best place is underneath the “collect user state variables” (the block of ‘set’ commands. Put it in with the “checks if the variable definitions are up to date” commands, under `_CheckProbe action=query`
 On line 577 in my file.
