@@ -34,7 +34,7 @@ M12 Probe mount
 
 DIN rail mount
 
- -https://www.printables.com/model/867676-sovol-sv08-recessed-din-rail-mount-bracket
+ - https://www.printables.com/model/867676-sovol-sv08-recessed-din-rail-mount-bracket
 
 ****************************************************************************************************************************
 
