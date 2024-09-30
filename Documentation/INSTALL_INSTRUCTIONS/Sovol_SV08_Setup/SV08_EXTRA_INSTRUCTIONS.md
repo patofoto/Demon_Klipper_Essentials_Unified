@@ -8,7 +8,8 @@ If you feel these macros are valuable enough to download & use please consider h
 **Also you must update ALL the macro files as this new version will NOT work correctly with old files!**
 ****************************************************************************************************************************
 
-
+- ### [UPDATING FROM A PREVIOUS VERSION CLICK HERE!!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Other_Files/Version_Config_Changes/V2.9_Config_Changes.md)
+****************************************************************************************************************************
 
 # IF YOU'RE USING A SOVOL SV08 PRINTER! 
 
