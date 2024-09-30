@@ -1,3 +1,4 @@
+# GENERAL SETUP FOR ALL PRINTERS
 
 If you feel these macros are valuable enough to download & use please consider hitting that "sponsor this project" button or the Ko-Fi image below or at https://ko-fi.com/3dprintdemon & buying me a beer/coffee. Its always very much appreciated & anything you do send goes towards helping me continue putting my ideas out there for the whole 3D printing community. Sending even a little makes a difference! Thank you & happy printing!!
 
@@ -324,12 +325,17 @@ This system will also not let you home the printer with the toolhead under 5mm h
 So there’s no more risk of homing at Z0.2mm after a stoppage or a Z offset calibration test or risk hitting any clips or nozzle cleaners etc!
 Not only that the homing macros know automatically if you’re using a BTT Eddy Probe or not and will adapt themselves to it!
 
-To use the `demon_homing_control_v1.0.cfg file`
+****************************************************************************************************************************
+
+## DEMON Homing Control - IMPORTANT!
+To use the `demon_homing_control_v1.0.cfg` file
 Be sure to comment out or un-include & disable any old homing or sensorless homing macros you might have, you will also need to comment out any old `[safe_homing]` & `[homing_override]` sections in your `printer,cfg` or macro files.
 
-NOTE: UNLESS you’re using `Klicky Probe`!!!
-For printers using `Klicky Probe` you need to open the `demon_homing_control_v1.0.cfg` file & comment out the `[homing_override]` section found there, lines 12-119.
-This is has to be done because Klicky Probe needs control of that section for their system. The printer won’t home if you forget to do this. Or maybe other bad things will happen, don’t say I didn’t warn ya! 
+****************************************************************************************************************************
+
+## UNLESS you’re using `Klicky Probe`!!! 
+
+For printers using `Klicky Probe` you need to open the `demon_homing_control_v1.0.cfg` file & comment out the `[homing_override]` section found there, lines 12-119. This is has to be done because Klicky Probe needs control of that section for their system. The printer won’t home if you forget to do this. Or maybe other bad things will happen, don’t say I didn’t warn ya! 
 
 You will also need to go into the `Klicky-macros.cfg` file & add 
 ```
@@ -340,6 +346,9 @@ On line 577 in my file.
 
 This will call the macro that recognises your XY drivers & passes that info to the Demon Homing macro. For printers NOT using `Klicky Probe`, you don’t need to do this!
 
+****************************************************************************************************************************
+
+## Z Endstop Switch
 
 If you’re using your printer with a separate endstop switch & you are NOT using the `Klicky` macros you need to set the location of your Z endstop switch in the Demon macros `demon_user_settings_v2.9.cfg file`. There’s two variables for you to define the location of your separate endstop switch.
 
@@ -348,7 +357,7 @@ Open the `demon_user_settings_v2.9.cfg` file & search
 ```
 z_endstop_loaction_x
 ``` 
-&/or...
+&...
 ```
 z_endstop_loaction_y
 ```
@@ -358,25 +367,40 @@ There are also other definable homing options to set there too! So be sure to se
 
 When testing homing for the first time be EXTREMELY CAREFUL & be ready to hit EMERGENCY STOP!! You may need to abort the homing process.
 
+****************************************************************************************************************************
 
-# DEMON HOMING CONTROL SETTINGS - Found in the demon_user_settings_v2.9.cfg
 
-override_home_power_safety = leave this set false unless you need a high homing current. Damage may result if used improperly!
-soft_home_power = This is the power level to reduce the X Y axis down to while homing. Normally 0.6-0.7 is good
-pre_home_lift = Set height to lift the toolhead prior to homing if axes are not enabled & homed. Range of 0-20mm
-z_lift_speed = Set the speed to lift the Z axis. Range of 1-25mm/s - limited by your max_z_velocity
-axis_backoff_speed = Set speed for the toolhead to back away from the axis endstop mm/s
-axis_backoff_distance = Set distance in mm to back the toolhead away from the axis endstop
-axis_register_clear_wait = Set axis register clear time. If using sensorless homing this value should be 2 seconds or slightly over
-homing_movement_travel_speed = Set speed for the toolhead to move to the axis endstop mm/s 
+# DEMON HOMING CONTROL SETTINGS 
+Found in the demon_user_settings_v2.9.cfg
 
-post_z_switch_backoff = Set True to raise Z axis & back the gantry away from the rear of the printer after Z endstop switch press
-z_switch_backoff_y_dist = Set how far to back the gantry away from the rear of the printer - not used if homing with probe
-post_z_switch_backoff_height = Set safe Z height to park the toolhead after endstop switch press - not used if homing with probe
+`override_home_power_safety` = leave this set false unless you need a high homing current. Damage may result if used improperly!
 
-z_endstop_loaction_x = If you're using a separate non-Klicky Probe Z endstop switch of any sort set X axis location
-z_endstop_loaction_y= If you're using a separate non-Klicky Probe Z endstop switch of any sort set Y axis location
+`soft_home_power` = This is the power level to reduce the X Y axis down to while homing. Normally 0.6-0.7 is good
 
+`pre_home_lift` = Set height to lift the toolhead prior to homing if axes are not enabled & homed. Range of 0-20mm
+
+`z_lift_speed` = Set the speed to lift the Z axis. Range of 1-25mm/s - limited by your max_z_velocity
+
+`axis_backoff_speed` = Set speed for the toolhead to back away from the axis endstop mm/s
+
+`axis_backoff_distance` = Set distance in mm to back the toolhead away from the axis endstop
+
+`axis_register_clear_wait` = Set axis register clear time. If using sensorless homing this value should be 2 seconds or slightly over
+
+`homing_movement_travel_speed` = Set speed for the toolhead to move to the axis endstop mm/s 
+
+`post_z_switch_backoff` = Set True to raise Z axis & back the gantry away from the rear of the printer after Z endstop switch press
+
+
+`z_switch_backoff_y_dist` = Set how far to back the gantry away from the rear of the printer - not used if homing with probe
+
+`post_z_switch_backoff_height` = Set safe Z height to park the toolhead after endstop switch press - not used if homing with probe
+
+`z_endstop_loaction_x` = If you're using a separate non-Klicky Probe Z endstop switch of any sort set X axis location
+
+`z_endstop_loaction_y` = If you're using a separate non-Klicky Probe Z endstop switch of any sort set Y axis location
+
+****************************************************************************************************************************
 
 # BTT EDDY PROBE
 
