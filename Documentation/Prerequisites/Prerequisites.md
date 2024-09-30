@@ -32,3 +32,6 @@ These additional macros are prerequisites:
 
 You must keep neopixels set to `False` in the `demon_user_settings_v2.9.cfg` `Hardware Options` section
 
+******************************
+
+- [Head on to General Setup For All Printers](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General%20_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md)
