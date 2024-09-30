@@ -88,8 +88,10 @@ https://www.printables.com/model/873006-sovol-sv08-silicone-nozzle-cleaner-purge
 
 You will need to edit your slicer's `Start G-code` & `End G-code` boxes to get the `PRINT_START` macro to work correctly. 
 
+****************************************************************************************************************************
 
-# Here's how you do it...
+
+# FULL INSTALL INSTRUCTIONS...
 
 ## Stuff you need to install BEFORE these macros can work - DO NOT SKIP THIS!
 
