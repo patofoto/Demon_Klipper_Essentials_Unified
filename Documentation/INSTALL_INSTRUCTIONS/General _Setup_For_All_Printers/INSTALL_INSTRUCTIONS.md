@@ -439,6 +439,7 @@ Don’t worry it’s super simple! Open the file linked above & “comment in”
 
 I REPEAT LEAVE LINE 106 COMMENTED OUT!!! Comment in lines 101-05 ONLY!
 
+![BTT_Eddy_setup](https://github.com/user-attachments/assets/6340a21d-1ac6-4be4-b16e-c0f0b2254c31)
 
 
 
