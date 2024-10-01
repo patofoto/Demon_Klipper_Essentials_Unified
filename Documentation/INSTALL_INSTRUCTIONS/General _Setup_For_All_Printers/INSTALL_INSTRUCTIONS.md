@@ -536,8 +536,19 @@ PAUSE
 ### Other Slicers
 - [HERES THE FILE FOR OTHER SLICER'S G-CODE START](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/Other_Slicers_Start_G-code/Other_Slicers.md)
 
-**Fin...**
 
+### Orca Slicer Additional
+If you get the error in the photo below it means your version is not v2.20 (beta or beta2 or later)
+PLEASE UPDATE YOUR SLICER! DO NOT USE ORCA SLICER DOT NET!!! BAD!!!
+
+This link GOOD!
+
+- https://github.com/SoftFever/OrcaSlicer/releases
+
+
+![Orca Fail](https://github.com/user-attachments/assets/2fd3bbf6-2c4b-4e89-ba27-5bf112cbd179)
+
+**Fin...**
 
 ****************************************************************************************************************************
 # If You're Using A Sovol SV08 Printer
