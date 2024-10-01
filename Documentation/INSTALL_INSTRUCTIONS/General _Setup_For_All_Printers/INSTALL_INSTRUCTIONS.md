@@ -15,6 +15,16 @@ If you feel these macros are valuable enough to download & use please consider h
 https://github.com/3DPrintDemon/How-to-Update-Sovol-Klipper-Screen-To-Latest-Klipper-SV06-and-SV07 
 ****************************************************************************************************************************
 
+### Orca Slicer
+
+Make sure you have the latest 2.2.0 (beta2 or later) version of Orca Slicer DO NOT USE ORCA SLICER DOT NET!!! BAD!!!
+
+This link GOOD!
+
+- https://github.com/SoftFever/OrcaSlicer/releases
+
+******************************
+
 # Whats New
 
 - [Check Out the new macros & how to use them!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/Update%20History/Update_History.md)
