@@ -122,10 +122,10 @@ You need to do this as well as the general setup for all printers above...
 ****************************************************************************************************************************
 
 ## Orca Slicer Heads-up!
-If you get the error in the photo below it means your version is not v2.20 (beta or beta2 or later)
+If you get the error in the photo below it means your version is not v2.2.0 (beta or beta2 or later)
 PLEASE UPDATE YOUR SLICER! 
 
-DO NOT USE ORCA SLICER DOT NET!!! BAD!!!
+DO NOT USE ORCA SLICER DOT NET!!! ....BAD!!!
 
 This link GOOD!
 
