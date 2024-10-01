@@ -538,8 +538,8 @@ PAUSE
 
 
 ### Orca Slicer Additional
-If you get the error in the photo below it means your version is not v2.20 (beta or beta2 or later)
-PLEASE UPDATE YOUR SLICER! DO NOT USE ORCA SLICER DOT NET!!! BAD!!!
+If you get the error in the photo below it means your version is not v2.2.0 (beta or beta2 or later)
+PLEASE UPDATE YOUR SLICER! DO NOT USE ORCA SLICER DOT NET!!! ....BAD!!!
 
 This link GOOD!
 
