@@ -370,11 +370,11 @@ If you’re using your printer with a separate endstop switch & you are NOT usin
 Open the `demon_user_settings_v2.9.cfg` file & search 
 
 ```
-z_endstop_loaction_x
+z_endstop_location_x
 ``` 
 &...
 ```
-z_endstop_loaction_y
+z_endstop_location_y
 ```
 then enter your switch axis locations.
 
@@ -411,9 +411,9 @@ Found in the demon_user_settings_v2.9.cfg
 
 `post_z_switch_backoff_height` = Set safe Z height to park the toolhead after endstop switch press - not used if homing with probe
 
-`z_endstop_loaction_x` = If you're using a separate non-Klicky Probe Z endstop switch of any sort set X axis location
+`z_endstop_location_x` = If you're using a separate non-Klicky Probe Z endstop switch of any sort set X axis location
 
-`z_endstop_loaction_y` = If you're using a separate non-Klicky Probe Z endstop switch of any sort set Y axis location
+`z_endstop_location_y` = If you're using a separate non-Klicky Probe Z endstop switch of any sort set Y axis location
 
 ****************************************************************************************************************************
 
