@@ -83,6 +83,44 @@ Comment out the stock entry do not delete it, it must look like this:
 # max_power: 1.0
 ```
 
+Be sure to comment out the Sovol [homing_override] section if you want to use the demon_homing_control file. If not leave this commented in & disable the demon file by commenting out its full content.
+
+```
+# [homing_override]
+# gcode:
+#    {% if not 'Z' in params and not 'Y' in params and 'X' in params %}
+#      G28 X
+#      G0 X348 F1200
+#    {% elif not 'Z' in params and not 'X' in params and 'Y' in params %}
+#      G28 Y
+#      G0 Y360  F1200
+#    {% elif not 'Z' in params and 'X' in params and 'Y' in params %}
+#      G28 Y
+#      G0 Y360  F1200
+#      G4 P2000
+#      G28 X
+#      G0 X348  F1200
+#    {% elif 'Z' in params and not 'X' in params and not 'Y' in params %}
+#      G90
+#      G0  X191 Y165 F3600
+#      G28 Z
+#      G0  Z10 F600
+#    {% else %}
+#      G90
+#      G0 Z5 F300
+#      G28 Y
+#      G0 Y360  F1200
+#      G4 P2000
+#      G28 X
+#      G0 X348  F1200
+#      G90
+#      G0  X191 Y165 F3600
+#      G28 Z
+#      G0  Z10 F600
+#    {% endif %}
+# axes: xyz
+# set_position_z: 0
+```
 
 ****************************************************************************************************************************
 
