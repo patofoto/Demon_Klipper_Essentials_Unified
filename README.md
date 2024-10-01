@@ -121,6 +121,19 @@ You need to do this as well as the general setup for all printers above...
 
 ****************************************************************************************************************************
 
+## Orca Slicer Heads-up!
+If you get the error in the photo below it means your version is not v2.20 (beta or beta2 or later)
+PLEASE UPDATE YOUR SLICER! 
+
+DO NOT USE ORCA SLICER DOT NET!!! BAD!!!
+
+This link GOOD!
+
+- https://github.com/SoftFever/OrcaSlicer/releases
+
+
+![Orca Fail](https://github.com/user-attachments/assets/2fd3bbf6-2c4b-4e89-ba27-5bf112cbd179)
+
 [<img width="171" alt="kofi_s_tag_dark" src="https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/assets/122202359/08473899-563b-4b4d-9409-5e6602d6ec44">](https://ko-fi.com/3dprintdemon)
 
 # WANT MORE...??
