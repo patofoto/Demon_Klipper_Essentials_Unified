@@ -7,7 +7,7 @@ If you feel these macros are valuable enough to download & use please consider h
 
 ### Orca Slicer
 
-Make sure you have the latest 2.2.0 (beta2) version of Orca Slicer DO NOT USE ORCA SLICER DOT NET!!! BAD!!!
+Make sure you have the latest 2.2.0 (beta2 or later) version of Orca Slicer DO NOT USE ORCA SLICER DOT NET!!! BAD!!!
 
 This link GOOD!
 
