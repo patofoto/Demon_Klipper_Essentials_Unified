@@ -178,6 +178,14 @@ These macros make use of the `respond` command so please make sure your printer.
 [respond]
 ```
 
+# Define Force Move Section
+
+be sure to define the force move section in your printer.cfg file or your printer wont be able to make use of the new homing routine. 
+```
+[force_move]
+enable_force_move: true
+```
+
 ****************************************************************************************************************************
 
 
