@@ -592,21 +592,21 @@ pause_delay: 0.5
 If you have an encoder based sensor like the BTT Smart Sensor add this:
 ```
 [filament_motion_sensor encoder_sensor]
- switch_pin: ^### <<<<<< insert board pin
- detection_length: 9
- extruder: extruder
- pause_on_runout: False
- insert_gcode:
-     { action_respond_info("Filament Encoder is Running") }
- runout_gcode:
+switch_pin: ^### <<<<<< insert board pin
+detection_length: 9
+extruder: extruder
+pause_on_runout: False
+insert_gcode:
+    { action_respond_info("Filament Encoder is Running") }
+runout_gcode:
     { action_respond_info("Filament Encoder Stall Detected") }
     {% if printer.print_stats.state == "printing" %}
       PAUSE
     {% endif %}
 
- [delayed_gcode encoder_sensor]
- initial_duration: 1
- gcode:
+[delayed_gcode encoder_sensor]
+initial_duration: 1
+gcode:
     SET_FILAMENT_SENSOR SENSOR=encoder_sensor ENABLE=0
 ```
 
