@@ -11,6 +11,16 @@ If you feel these macros are valuable enough to download & use please consider h
 - ### [UPDATING FROM A PREVIOUS VERSION CLICK HERE!!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Other_Files/Version_Config_Changes/V2.9_Config_Changes.md)
 ****************************************************************************************************************************
 
+### Orca Slicer
+
+Make sure you have the latest 2.2.0 (beta2 or later) version of Orca Slicer DO NOT USE ORCA SLICER DOT NET!!! BAD!!!
+
+This link GOOD!
+
+- https://github.com/SoftFever/OrcaSlicer/releases
+
+******************************
+
 # IF YOU'RE USING A SOVOL SV08 PRINTER! 
 
 BE SURE TO INSTALL THE STUFF YOU NEED TO INSTALL!!!
