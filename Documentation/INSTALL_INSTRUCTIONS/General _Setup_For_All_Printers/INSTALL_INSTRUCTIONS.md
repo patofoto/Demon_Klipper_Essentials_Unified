@@ -433,13 +433,13 @@ For use here with the Demon macros we need to be using the regular version (non-
 https://github.com/bigtreetech/Eddy/blob/master/sample-bigtreetech-eddy.cfg
 
 For a Printer with `Eddy Probe` being used as your Z endstop probe, basically homing the printer with the probe (No separate Z endstop Switch) you need to modify their file. 
-Don’t worry it’s super simple! Open the file linked above & “comment in” lines 106-110.
+Don’t worry it’s super simple! Open the file linked above & “comment in” lines 101-105.
 
- IMPORTANT>>>>>>> LEAVE  LINE 111 COMMENTED OUT!! 
+ IMPORTANT>>>>>>> LEAVE  LINE 106 COMMENTED OUT!! 
 
-I REPEAT LEAVE LINE 111 COMMENTED OUT!!! Comment in lines 106-110 ONLY!
+I REPEAT LEAVE LINE 106 COMMENTED OUT!!! Comment in lines 101-05 ONLY!
 
-![BTT_EDDY_Setup](https://github.com/user-attachments/assets/1d92fd9d-7029-40e6-b59d-a2c7b52893ca)
+
 
 
 ##### NOTE: If you're using Eddy as a bed scanner only & have a separate endstop switch DO NOT do the above. Leave the file as it is.
