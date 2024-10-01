@@ -345,11 +345,6 @@ This system will also not let you home the printer with the toolhead under 5mm h
 So there’s no more risk of homing at Z0.2mm after a stoppage or a Z offset calibration test or risk hitting any clips or nozzle cleaners etc!
 Not only that the homing macros know automatically if you’re using a BTT Eddy Probe or not and will adapt themselves to it!
 
-Early file update made to support more printer types & situations.
-Please update any systems with demon_homing_contorl_v1.0.cfg to demon_homing_contorl_v1.1.cfg if you're having issues on your machine.
-You will also need to update demon_core_assets_v1.3.cfg as & your demon_user_settings_v2.9 for everything to be correct.
-please download these files again & hopefully that should help any issue you might be having.
-
 ****************************************************************************************************************************
 
 ## DEMON Homing Control - IMPORTANT!
@@ -394,6 +389,8 @@ then enter your switch axis locations.
 There are also other definable homing options to set there too! So be sure to setup ALL your homing variables & tune your sensorless homing values in your `printer.cfg` at the desired homing power levels, & to check that your chosen endstop will trigger when needed! 
 
 When testing homing for the first time be EXTREMELY CAREFUL & be ready to hit EMERGENCY STOP!! You may need to abort the homing process.
+
+If for any reason you wish to revert back to your normal homing system, simply commented all back in & disable the `demon_homing_control_v1.1.cfg` file by commenting out its full content by selecting it all with `ctrl+A` & then `ctrl+/` on wondows & `cmd+A` & then `cmd+/` on MacOS.
 
 ****************************************************************************************************************************
 
