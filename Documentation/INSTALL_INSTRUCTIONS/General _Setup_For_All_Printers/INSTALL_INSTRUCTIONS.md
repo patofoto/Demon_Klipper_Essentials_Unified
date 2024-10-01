@@ -345,17 +345,22 @@ This system will also not let you home the printer with the toolhead under 5mm h
 So there’s no more risk of homing at Z0.2mm after a stoppage or a Z offset calibration test or risk hitting any clips or nozzle cleaners etc!
 Not only that the homing macros know automatically if you’re using a BTT Eddy Probe or not and will adapt themselves to it!
 
+Early file update made to support more printer types & situations.
+Please update any systems with demon_homing_contorl_v1.0.cfg to demon_homing_contorl_v1.1.cfg if you're having issues on your machine.
+You will also need to update demon_core_assets_v1.3.cfg as & your demon_user_settings_v2.9 for everything to be correct.
+please download these files again & hopefully that should help any issue you might be having.
+
 ****************************************************************************************************************************
 
 ## DEMON Homing Control - IMPORTANT!
-To use the `demon_homing_control_v1.0.cfg` file
+To use the `demon_homing_control_v1.1.cfg` file
 Be sure to comment out or un-include & disable any old homing or sensorless homing macros you might have, you will also need to comment out any old `[safe_homing]` & `[homing_override]` sections in your `printer,cfg` or macro files.
 
 ****************************************************************************************************************************
 
 ## UNLESS you’re using `Klicky Probe`!!! 
 
-For printers using `Klicky Probe` you need to open the `demon_homing_control_v1.0.cfg` file & comment out the `[homing_override]` section found there, lines 12-119. This is has to be done because Klicky Probe needs control of that section for their system. The printer won’t home if you forget to do this. Or maybe other bad things will happen, don’t say I didn’t warn ya! 
+For printers using `Klicky Probe` you need to open the `demon_homing_control_v1.1.cfg` file & comment out the `[homing_override]` section found there, lines 12-119. This is has to be done because Klicky Probe needs control of that section for their system. The printer won’t home if you forget to do this. Or maybe other bad things will happen, don’t say I didn’t warn ya! 
 
 You will also need to go into the `Klicky-macros.cfg` file & add 
 ```
@@ -412,8 +417,13 @@ Found in the demon_user_settings_v2.9.cfg
 
 `homing_movement_travel_speed` = Set speed for the toolhead to move to the Z axis endstop or probing location in mm/s 
 
-`post_z_switch_backoff` = Set True to raise Z axis & back the gantry away from the rear of the printer after Z endstop switch press
+`set_probe_point_default` = Set False if you want a custom probing point for your bltouch/eddy probe
 
+`set_probe_custom_x` = Set custom X probe position for your bltouch/eddy probe
+
+`set_probe_custom_y` = Set custom Y probe position for your bltouch/eddy probe
+
+`post_z_switch_backoff` = Set True to raise Z axis & back the gantry away from the rear of the printer after Z endstop switch press
 
 `z_switch_backoff_y_dist` = Set how far to back the gantry away from the rear of the printer - not used if homing with probe
 
@@ -422,6 +432,7 @@ Found in the demon_user_settings_v2.9.cfg
 `z_endstop_location_x` = If you're using a separate non-Klicky Probe Z endstop switch of any sort set X axis location
 
 `z_endstop_location_y` = If you're using a separate non-Klicky Probe Z endstop switch of any sort set Y axis location
+
 
 ****************************************************************************************************************************
 
