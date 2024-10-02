@@ -3,6 +3,12 @@ If you feel these macros are valuable enough to download & use please consider h
 
 [<img width="171" alt="kofi_s_tag_dark" src="https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/assets/122202359/08473899-563b-4b4d-9409-5e6602d6ec44">](https://ko-fi.com/3dprintdemon)
 
+*********************************
+
+# See Update History for [latest features](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/Update%20History/Update_History.md)
+
+*********************************
+
 # Previous & Existing Features
 
 - NEW! ORCA Slicer `Multi_Surface` handling! 
