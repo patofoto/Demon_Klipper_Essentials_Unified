@@ -9,6 +9,8 @@ If you feel these macros are valuable enough to download & use please consider h
 ****************************************************************************************************************************
 
 - ### [UPDATING FROM A PREVIOUS VERSION CLICK HERE!!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Other_Files/Version_Config_Changes/V2.9_Config_Changes.md)
+
+
 ****************************************************************************************************************************
 
 ### Orca Slicer
@@ -25,6 +27,7 @@ This link GOOD!
 
 BE SURE TO INSTALL THE STUFF YOU NEED TO INSTALL!!!
 
+- https://github.com/3DPrintDemon/SV08/releases/tag/v1.0
 - https://github.com/3DPrintDemon/KAMP_LiTE/releases/tag/v1.0
 - https://github.com/3DPrintDemon/Voron-Stealthburner/blob/main/Firmware/RGB_LEDs.cfg
 - https://github.com/3DPrintDemon/Non_Blocking_Wait/releases/tag/Heat_Soak_Timers_V1.0
@@ -91,6 +94,17 @@ Comment out the stock entry do not delete it, it must look like this:
 # [fan_generic fan1] # front model cooling fan
 # pin: extra_mcu:PB1
 # max_power: 1.0
+```
+
+Rename the `[output_pin Main_LED]` section & change the cycle_time. As the stock value of `5` is incorrect. 
+
+```
+[output_pin Printer_Lights]
+pin:PA3
+pwm: 1
+value:1
+cycle_time: 0.01
+shutdown_value: 0
 ```
 
 Be sure to comment out the Sovol [homing_override] section if you want to use the demon_homing_control file. If not leave this commented in & disable the demon file by commenting out its full content.
