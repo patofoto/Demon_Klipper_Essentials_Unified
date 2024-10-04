@@ -146,6 +146,71 @@ Be sure to comment out the Sovol [homing_override] section if you want to use th
 # set_position_z: 0
 ```
 
+Now... There's one more thing I really recommend doing & that's modifying the settings below for your meshing & probing sections! This will improve the accuracy of your system when using the probe. Do check these values against your current values & DO NOT overwrite your stock sections!! Comment them out & paste these in below them so you can always go back if you need to!
+
+THIS FIRST SECTION IS OPTIONAL TO SLOW THE MACHINE DOWN - as the stock settings are waaaaaaaaay too fast & are unrealistic.
+```
+[printer] 
+kinematics: corexy
+max_velocity: 700
+max_accel: 8200
+max_accel_to_decel: 4500
+max_z_velocity: 20
+max_z_accel: 500
+square_corner_velocity: 5.0
+```
+ 
+```
+[probe]
+pin: extra_mcu:PB6
+x_offset: -17
+y_offset: 10
+# z_offset: 0 
+speed: 5
+samples: 3
+samples_result: median
+sample_retract_dist: 5.0
+lift_speed: 50
+samples_tolerance: 0.01
+samples_tolerance_retries: 10
+```
+ 
+```
+[bed_mesh]
+speed: 350                   
+horizontal_move_z: 5         
+mesh_min: 10,10              
+mesh_max: 333,340            
+probe_count: 11,11             
+algorithm: bicubic   
+bicubic_tension: 0.4
+split_delta_z: 0.01
+mesh_pps:3,3
+adaptive_margin: 5
+fade_start: 0
+fade_end: 10
+fade_target: 0
+```
+ 
+```
+[quad_gantry_level]
+gantry_corners:              
+	-60,-10
+	410,420
+points:
+	36,10
+	36,320
+	346,320
+	346,10
+speed: 350                   
+horizontal_move_z: 5       
+retry_tolerance: 0.01      
+retries: 5                  
+max_adjust: 10  
+
+```
+
+
 ****************************************************************************************************************************
 
 
