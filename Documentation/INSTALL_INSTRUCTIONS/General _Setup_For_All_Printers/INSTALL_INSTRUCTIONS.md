@@ -156,7 +156,7 @@ Also be sure to add the line below for the `variable_runout_sensor: ""` option b
 ```
 filament_switch_sensor filament_sensor
 ```
-Your new uncommented `_CLIENT_VARIABLE` marco should look like this when you're done. Image is for a Voron 2.4 350
+Your new uncommented `_CLIENT_VARIABLE` macro should look like this when you're done. Image is for a Voron 2.4 350
 
 BE SURE TO SAVE & RESTART!
 
@@ -577,7 +577,7 @@ To get the most from these macros you’ll need to add a Chamber thermistor to y
 ****************************************************************************************************************************
 
 ## Filament Sensor
-If you have or are going to install a filament sensor this must be added to your `printer.cfg` file to run the filament sensor. The filament runout check in the `PRINT_START` macro can then be enabled & disabled in the `_START_VARIABLES` marco if you dont have one or dont want to perform the check at the start of the print.
+If you have or are going to install a filament sensor this must be added to your `printer.cfg` file to run the filament sensor. The filament runout check in the `PRINT_START` macro can then be enabled & disabled in the `_START_VARIABLES` macro if you dont have one or dont want to perform the check at the start of the print.
 ```
 [filament_switch_sensor filament_sensor]
 switch_pin: ^### <<<<<< Insert board pin for sensor
