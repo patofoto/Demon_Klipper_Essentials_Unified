@@ -32,7 +32,11 @@ BE SURE TO INSTALL THE STUFF YOU NEED TO INSTALL!!!
 - https://github.com/3DPrintDemon/Voron-Stealthburner/blob/main/Firmware/RGB_LEDs.cfg
 - https://github.com/3DPrintDemon/Non_Blocking_Wait/releases/tag/Heat_Soak_Timers_V1.0
   
-###### Note: These files are requred for the macro pack to work correctly. Install even if you dont have any LEDs & set a dummy pin.
+###### Note: These files are required for the macro pack to work correctly. Install even if you dont have any LEDs & set a dummy pin.
+
+OPTIONAL INSTALL!!
+
+- [HDMI DEMON Boot Screen!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/DEMON_Armbian_HDMI_Boot_Screen/DEMON_HDMI_Boot_Screen_Install.md)
 
 Here is my SV08 nozzle cleaning & purge bucket!
 
