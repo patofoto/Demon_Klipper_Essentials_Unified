@@ -35,7 +35,12 @@ These additional macros are prerequisites:
 - https://github.com/3DPrintDemon/Voron-Stealthburner/blob/main/Firmware/RGB_LEDs.cfg
 - https://github.com/3DPrintDemon/Non_Blocking_Wait/releases/tag/Heat_Soak_Timers_V1.0
   
-###### Note: This file is requred for the heat soaks to work correctly. Install even if you dont have any LEDs & set a dummy pin.
+###### Note: This file is required for the heat soaks to work correctly. Install even if you dont have any LEDs & set a dummy pin.
+
+### Optional install for Armbian systems
+
+- [DEMON Armbian HDMI Boot Screen](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/DEMON_Armbian_HDMI_Boot_Screen/DEMON_HDMI_Boot_Screen_Install.md)
+
 
 ### **For other machines without toolhead Neopixels**
 - https://github.com/3DPrintDemon/Non_Blocking_Wait/releases/tag/Heat_Soak_Timers_V1.0
@@ -47,3 +52,4 @@ You must keep neopixels set to `False` in the `demon_user_settings_v2.9.cfg` `Ha
 ******************************
 
 - [Head on to General Setup For All Printers](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General%20_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md)
+
