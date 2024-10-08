@@ -8,6 +8,7 @@ Here you will save a backup of your current boot screen file & replace it with t
 
 MAKE A BACKUP OF YOUR PRINTER &/OR YOUR CONFIG FOLDER!!!!
 
+![DEMON_Armbian_Boot](https://github.com/user-attachments/assets/fb98da30-1f13-4490-9dfd-861b4a979488)
 
 
 # This example has been tested WORKING on the STOCK SV08 system
@@ -15,7 +16,7 @@ MAKE A BACKUP OF YOUR PRINTER &/OR YOUR CONFIG FOLDER!!!!
 Download the file by clicking the link or pasting the command into your SSH terminal
 
 
-## Backup Your Current File!
+# Backup Your Current File!
 
 Open your chosen SFTP client & login to your SV08
 
@@ -30,8 +31,7 @@ find the `bootsplash.armbian` file already in your system & download it to keep 
 
 Download the `bootsplash.armbian` file here.
 
-LINK >>>>>>>>>
-
+https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/tree/main/Other_Files/DEMON_Armbain_HDMI_Boot_Screen
 
 # install direct via SSH 
 
@@ -40,7 +40,7 @@ This will download the file to your user directory
 ```
 cd ~
 
-wget link
+wget https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/raw/refs/heads/main/Other_Files/DEMON_Armbain_HDMI_Boot_Screen/bootsplash.armbian
 ```
 
 ## Now to copy it to the correct directory ready for use
@@ -50,11 +50,11 @@ Run this command to copy the file to the correct directory
 sudo cp ~/bootsplash.armbian /usr/lib/firmware/bootsplash.armbian
 ```
 
-Once that's done its time update the system to use it.
+Once that's done its time update the system to use it. Your pi will run a load of commands that will scroll & there'll be a small wait at the end as it finishes.
 ```
 sudo update-initramfs -v -u
 ```
-Your pi will run a load of commands that will scroll & there'll be a small wait at the end as it finishes. Once finished it's time to reboot the pi to use the new boot screen!
+It's time to reboot the pi to use the new boot screen!
 
 ```
 sudo reboot Now
