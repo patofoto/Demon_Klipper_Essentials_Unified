@@ -89,6 +89,9 @@ pins: extra_mcu:PA7, extra_mcu:PB1
 [fan]
 pin:multi_pin: fan_pins
 max_power: 1.0
+shutdown_speed: 0
+kick_start_time: 0.5
+off_below: 0.10
 ```
 Comment out the stock entry do not delete it, it must look like this:
 ```
