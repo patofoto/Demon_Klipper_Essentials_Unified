@@ -12,7 +12,8 @@ MAKE A BACKUP OF YOUR PRINTER &/OR YOUR CONFIG FOLDER!!!!
 ![DEMON_Armbian_Boot](https://github.com/user-attachments/assets/fb98da30-1f13-4490-9dfd-861b4a979488)
 
 
-# This example has been tested WORKING on the STOCK SV08 system
+# This example has been tested WORKING on the STOCK SV08 system 
+# IT IS UNTESTED ON SV08 MAINLINE KLIPPER HOWEVER
 
 Download the file by clicking the link or pasting the command into your SSH terminal
 
