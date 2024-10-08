@@ -58,7 +58,7 @@ sudo update-initramfs -v -u
 It's time to reboot the pi to use the new boot screen!
 
 ```
-sudo reboot Now
+sudo reboot now
 ```
 
 
