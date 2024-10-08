@@ -34,7 +34,8 @@ BE SURE TO INSTALL THE STUFF YOU NEED TO INSTALL!!!
   
 ###### Note: These files are required for the macro pack to work correctly. Install even if you dont have any LEDs & set a dummy pin.
 
-OPTIONAL INSTALL!!
+## OPTIONAL INSTALL!!
+![DEMON_Armbian_Boot](https://github.com/user-attachments/assets/fb98da30-1f13-4490-9dfd-861b4a979488)
 
 - [HDMI DEMON Boot Screen!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/DEMON_Armbian_HDMI_Boot_Screen/DEMON_HDMI_Boot_Screen_Install.md)
 
