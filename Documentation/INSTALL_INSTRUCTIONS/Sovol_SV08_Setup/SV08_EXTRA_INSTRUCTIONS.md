@@ -25,6 +25,8 @@ This link GOOD!
 
 # IF YOU'RE USING A SOVOL SV08 PRINTER! 
 
+![DEMON_Display_Menu](https://github.com/user-attachments/assets/eb7965ac-fcd2-4fd4-9487-7cbcaf2828e7)
+
 BE SURE TO INSTALL THE STUFF YOU NEED TO INSTALL!!!
 
 - https://github.com/3DPrintDemon/SV08/releases/tag/v1.0
