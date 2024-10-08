@@ -5,7 +5,7 @@ This install requires you to modify system files! If you are uncomfortable doing
 Here you will save a backup of your current boot screen file & replace it with the Demon version. 
 
 ## To do this you MUST be running an Armbian system!! No if's buts or coconuts! 
-## DO NOT TRY TO USE ON AN DEBIAN SYSTEM (NOT FOR REAL RPI3-4-5!)
+## DO NOT TRY TO USE ON AN DEBIAN SYSTEM (NOT FOR REAL Rpi3-4-5!)
 
 MAKE A BACKUP OF YOUR PRINTER &/OR YOUR CONFIG FOLDER!!!!
 
