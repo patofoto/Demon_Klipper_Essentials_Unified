@@ -34,7 +34,7 @@ Download the `bootsplash.armbian` file here.
 
 https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/tree/main/Other_Files/DEMON_Armbain_HDMI_Boot_Screen
 
-# install direct via SSH 
+# Install direct via SSH 
 
 This will download the file to your user directory
 
