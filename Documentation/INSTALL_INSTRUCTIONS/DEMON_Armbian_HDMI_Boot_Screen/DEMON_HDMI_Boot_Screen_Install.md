@@ -62,6 +62,26 @@ It's time to reboot the pi to use the new boot screen!
 sudo reboot now
 ```
 
+••••••••••••••••••••••••••••••••••••••••
+## Screen Inverted?
+If your boot screen is flipped you can either rotate your screen with the button (BTT TFT50/70) & then edit the system boot file to invert KlipperScreen
+```
+sudo nano boot/system.cfg
+```
+
+Then uncomment the KS screen rotation option & select inverted.
+
+Save & exit.
+
+```
+sudo reboot now
+```
+
+Or you can simply upload the 180 inverted bootscreen...
+
+```
+wget https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/raw/refs/heads/main/Other_Files/DEMON_Armbian_HDMI_Boot_Screen/Boot_Screen_180/bootsplash.armbian
+```
 
 
 
