@@ -41,6 +41,7 @@ BE SURE TO INSTALL THE STUFF YOU NEED TO INSTALL!!!
 
 - [HDMI DEMON Boot Screen!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/DEMON_Armbian_HDMI_Boot_Screen/DEMON_HDMI_Boot_Screen_Install.md)
 
+## Other Great Upgrade Options For All SV08's
 Here is my SV08 nozzle cleaning & purge bucket!
 
 - https://www.printables.com/model/873006-sovol-sv08-silicone-nozzle-cleaner-purge-bucket-mi
