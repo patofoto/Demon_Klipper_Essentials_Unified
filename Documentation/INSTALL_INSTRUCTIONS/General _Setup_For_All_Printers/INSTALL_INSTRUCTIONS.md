@@ -357,14 +357,14 @@ Not only that the homing macros know automatically if you’re using a BTT Eddy 
 ****************************************************************************************************************************
 
 ## DEMON Homing Control - IMPORTANT!
-To use the `demon_homing_control_v1.1.cfg` file
+To use the `demon_homing_control_v1.2.cfg` file
 Be sure to comment out or un-include & disable any old homing or sensorless homing macros you might have, you will also need to comment out any old `[safe_homing]` & `[homing_override]` sections in your `printer,cfg` or macro files.
 
 ****************************************************************************************************************************
 
 ## UNLESS you’re using `Klicky Probe`!!! 
 
-For printers using `Klicky Probe` you need to open the `demon_homing_control_v1.1.cfg` file & comment out the `[homing_override]` section found there, lines 12-119. This is has to be done because Klicky Probe needs control of that section for their system. The printer won’t home if you forget to do this. Or maybe other bad things will happen, don’t say I didn’t warn ya! 
+For printers using `Klicky Probe` you need to open the `demon_homing_control_v1.2.cfg` file & comment out the `[homing_override]` section found there, lines 12-119. This is has to be done because Klicky Probe needs control of that section for their system. The printer won’t home if you forget to do this. Or maybe other bad things will happen, don’t say I didn’t warn ya! 
 
 You will also need to go into the `Klicky-macros.cfg` file & add 
 ```
@@ -399,7 +399,7 @@ There are also other definable homing options to set there too! So be sure to se
 
 When testing homing for the first time be EXTREMELY CAREFUL & be ready to hit EMERGENCY STOP!! You may need to abort the homing process.
 
-If for any reason you wish to revert back to your normal homing system, simply commented all back in & disable the `demon_homing_control_v1.1.cfg` file by commenting out its full content by selecting it all with `ctrl+A` & then `ctrl+/` on wondows & `cmd+A` & then `cmd+/` on MacOS.
+If for any reason you wish to revert back to your normal homing system, simply commented all back in & disable the `demon_homing_control_v1.2.cfg` file by commenting out its full content by selecting it all with `ctrl+A` & then `ctrl+/` on wondows & `cmd+A` & then `cmd+/` on MacOS.
 
 ****************************************************************************************************************************
 
@@ -407,7 +407,9 @@ If for any reason you wish to revert back to your normal homing system, simply c
 # DEMON HOMING CONTROL SETTINGS 
 Found in the demon_user_settings_v2.9.cfg
 
-`override_home_power_safety` = leave this set false unless you need a high homing current. Damage may result if used improperly!
+`home_y_first` = set True to home the Y axis first or False to home X first. 
+
+`override_home_power_safety` = leave this set False unless you need a high homing current. Damage may result if used improperly!
 
 `home_power` = This is the power level to reduce the X Y axis down to while homing. Normally 0.6-0.7 is good
 
