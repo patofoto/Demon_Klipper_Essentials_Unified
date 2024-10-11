@@ -358,7 +358,7 @@ Not only that the homing macros know automatically if you’re using a BTT Eddy 
 
 ## DEMON Homing Control - IMPORTANT!
 To use the `demon_homing_control_v1.2.cfg` file
-Be sure to comment out or un-include & disable any old homing or sensorless homing macros you might have, you will also need to comment out any old `[safe_homing]` & `[homing_override]` sections in your `printer,cfg` or macro files.
+be sure to comment out or un-include & disable any old homing or sensorless homing macros you might have, you will also need to comment out any old `[safe_homing]` & `[homing_override]` sections in your `printer,cfg` or macro files.
 
 ****************************************************************************************************************************
 
@@ -468,6 +468,13 @@ Actual Probe setup & calibration. You will need to setup your Eddy Probe still, 
 https://github.com/bigtreetech/Eddy/blob/master/README.md
 
 Once Your probe is setup correctly & tested working as per the above BTT github guide all Demon Z_Probe calibration, machine meshing & machine levelling macros all now automatically detect & support BTT Eddy Probe! Just hit go & it’ll do its thing!
+
+## Eddy Coil Setup
+if you're using the Coil version of the Eddy Probe & are struggling to set it up here is what you need! edited cfg file with correct settings for use with a EBB36 & set up to deal with high temperature printing. 
+
+NOT FOR EDDY USB!
+
+https://github.com/3DPrintDemon/Eddy/releases/tag/Eddy_Coil_with_EBB36_Edited_cfg_v1.0
 
 
 ****************************************************************************************************************************
