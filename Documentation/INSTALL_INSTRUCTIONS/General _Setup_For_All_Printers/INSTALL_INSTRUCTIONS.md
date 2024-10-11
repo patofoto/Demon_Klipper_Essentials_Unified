@@ -399,7 +399,7 @@ There are also other definable homing options to set there too! So be sure to se
 
 When testing homing for the first time be EXTREMELY CAREFUL & be ready to hit EMERGENCY STOP!! You may need to abort the homing process.
 
-If for any reason you wish to revert back to your normal homing system, simply commented all back in & disable the `demon_homing_control_v1.2.cfg` file by commenting out its full content by selecting it all with `ctrl+A` & then `ctrl+/` on wondows & `cmd+A` & then `cmd+/` on MacOS.
+If for any reason you wish to revert back to your normal homing system, simply comment all back in from your old system & disable the `demon_homing_control_v1.2.cfg` file by commenting out its full content apart from the file version number at the bottom. Make your selection & then by then `ctrl+/` on wondows or `cmd+/` on MacOS.
 
 ****************************************************************************************************************************
 
