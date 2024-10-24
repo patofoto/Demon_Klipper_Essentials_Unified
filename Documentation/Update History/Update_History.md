@@ -30,7 +30,7 @@ Handy for seeing your adjusted settings that are in active RAM & not the saved v
 
 DEMON HOMING CONTROLl! - COMPATIBLE WITH BBT EDDY PROBE!
 Fully customisable homing system that will never home the printer when the nozzle is less than 5mm off the bed! It will always raise so no more homing actions at Z0.24!!! Thats some scary stuff! Also no more collisions with nozzle cleaners or bed clips/guiders!! Yay!
-This system automatically sees what drivers you have installed & lets you reduce the homing motor current your printer uses without needing to edit the macro files at all, unlike other popular files! Currently it supports 7 common driver types. TMC2208, TMC2209, TMC5160, TMC2225, TMC2226, TMC2130, TMC2240.
+This system automatically sees what drivers you have installed & lets you reduce the homing motor current your printer uses without needing to edit the macro files at all, unlike other popular files! Currently it supports 7 common driver types. TMC2208, TMC2209, TMC5160, TMC2225, TMC2226, TMC2130, TMC2240, TMC2660.
 The system is fully customisable within the Demon User Settings file, it even has a high current safety feature that’ll stop you setting the current too high & inadvertently causing damage to your printer! …& yes you can choose to override it if you wish! Be sure to comment out any old sensorless homing macros or homing override sections you might have.
 
 PLUS! - The system automatically knows if you have a BTT Eddy probe & it’ll know if you’re using it as a Z endstop or not & will adapt itself to it! No changes required!!!
