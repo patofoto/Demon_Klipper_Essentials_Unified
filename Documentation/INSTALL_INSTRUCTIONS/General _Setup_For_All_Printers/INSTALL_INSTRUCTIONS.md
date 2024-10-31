@@ -590,12 +590,14 @@ If you have or are going to install a filament sensor this must be added to your
 ```
 [filament_switch_sensor filament_sensor]
 switch_pin: ^### <<<<<< Insert board pin for sensor
-pause_on_runout: True
+pause_on_runout: False
 insert_gcode:
-    { action_respond_info("Insert Detected") }
+    { action_respond_info("Insert Detected") }  
 runout_gcode:
     { action_respond_info("Runout Detected") }
-pause_delay: 0.5
+    {% if printer.print_stats.state == "printing" %}
+      _FIL_CHANGE_PARK
+    {% endif %}
 ```
 
 If you have an encoder based sensor like the BTT Smart Sensor add this:
