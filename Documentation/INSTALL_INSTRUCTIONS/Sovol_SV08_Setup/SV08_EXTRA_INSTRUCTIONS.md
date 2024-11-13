@@ -221,6 +221,13 @@ max_adjust: 10
 
 ```
 
+## Timelapse Use
+
+If you wish to continue to use Timelapse be sure to add this back in your slicer's `Before Layer Change` gcode box.
+```
+TIMELAPSE_TAKE_FRAME
+```
+
 ## Mainline users
 
 You will need to add these sections to your printer.cfg if they're not defined already. 
