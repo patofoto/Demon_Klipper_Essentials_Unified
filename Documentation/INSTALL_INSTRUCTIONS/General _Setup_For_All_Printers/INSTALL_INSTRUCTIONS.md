@@ -364,7 +364,7 @@ be sure to comment out or un-include & disable any old homing or sensorless homi
 
 ## UNLESS you’re using `Klicky Probe`!!! 
 
-For printers using `Klicky Probe` you need to open the `demon_homing_control_v1.2.cfg` file & comment out the `[homing_override]` section found there, lines 12-119. This is has to be done because Klicky Probe needs control of that section for their system. The printer won’t home if you forget to do this. Or maybe other bad things will happen, don’t say I didn’t warn ya! 
+For printers using `Klicky Probe` you need to open the `demon_homing_control_v1.3.cfg` file & comment out the `[homing_override]` section found there, lines 12-145. This is has to be done because Klicky Probe needs control of that section for their system. The printer won’t home if you forget to do this. Or maybe other bad things will happen, don’t say I didn’t warn ya! 
 
 You will also need to go into the `Klicky-macros.cfg` file & add 
 ```
