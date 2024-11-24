@@ -119,8 +119,8 @@ Then setup where you want/need the park position, the extruder retract/unretract
 You can define a specific cancel print location too if you wish! Set your X Y loaction with these:
 ```
 variable_park_at_cancel   : True
-variable_park_at_cancel_x :
-variable_park_at_cancel_y :
+variable_park_at_cancel_x : None
+variable_park_at_cancel_y : None
 ```
 You must set...
 
