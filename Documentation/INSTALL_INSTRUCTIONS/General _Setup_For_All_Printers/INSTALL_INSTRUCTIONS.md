@@ -533,7 +533,7 @@ _FIL_CHANGE_PARK
 
 Change extrusion role G-code:
 ```
-_ADAPTIVE_PA TYPE=[extrusion_role]
+_DEMON_ADAPTIVE_PA TYPE=[extrusion_role]
 ```
 
 Pause G-code:
