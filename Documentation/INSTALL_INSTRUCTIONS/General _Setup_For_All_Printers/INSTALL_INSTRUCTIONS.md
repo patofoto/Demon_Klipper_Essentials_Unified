@@ -195,6 +195,12 @@ be sure to define the force move section in your printer.cfg file or your printe
 enable_force_move: true
 ```
 
+# Define Save Variables Section
+```
+[save_variables]
+filename: ~/demon_vars.cfg
+```
+
 ****************************************************************************************************************************
 
 
