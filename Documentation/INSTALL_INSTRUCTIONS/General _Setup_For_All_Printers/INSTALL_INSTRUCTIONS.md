@@ -711,6 +711,13 @@ name: Heatsoak Toggle
 icon: heat-up
 method: printer.gcode.script
 params: {"script":"HEATSOAK_TOGGLE"}
+
+[menu __main custom reset_file]
+name: Reset Print State
+icon: sd
+method: printer.gcode.script
+params: {"script":"_RESET_FILE_STATE"}
+
 ```
 
 The icons are appropriate if you use with the material-darker theme. Other theme’s icons may differ.
