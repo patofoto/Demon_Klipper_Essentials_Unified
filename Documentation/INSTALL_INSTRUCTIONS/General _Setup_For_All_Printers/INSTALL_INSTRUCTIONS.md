@@ -196,10 +196,27 @@ enable_force_move: true
 ```
 
 # Define Save Variables Section
+
+SSH into your printer & paste in
+```
+cd ~
+wget https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Vars/demon_vars.cfg -O demon_vars.cfg --backups=0
+```
+This will install the required variables file in the correct location.
+
+
+Then add this to your `printer.cfg`
+
 ```
 [save_variables]
 filename: ~/demon_vars.cfg
 ```
+If this file is not present on your first reboot but you have already added the `[save_variables]` section you'll see this error:
+
+![EOF Error](https://github.com/user-attachments/assets/b67bb757-e83e-4d0c-9267-a80c3c3f5944)
+
+
+Dont worry though this is just telling you the system created the file but it does not have the required saved variable within the file. Simply home the printer to create the variable within the file to clear the error.
 
 ****************************************************************************************************************************
 
