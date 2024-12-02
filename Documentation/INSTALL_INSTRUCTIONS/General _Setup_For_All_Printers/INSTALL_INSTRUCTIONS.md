@@ -387,9 +387,19 @@ be sure to comment out or un-include & disable any old homing or sensorless homi
 
 ## UNLESS you’re using `Klicky Probe`!!! 
 
-For printers using `Klicky Probe` you need to open the `demon_homing_control_v1.3.cfg` file & comment out the `[homing_override]` section found there, lines 12-145. This is has to be done because Klicky Probe needs control of that section for their system. The printer won’t home if you forget to do this. Or maybe other bad things will happen, don’t say I didn’t warn ya! 
+For printers using `Klicky Probe` you need to open the `demon_homing_control_v1.4.cfg` file & comment out the `[homing_override]` section found there, lines 12-151. This is has to be done because Klicky Probe needs control of that section for their system. The printer won’t home if you forget to do this. Or maybe other bad things will happen, don’t say I didn’t warn ya! 
 
-You will also need to go into the `Klicky-macros.cfg` file & add 
+You will also need to go into the `Klicky-macros.cfg` file & add:
+
+This at the very end of the `[gcode_macro _Home_Z_]` macro, around line 865 directly under the line that reads `_exit_point function=Home_Z`
+```
+M400
+_SAVE
+{% if start_vars.z_tracker_reduced_monitoring == False %}
+ UPDATE_DELAYED_GCODE ID=_ACTIVE_Z_MONITOR DURATION=1  
+{% endif %}
+```
+Then add this as per the image below
 ```
 _DRIVER_DEFINER
 ```
