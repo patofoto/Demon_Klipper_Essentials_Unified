@@ -216,7 +216,9 @@ If this file is not present on your first reboot but you have already added the 
 ![EOF Error](https://github.com/user-attachments/assets/b67bb757-e83e-4d0c-9267-a80c3c3f5944)
 
 
-Dont worry though this is just telling you the system created the file but it does not have the required saved variable within the file. Simply home the printer to create the variable within the file to clear the error.
+Dont worry though this is just telling you the system created the file but it does not have the required saved variable within the file. Simply home the printer to create the variable within the file to clear the error. 
+
+•Unless you're running `Klicky Probe` then please [see here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General%20_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#unless-youre-using-klicky-probe).
 
 ****************************************************************************************************************************
 
