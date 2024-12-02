@@ -391,7 +391,13 @@ For printers using `Klicky Probe` you need to open the `demon_homing_control_v1.
 
 You will also need to go into the `Klicky-macros.cfg` file & add:
 
+At the very top of the `[gcode_macro _Home_Z_]` add at line 837
+```
+{% set start_vars = printer["gcode_macro _START_VARIABLES"] %}
+```
+
 This at the very end of the `[gcode_macro _Home_Z_]` macro, around line 865 directly under the line that reads `_exit_point function=Home_Z`
+
 ```
 M400
 _SAVE
